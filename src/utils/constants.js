@@ -13,5 +13,10 @@ export const images = [
         id:3,
         desc:"product page image 1",
         url:"../Images/hehe.jpeg"
+    },
+    {
+        id:3,
+        desc:"product page image 1",
+        url:"../Images/hehe.jpeg"
     }
 ]
