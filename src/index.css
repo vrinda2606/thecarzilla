@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior:smooth;
+    font-family: 'Pacifico', 'cursive','Poppins', sans-serif, 'Lexend Deca','Space Grotesk'; 
+}
+
+.header{
+    width: 1440px;
+    height: 105px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.search-bar{
+    border:none;
+    outline:none;
+    width:350px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+
+.iconContainerStyle {
+    width: 40px;
+    height :40px;
+    border: 1px solid #C3D4E966;
+    border-radius: 90%;
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  };
+  
+.iconStyle{
+    color: #596780;
+    font-size: "20px"; 
+}
