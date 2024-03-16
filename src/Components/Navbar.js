@@ -33,7 +33,7 @@ const Navbar = () => {
          width= "100%"
          height="105px"
          sx={{position: 'fixed', //position: 'sticky'
-              top: 0, zIndex: 999, background: 'white' , top : 0 , justifyContent: 'space-between',backgroundColor: "white"}}>
+              top: 0, zIndex: 999, background: 'white', justifyContent: 'space-between',backgroundColor: "white"}}>
       <Link to="/" style={{display: 'flex' , alignItems: 'center'}} >
       <img src={images[0].url} alt="logo" style={{width: "172px",height: "180px", marginTop: "10px" ,marginLeft: "12px"}} />
       </Link>
