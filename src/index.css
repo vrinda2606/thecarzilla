@@ -117,3 +117,20 @@ body {
   border-radius: 10px;
   padding: 20px, 24px;
 }
+.footerI .contactSocial {
+  display: flex;
+  justify-content: center;
+}
+
+.footerI .contactSocial .social{
+  background-color: #D43500;
+  height: 38px;
+  width: 38px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.footerI .contactSocial .social a{
+    color: white;
+}
