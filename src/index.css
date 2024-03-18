@@ -122,7 +122,7 @@ body {
 .footer{
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 50px;
   width: 1140px;
 }
 
@@ -145,7 +145,7 @@ body {
 }
 .startUpLogo .imageLogoStartup{
   width: 142px;
-  height: 40px;
+  height: 60px;
 }
 
 .footerTwo{
@@ -184,7 +184,7 @@ ul .links{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 70px;
+  height: 210px;
 }
 
 .footerThree .subscribe{
@@ -195,6 +195,10 @@ ul .links{
   display: flex;
   flex-direction: column;
 }
-.startUpLogo .startUp {
-  display: flex;
+.startUpLogo{
+  padding-top: 25px;
 }
+.startUpLogoImg {
+  display: flex;
+  justify-content: space-between;
+ }

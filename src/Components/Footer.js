@@ -49,13 +49,13 @@ const Footer = () => {
                 <input type='text' placeholder='Enter your email...' style={{textIndent: '20px',color: '#000000',fontFamily : 'Space Grotesk',fontWeight : '400',fontSize: '12px',lineHeight : '25px',height:'45px',width : '100%'}}></input>
                 <button style={{backgroundColor: '#FF3F00',fontWeight: '500',fontSize:'14px',lineHeight :'18px',color : '#FFFFFF',width :'112px',height: '45px',padding : '16px, 20px, 16px, 20px',gap :'10px',fontFamily : 'Lexend Deca'}}>Subscribe</button>
             </div>
-            <div className='startUpLogo' style={{width:'270px'}}>
+            <div className='startUpLogo' style={{width:'300px'}}>
                 <div>
-                  <p style={{width: '241px',color: '#FFFFFF',height:'28px',fontFamily :'Saira',fontWeight : '600',fontSize :'20px',lineHeight : '15px'}}>Proudly Recognized By</p>
+                  <p style={{width: '300px',color: '#FFFFFF',height:'28px',fontFamily :'Saira',fontWeight : '600',fontSize :'20px',lineHeight : '15px'}}>Proudly Recognized By</p>
                 </div>
-                <div className='startUp Logo'>
-                  <img className='imageLogoStartup' src='../Images/StartUpLogo1.png' alt='Startup logo'/>
-                  <img className='imageLogoStartup' src='../Images/StartupLogo2.png' alt='Startup logo 2'></img>
+                <div className='startUpLogoImg'>
+                  <img className='imageLogoStartup' src='../Images/StartUpLogo1.png' alt='Startup logo' style={{position: 'relative',width: '100%',height: '100%',objectFit: 'cover',margin: '-57px 0px 0px -35px'}}/>
+                  <img className='imageLogoStartup' src='../Images/StartupLogo2.png' alt='Startup logo 2' style={{width: '30%',height:'30%'}}></img>
                 </div>
             </div>
           </div>
@@ -64,7 +64,7 @@ const Footer = () => {
 
         <div className='bottom' style={{marginTop: '100px'}}>
             <hr width="1140px" style={{border: "1px solid #E5E6E8",margin:"auto"}}></hr>
-            <div style={{display:"flex",justifyContent: "space-between",width: "1140px" ,height:"27px",color :"#E5E6E8",margin:"32px auto",fontFamily:"Space Grotesk",fontWeight: "400",fontSize :"12px"}}>
+            <div style={{display:"flex",justifyContent: "space-between",width: "1140px" ,height:"27px",color :"#E5E6E8",margin:"32px 0px 0px",fontFamily:"Space Grotesk",fontWeight: "400",fontSize :"12px"}}>
                <p style={{width: "159px", height:"100%", lineHeight:"27px"}}>Copyright ©2024 IgniteX</p>
                <p style={{width: "179px", height:"100%", lineHeight:"27px"}}>Designed by IgniteX Solutions </p>
             </div>
