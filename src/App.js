@@ -1,22 +1,16 @@
-import {BrowserRouter ,Routes ,Route} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
+import Function from "./Function";
+import HomeI from "./Components/HomeI";
 
-import {Box} from "@mui/material";
-import Navbar from './Components/Navbar';
-import  Home from './Components/Home';
+const App = () => {
+  return(
+    <>    
+          <Routes>
+            <Route exact path="/" element={<Function/>} />
+          </Routes>
 
-const App = () => (
-    <BrowserRouter>
-        <Box sx={{backgroundColor : 'white'}}>
-           <Navbar /> 
-           <Home />
-           <Routes>
-             {/* <Route path="/" exact element={<Home/>} /> */}
-             {/*<Route path="/video/:id" element={<VideoDetail />} />
-             <Route path="/channel/:id" element={<ChannelDetail />} />
-             <Route path="/search/:searchTerm" element={<SearchFeed />} /> */}
-           </Routes>
-        </Box>
-    </BrowserRouter>
-);
+    </>)
+          
+  };
 
 export default App;
