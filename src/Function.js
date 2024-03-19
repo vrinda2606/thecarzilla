@@ -9,9 +9,6 @@ const Function = () => {
         <Box sx={{backgroundColor : 'white'}}>
     <Navbar /> 
     <Home />
-    {/* <Routes>
-      <Route exact path="/" element={<HomeI/>} />
-    </Routes> */}
     </Box>
     </>)
 }
