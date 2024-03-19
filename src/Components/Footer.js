@@ -54,8 +54,8 @@ const Footer = () => {
                   <p style={{width: '300px',color: '#FFFFFF',height:'28px',fontFamily :'Saira',fontWeight : '600',fontSize :'20px',lineHeight : '15px'}}>Proudly Recognized By</p>
                 </div>
                 <div className='startUpLogoImg'>
-                  <img className='imageLogoStartup' src='../Images/StartUpLogo1.png' alt='Startup logo' style={{position: 'relative',width: '100%',height: '100%',objectFit: 'cover',margin: '-57px 0px 0px -35px'}}/>
-                  <img className='imageLogoStartup' src='../Images/StartupLogo2.png' alt='Startup logo 2' style={{width: '30%',height:'30%'}}></img>
+                  <img className='imageLogoStartup' src='../Images/StartUpLogo1.png' alt='Startup logo' style={{position: 'relative',width: '100%',height: '100%',objectFit: 'cover',margin: '-57px 0px 0px -45px'}}/>
+                  <img className='imageLogoStartup' src='../Images/StartupLogo2.png' alt='Startup logo 2' style={{width: '60%',height:'30%', margin: '0 0 0 -20px'}}></img>
                 </div>
             </div>
           </div>

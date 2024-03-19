@@ -14,9 +14,9 @@ const HomeI = () => {
 // currentImageIndex instead of 1
 return (
      <div className='Home'>
-        
+
         <div className="homeI" style={{backgroundImage: `url(${images[1].url})`,backgroundSize: "cover", width: "100%",height: "590px",marginTop: "105px"}}>
-          <img  src="../Images/Harrier.png"  alt="Harrier" style={{width: "526px",height: "282px",marginTop: "320px",marginLeft: "899px"}}/>
+            <img  src="../Images/Harrier.png"  alt="Harrier" style={{width: "526px",height: "282px",marginTop: "320px",marginLeft: "899px"}}/>
         </div>
 
         <div className='homeII' style={{padding: "20px",backgroundColor: "#292929", width: "100%" , height: "665px" ,backgroundRepeat: 'repeat',backgroundImage : `url('../Images/bgEffect.png')`,backgroundSize: "612px auto",backgroundBlendMode: "overlay"}}>
