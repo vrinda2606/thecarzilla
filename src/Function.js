@@ -4,11 +4,9 @@ import  Home from './Components/Home';
 const Function = () => {
     return(<>
         <Box sx={{backgroundColor : 'white'}}>
-    
-    <Home />
-    
-    </Box>
-    </>)
-}
+        <Home />
+        </Box>
+    </>);
+};
 
 export default Function;

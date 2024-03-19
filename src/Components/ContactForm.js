@@ -2,12 +2,12 @@ import React from 'react'
 
 const ContactForm = () => {
   return (
-    <div className='BlackBg'>
+    <div className='BlackBg' style={{height : '550px'}}>
       
-      <div className='contactHeadingBlack'>
+      <div className='HeadingBoxBlack'>
       <div className='HeadingBlackDiv'>
          <span className='BlackDivfirst'><hr /><p>BOOK YOUR DREAM CAR</p><hr/></span>
-         <span style={{marginTop:"13px"}}><h1>Get Personalized Quote</h1></span>
+         <span className='BlackDivMiddle'><h1>Get Personalized Quote</h1></span>
          <span className='BlackDivLast'>Our experts will assist you personally</span>
       </div>
       </div>

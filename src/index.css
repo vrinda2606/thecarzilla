@@ -209,19 +209,18 @@ ul .links{
   padding: 20px;
   background-color: #292929;
   width: 100%;
-  height: 575px;
   background-repeat: repeat;
   background-image : url('F:/carzilla/public/Images/bgEffect.png');
   background-size: 612px auto;
   background-blend-mode: overlay;
  }
-.contactHeadingBlack{
+.HeadingBoxBlack{
   width: 700px;
   height: 142px;
   margin: auto;
   color: #ffffff;
 }
-.contactHeadingBlack .HeadingBlackDiv{
+.HeadingBoxBlack .HeadingBlackDiv{
   width: 700px;
   height: 142px;
   margin: 40px auto;
@@ -229,7 +228,8 @@ ul .links{
   flex-direction: column;
   align-items: center;
 }
-.HeadingBlackDiv .BlackDivfirst{
+.HeadingBlackDiv .BlackDivfirst,
+.HeadingWhiteDiv .WhiteDivfirst{
   margin-top: 0px;
   display: flex;
   align-items: center;
@@ -239,7 +239,8 @@ ul .links{
   border: 1px solid;
   margin: auto 10px;
 }
-.HeadingBlackDiv h1{
+.HeadingBlackDiv h1,
+.HeadingWhiteDiv h1{
   font-family: 'Lexend Deca';
   font-weight: 600;
   font-size: 45px;
@@ -254,4 +255,83 @@ ul .links{
   font-size: 20px;
   height: 25px;
   margin-top: 17px;
+}
+
+/* White bg headings*/
+.WhiteBg{
+  background-color: #F6F7F9;
+  width: 100%;
+  font-family: "Space Grotesk";
+}
+.WhiteBg .headingBoxWhite{
+  padding: 2px;
+  margin: auto;
+}
+.WhiteBg .HeadingWhiteDiv{
+  width: 700px;
+  height: 145px;
+  margin: 46px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.HeadingWhiteDiv .WhiteDivfirst hr{
+  width: 16px;
+  border: 1px solid black;
+  margin: auto 10px;
+}
+.HeadingWhiteDiv .WhiteDivLast{
+  font-weight: 700;
+  color : #7F808E;
+  line-height: 25px;
+  font-size: 20px;
+  height: 25px;
+  margin-top: 17px;
+}
+.HeadingWhiteDiv .WhiteDivMiddle,
+.HeadingBlackDiv .BlackDivMiddle{
+  margin-top : 13px;
+}
+
+/* button for more*/
+.btnForMoreDiv{
+  width: 501px;
+  margin: 12px auto;
+  height: 63px;
+  text-align: center; 
+}
+.btnForMore{
+  font-family: 'Lexend Deca';
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: white;
+  width: 135px;
+  height: 35px;
+  color: black;
+  border-radius: 10px;
+  margin: 40px auto;
+  cursor: pointer;
+}
+
+/* DivContent */
+.DivContent{
+  width: 90%;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin: 40px auto -30px auto;
+  text-align: center;
+}
+
+.getInTouch{
+  width: 100%;
+  height: 750px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 141px 200px -80px #193A4B4D;
+
 }

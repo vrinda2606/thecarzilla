@@ -68,8 +68,8 @@ return (
                </div>
             </div>
 
-            <div style={{width: "501px",margin:"12px auto", height: "63px", textAlign: "center" }} >
-            <button style={{fontFamily: 'Lexend Deca',lineHeight: '21px',letterSpacing: '0em',textAlign: 'center',fontSize: '15px',fontWeight: '400',backgroundColor: "white",width: "135px",height: "35px", color: "black",borderRadius: "10px",margin: "40px auto"}}>More Brands</button>
+            <div className='btnForMoreDiv'>
+            <button className='btnForMore'>More Brands</button>
             </div>
 
 
