@@ -7,7 +7,6 @@ import ContactForm from './ContactForm';
 import Team from './Team';
 import Testimonial from './Testimonial';
 import LiteApp from './LiteApp';
-import Footer from './Footer';
 
 const Home = () => {
       return(<>
@@ -17,7 +16,6 @@ const Home = () => {
       <Testimonial />
       <Team />
       <LiteApp />
-      <Footer />
       </>
       )
 };

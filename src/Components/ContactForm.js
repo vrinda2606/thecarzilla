@@ -2,13 +2,13 @@ import React from 'react'
 
 const ContactForm = () => {
   return (
-    <div style={{padding:"20px",Width: "100%",height: "545px",backgroundColor: "#292929",backgroundRepeat: 'repeat',backgroundImage : `url('../Images/bgEffect.png')`,backgroundSize: "612px auto",backgroundBlendMode: "overlay"}}>
+    <div className='BlackBg'>
       
-      <div className='contactHeading' style={{width:"700px",height: "142px",margin: "auto",color: "#ffffff"}}>
-      <div style={{ width: "700px", height: "142px", margin: "40px auto", display: "flex", flexDirection: "column", alignItems: "center" }}>
-         <span style={{marginTop: "0px",display: "flex", alignItems: "center" }}><hr style={{width: "16px",border: "1px solid",margin: "auto 10px"}}/><p style={{}}>BOOK YOUR DREAM CAR</p><hr style={{width: "16px",border: "1px solid",margin: "auto 10px"}}/></span>
-         <span style={{marginTop:"13px"}}><h1 style={{ fontFamily:"Lexend Deca",fontWeight: "600", fontSize: "45px", lineHeight: "63px" ,gap: "20px"}}>Get Personalized Quote</h1></span>
-         <span style={{ fontFamily:"Space Grotesk",fontWeight: "700",color : "#FFFFFF",lineHeight: "25px",fontSize: "20px",height:"25px",marginTop:"17px"}}>Our experts will assist you personally</span>
+      <div className='contactHeadingBlack'>
+      <div className='HeadingBlackDiv'>
+         <span className='BlackDivfirst'><hr /><p>BOOK YOUR DREAM CAR</p><hr/></span>
+         <span style={{marginTop:"13px"}}><h1>Get Personalized Quote</h1></span>
+         <span className='BlackDivLast'>Our experts will assist you personally</span>
       </div>
       </div>
 

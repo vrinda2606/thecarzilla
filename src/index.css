@@ -202,3 +202,56 @@ ul .links{
   display: flex;
   justify-content: space-between;
  }
+
+
+/* Black bg headings*/
+ .BlackBg{
+  padding: 20px;
+  background-color: #292929;
+  width: 100%;
+  height: 575px;
+  background-repeat: repeat;
+  background-image : url('F:/carzilla/public/Images/bgEffect.png');
+  background-size: 612px auto;
+  background-blend-mode: overlay;
+ }
+.contactHeadingBlack{
+  width: 700px;
+  height: 142px;
+  margin: auto;
+  color: #ffffff;
+}
+.contactHeadingBlack .HeadingBlackDiv{
+  width: 700px;
+  height: 142px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.HeadingBlackDiv .BlackDivfirst{
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+}
+.HeadingBlackDiv .BlackDivfirst hr{
+  width: 16px;
+  border: 1px solid;
+  margin: auto 10px;
+}
+.HeadingBlackDiv h1{
+  font-family: 'Lexend Deca';
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 63px;
+  gap: 20px;
+}
+.HeadingBlackDiv .BlackDivLast{
+  font-family: "Space Grotesk";
+  font-weight: 700;
+  color : #FFFFFF;
+  line-height: 25px;
+  font-size: 20px;
+  height: 25px;
+  margin-top: 17px;
+}
