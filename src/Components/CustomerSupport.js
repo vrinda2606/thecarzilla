@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhoneVolume , faEnvelopeOpenText} from '@fortawesome/free-solid-svg-icons';
 import React from 'react'
 
 const CustomerSupport = () => {
@@ -32,7 +34,41 @@ const CustomerSupport = () => {
         </div>
 
         <div className='getInTouch'>
-            
+            <div className='getInTouchForm'>
+               <div className='TouchFormHeading'>
+                  <img src='../Images/Get in Touch.jpg' alt= 'Get In Touch' width='60%'/>
+                  <p className='TouchFormHeadingHead'>Unlocking endless support for your car buying needs</p>
+               </div>
+
+               <form className='getInTouchFormDetails'>
+                  <input type='text' placeholder='Name *'></input>
+                  <input type='email' placeholder='Email'></input>
+                  <input type='number' placeholder='Phone number *'></input>
+                  <select>
+                      <option value="default" selected>How did you find us?</option>
+                      <option value="Instagram">Instagram</option>
+                      <option value="Facebook">Facebook</option>
+                      <option value="WhatsApp">WhatsApp</option>
+                      <option value="Family/Friend">Family/Friend</option>
+                      <option value="Our Website">Our Website</option>
+                      <option value="Advertisement">Advertisement</option>
+                  </select>
+                  <button>SEND</button>
+               </form>
+
+               <div className='getInTouchFormContact'>
+                    <div class="FormContactPhone">
+                      <div class="contactIcon"> <FontAwesomeIcon icon={faPhoneVolume} /> </div>
+                      <div class="contactPhoneheadings">  <p>PHONE</p> <p>+91 9457709575</p>  </div>
+                    </div>
+                    <div class="FormContactPhone">
+                      <div class="contactIcon"> <FontAwesomeIcon icon={faEnvelopeOpenText} /> </div>
+                      <div class="contactPhoneheadings">  <p>EMAIL</p> <p>help@thecarzilla.in</p>  </div>
+                    </div>
+               </div>
+            </div>
+
+            <div className='getInTouchPic'></div>
         </div>
     </>
   )
