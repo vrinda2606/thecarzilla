@@ -15,6 +15,6 @@ ReactDOM.render(
 {/* <App /> */}
 {/* <TermsCond /> */}
 {/* <PrivacyPolicy /> */}
-<CustomerSupport />
+{/* <CustomerSupport /> */}
 <Footer />
 </BrowserRouter>,document.getElementById('root'));
