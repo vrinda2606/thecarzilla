@@ -78,7 +78,7 @@ const HowDoesItWork = () => {
          </div>
       </div>
       
-      <div style={{color : '#000000B2',fontFamily : 'Poppins',fontWeight : '600', fontSize : '20px',lineHeight : '30px',width : '93%',textAlign : 'center',textAlign: 'center',margin: '-50px auto',paddingBottom: '100px'}}>
+      <div style={{color : '#000000B2',fontFamily : 'Poppins',fontWeight : '600', fontSize : '20px',lineHeight : '30px',width : '93%',textAlign: 'center',margin: '-50px auto',paddingBottom: '100px'}}>
       Along with you, investors like AY Ventures , Shakunt Finance and TBI-KIET  have also put their trust in us. And we promise to uphold the trust you all have put in us. By the way, we love all cars, new or old and if in case you want to give your old darling a farewell, we will get you the best price for that beauty as well :)
       </div>
 

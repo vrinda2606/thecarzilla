@@ -4,8 +4,8 @@ import "./index.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import {BrowserRouter} from "react-router-dom";
-import AboutUs from "./Components/AboutUs";
-// import App from "./App";
+// import AboutUs from "./Components/AboutUs";
+import App from "./App";
 // import TermsCond from "./Components/TermsCond";
 // import PrivacyPolicy from "./Components/PrivacyPolicy";
 // import CustomerSupport from "./Components/CustomerSupport";
@@ -17,13 +17,13 @@ import AboutUs from "./Components/AboutUs";
 ReactDOM.render(
 <BrowserRouter>
 <Navbar />
-{/* <App /> */}
+<App />
 {/* <TermsCond /> */}
 {/* <PrivacyPolicy /> */}
 {/* <CustomerSupport /> */}
 {/* <TermsCondII /> */}
 {/* <PrivacyPolicyII /> */}
 {/* <HowDoesItWork /> */}
-<AboutUs />
+{/* <AboutUs /> */}
 <Footer />
 </BrowserRouter>,document.getElementById('root'));
