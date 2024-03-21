@@ -211,7 +211,7 @@ ul .links{
   background-color: #292929;
   width: 100%;
   background-repeat: repeat;
-  background-image : url('F:/carzilla/public/Images/bgEffect.png');
+  background-image : url('../public/Images/bgEffect.png');
   background-size: 612px auto;
   background-blend-mode: overlay;
  }
