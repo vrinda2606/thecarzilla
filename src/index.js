@@ -8,7 +8,8 @@ import {BrowserRouter} from "react-router-dom";
 // import TermsCond from "./Components/TermsCond";
 // import PrivacyPolicy from "./Components/PrivacyPolicy";
 // import CustomerSupport from "./Components/CustomerSupport";
-import TermsCondII from "./Components/TermsCondII";
+// import TermsCondII from "./Components/TermsCondII";
+import PrivacyPolicyII from "./Components/PrivacyPolicyII";
 
 ReactDOM.render(
 <BrowserRouter>
@@ -17,6 +18,7 @@ ReactDOM.render(
 {/* <TermsCond /> */}
 {/* <PrivacyPolicy /> */}
 {/* <CustomerSupport /> */}
-<TermsCondII />
+{/* <TermsCondII /> */}
+<PrivacyPolicyII />
 <Footer />
 </BrowserRouter>,document.getElementById('root'));
