@@ -421,7 +421,8 @@ ul .links{
 /*TermsCondII*/
 .IIPart{
   width: 100%;
-  height: 1000px;
+  height: auto;
+  margin-bottom: 100px;
 }
 .IIPartHeading{
   font-family: 'Lexend Deca';
@@ -456,6 +457,10 @@ ul .links{
   margin-left: 35px;
   color: #000000B2;
 }
-.IIPartSubHeading ol {
+.IIPartSubHeading ol,
+.IIPartSubHeading ul{
   margin-left: 20px;
+}
+.IIPartSubHeading li{
+  margin: 25px auto 30px;
 }
