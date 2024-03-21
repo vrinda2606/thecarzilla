@@ -1,58 +1,68 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeadphones, faLayerGroup, faLock } from '@fortawesome/free-solid-svg-icons';
+import React,{useState,useEffect} from 'react';
 
 const HomeII = () => {
-  return (
-    <div className='WhiteBg' style={{height:"560px"}}>
-      <div className='headingBoxWhite'>
-      <div className='HeadingWhiteDiv'>
-        <span className='WhiteDivfirst'><hr/>Why Choose Us <hr/></span>
-        <span className='WhiteDivMiddle'><h1>Experience the Difference</h1></span>
-        <span className='WhiteDivLast'>Buy your dream car in just three easy steps</span>
-      </div>
-      </div>
+return (
+     <div className='Home'>
+        <div className='homeII' style={{padding: "20px",backgroundColor: "#292929", width: "100%" , height: "665px" ,backgroundRepeat: 'repeat',backgroundImage : `url('../Images/bgEffect.png')`,backgroundSize: "612px auto",backgroundBlendMode: "overlay"}}>
+            <div style={{width: "700px",backgroundColor: "white",margin:"42px auto 0px", height: "3px"}} />
+            
+            <div style={{width: "501px",margin:"18px auto", height: "63px", textAlign: "center" }} >
+               <h1 style={{alignContent: "center",fontWeight: "700" ,fontFamily:"Lexend Deca", color: "white",lineHeight: "63px",fontSize: "45px" }}>Brands We Deal In</h1>
+            </div>
+            
+            <div className='brands' style={{width: "1169px",height : "124px",marginTop:"55px",marginLeft: "160px",display: "flex",justifyContent: "space-between"}}>
+               <div className='TATA' style={{backgroundColor: "white",borderRadius: "10px",width: "124px",height : "124px"}}>
+                 <img src='../Brands/TATA.png' alt='TATA' style={{padding:"10px 5px",objectFit: "contain",maxWidth : "124px",maxHeight : "124px"}} />
+               </div>
+               <div className='SUZUKI' style={{ backgroundColor: "white", borderRadius: "10px", width: "124px", height: "124px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                 <img src='../Brands/SUZUKI.png' alt='SUZUKI' style={{ objectFit: "cover", width: "100%", height: "100%" }} />
+               </div>
+               <div className='HYUNDAI' style={{ backgroundColor: "white", borderRadius: "10px", width: "124px", height: "124px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                 <img src='../Brands/HYUNDAI.png' alt='HYUNDAI' style={{ objectFit: "contain", width: "100%", height: "100%" }} />
+               </div>
+               <div className='TOYOTA' style={{backgroundColor: "white",borderRadius: "10px",width: "124px",height : "124px"}}>
+                 <img src='../Brands/TOYOTA.png' alt='TOYOTA' style={{paddingTop:"10px",objectFit: "contain", width: "100%", height: "100%" }} />
+               </div>
+               <div className='MG' style={{backgroundColor: "white",borderRadius: "10px",width: "124px",height : "124px"}}>
+                 <img src='../Brands/MG.png' alt='MG' style={{padding:"10px 5px 10px 8px",objectFit: "cover",maxWidth : "124px",maxHeight : "124px"}} />
+               </div>
+               <div className='HONDA' style={{backgroundColor: "white",borderRadius: "10px",width: "124px",height : "124px",display: "flex", justifyContent: "center", alignItems: "center"}}>
+                 <img src='../Brands/HONDA.png' alt='HONDA' style={{objectFit: "cover",maxWidth : "124px",maxHeight : "124px"}} />
+               </div>
+            </div>
+
+            <div className='brands' style={{width: "1169px",height : "124px",marginTop:"55px",marginLeft: "160px",display: "flex",justifyContent: "space-between"}}>
+               <div className='SKODA' style={{backgroundColor: "white",borderRadius: "10px",width: "124px",height : "124px",display: "flex", justifyContent: "center", alignItems: "center"}}>
+                 <img src='../Brands/SKODA.png' alt='SKODA' style={{objectFit: "cover",Width : "100%",Height : "100%"}} />
+               </div>
+               <div className='NISSAN' style={{ backgroundColor: "white", borderRadius: "10px", width: "124px", height: "124px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                 <img src='../Brands/NISSAN.png' alt='NISSAN' style={{padding:"10px 5px", objectFit: "cover", width: "100%", height: "100%" }} />
+               </div>
+               <div className='VOLKSWAGON' style={{ backgroundColor: "white", borderRadius: "10px", width: "124px", height: "124px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                 <img src='../Brands/VOLKSWAGON.png' alt='VOLKSWAGON' style={{padding:"10px 5px", objectFit: "contain", width: "100%", height: "100%" }} />
+               </div>
+               <div className='JEEP' style={{backgroundColor: "white",borderRadius: "10px",width: "124px",height : "124px"}}>
+                 <img src='../Brands/JEEP.png' alt='JEEP' style={{padding:"30px 5px 0 5px",objectFit: "cover",maxWidth : "124px",maxHeight : "124px"}} />
+               </div>
+               <div className='CITROEN' style={{backgroundColor: "white",borderRadius: "10px",width: "124px",height : "124px"}}>
+                 <img src='../Brands/CITROEN.png' alt='CITROEN' style={{padding:"0 5px 0 5px",objectFit: "cover",maxWidth : "124px",maxHeight : "124px"}} />
+               </div>
+               <div className='KIA' style={{backgroundColor: "white",borderRadius: "10px",width: "124px",height : "124px"}}>
+                 <img src='../Brands/KIA.png' alt='KIA' style={{padding:"25px 5px 0 5px",objectFit: "cover",maxWidth : "124px",maxHeight : "124px"}} />
+               </div>
+            </div>
+
+            <div className='btnForMoreDiv'>
+            <button className='btnForMore'>More Brands</button>
+            </div>
 
 
 
-      <div style={{textAlign:"center",maxWidth: "942px",maxHeight: "210px",display:"flex",flexDirection:"row",justifyContent: "space-between",margin: "70px auto"}}>
-         <div className='card' style={{width: "280px",height: "209px",display: 'flex',flexDirection: "column",alignItems: "center",justifyContent: "space-around"}}>
-           <div className='cardIcon' style={{backgroundColor: "#000000",width: "64px",height:"64px",color:"white",display: "flex", justifyContent: "center", alignItems: "center" }}>
-           <FontAwesomeIcon icon={faLayerGroup} style={{ color: "white",width: "25px",height:"25px"}} />
-           </div>
-           <div className='cardHeading' style={{width: "61px",height:"25px"}}><h6 style={{height:"100%",width:"100%",fontWeight: "600",fontSize: "18px",fontFamily: "Lexend Deca", lineHeight: "25.2px",color: "#03040A"}}>DREAM</h6></div>
-           <div className='cardDesc' style={{width:" 280px",height:"80px"}}>
-              <p style={{fontFamily: "Space Grotesk",fontWeight: "400",fontSize: "15px",lineHeight: "25px"}}>
-              Fermentum luctus convallis non lectus. Aliquam at ut viverra non arcu massa laoreet commodo ac.
-              </p>
-           </div>
-         </div>
+            <div style={{width: "700px",backgroundColor: "white",margin:"51px auto", height: "3px"}} />
+            
+        </div>
 
-         <div className='card' style={{width: "280px",height: "209px",display: 'flex',flexDirection: "column",alignItems: "center",justifyContent: "space-around"}}>
-           <div className='cardIcon' style={{backgroundColor: "#000000",width: "64px",height:"64px",color:"white",display: "flex", justifyContent: "center", alignItems: "center" }}>
-           <FontAwesomeIcon icon={faLock} style={{ color: "white",width: "25px",height:"25px"}} />
-           </div>
-           <div className='cardHeading' style={{width: "61px",height:"25px"}}><h6 style={{height:"100%",width:"100%",fontWeight: "600",fontSize: "18px",fontFamily: "Lexend Deca", lineHeight: "25.2px",color: "#03040A"}}>DEAL</h6></div>
-           <div className='cardDesc' style={{width:" 280px",height:"80px"}}>
-              <p style={{fontFamily: "Space Grotesk",fontWeight: "400",fontSize: "15px",lineHeight: "25px"}}>
-              Fermentum luctus convallis non lectus. Aliquam at ut viverra non arcu massa laoreet commodo ac.
-              </p>
-           </div>
-         </div>
-         <div className='card' style={{width: "280px",height: "209px",display: 'flex',flexDirection: "column",alignItems: "center",justifyContent: "space-around"}}>
-           <div className='cardIcon' style={{backgroundColor: "#000000",width: "64px",height:"64px",color:"white",display: "flex", justifyContent: "center", alignItems: "center" }}>
-           <FontAwesomeIcon icon={faHeadphones} style={{ color: "white",width: "25px",height:"25px"}} />
-           </div>
-           <div className='cardHeading' style={{width: "61px",height:"25px"}}><h6 style={{height:"100%",width:"100%",fontWeight: "600",fontSize: "18px",fontFamily: "Lexend Deca", lineHeight: "25.2px",color: "#03040A"}}>DRIVE</h6></div>
-           <div className='cardDesc' style={{width:" 280px",height:"80px"}}>
-              <p style={{fontFamily: "Space Grotesk",fontWeight: "400",fontSize: "15px",lineHeight: "25px"}}>
-              Fermentum luctus convallis non lectus. Aliquam at ut viverra non arcu massa laoreet commodo ac.
-              </p>
-           </div>
-         </div>
-      </div>
-
-    </div>
+     </div>
   )
 }
 
