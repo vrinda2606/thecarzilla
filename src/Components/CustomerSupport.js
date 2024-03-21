@@ -47,11 +47,9 @@ const CustomerSupport = () => {
                   <select>
                       <option value="default" selected>How did you find us?</option>
                       <option value="Instagram">Instagram</option>
-                      <option value="Facebook">Facebook</option>
-                      <option value="WhatsApp">WhatsApp</option>
-                      <option value="Family/Friend">Family/Friend</option>
-                      <option value="Our Website">Our Website</option>
-                      <option value="Advertisement">Advertisement</option>
+                      <option value="linkedIn">linkedIn</option>
+                      <option value="Twitter">Twitter</option>
+                      <option value="Others">Others</option>
                   </select>
                   <button>SEND</button>
                </form>

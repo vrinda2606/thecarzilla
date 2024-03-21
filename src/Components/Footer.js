@@ -1,9 +1,18 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { NavLink } from 'react-bootstrap';
+import {NavLink} from "react-router-dom";
 
 const Footer = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth" // Smooth scrolling animation
+    });
+  };
+
+
   return (
     <div style={{backgroundColor:"#03040A",width:"100%",height:"432px",display: 'flex',flexDirection: 'column',alignItems: 'center'}}>
         
@@ -27,17 +36,17 @@ const Footer = () => {
           <div class="footerTwo">
             <ul className='footerTwo-1'>
                 <h6>Company</h6>
-                <NavLink className='links' to="/">Home</NavLink>
-                <NavLink className='links' to="/">About us</NavLink>
-                <NavLink className='links' to="/">Services</NavLink>               
-                <NavLink className='links' to="/">Blogs</NavLink>
+                <a className='links' href="/">Home</a>
+                <NavLink className='links' onClick={scrollToTop} to="/AboutUs">About us</NavLink>
+                <NavLink className='links' onClick={scrollToTop} to="/">Services</NavLink>               
+                <NavLink className='links' onClick={scrollToTop} to="/">Blogs</NavLink>
             </ul>
             <ul className='footerTwo-1'>
                 <h6>Help</h6>
-                <NavLink className='links' to="/">Customer Support</NavLink>
-                <NavLink className='links' to="/">How It Works</NavLink>
-                <NavLink className='links' to="/">Terms & Conditions</NavLink>
-                <NavLink className='links' to="/">Privacy Policy</NavLink>
+                <NavLink className='links' onClick={scrollToTop} to="/Support">Customer Support</NavLink>
+                <NavLink className='links' onClick={scrollToTop} to="/HowItWorks">How It Works</NavLink>
+                <NavLink className='links' onClick={scrollToTop} to="/TermsAndConditions">Terms & Conditions</NavLink>
+                <NavLink className='links' onClick={scrollToTop} to="/PrivacyPolicy">Privacy Policy</NavLink>
             </ul>
           </div>
 

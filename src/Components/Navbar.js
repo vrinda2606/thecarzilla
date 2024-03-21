@@ -1,6 +1,6 @@
 import React from 'react'
 import { Stack } from "@mui/material"; // used to create layout with a horizontal/vertcal stack of elements
-import {Link, NavLink} from "react-router-dom"; // creates links for navigation within React appn
+import {Link} from "react-router-dom"; // creates links for navigation within React appn
 import {images} from '../utils/constants';
 import SearchBar from  './SearchBar';
 import FavoriteIcon from '@mui/icons-material/Favorite';
@@ -40,10 +40,10 @@ const Navbar = () => {
       
 
       <div className='navLinks' style={{marginTop:"10px",fontWeight: 700,width:"460px",height: "25px",display: "flex", justifyContent: "space-between", alignItems: "center"}}>
-        <NavLink activeClassName='active' exact to="/">Home</NavLink>
-        <NavLink  activeClassName='active' to="/">Buy New Car</NavLink>
-        <NavLink  activeClassName='active' to="/">Blog</NavLink>
-        <NavLink  activeClassName='active' to="/">Services</NavLink>
+        <Link activeClassName='active' exact to="/">Home</Link>
+        <Link  activeClassName='active' to="/">Buy New Car</Link>
+        <Link  activeClassName='active' to="/">Blog</Link>
+        <Link  activeClassName='active' to="/">Services</Link>
       </div>    
 
       <SearchBar />
