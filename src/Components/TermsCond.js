@@ -3,7 +3,7 @@ import React from 'react';
 const TermsCond = () => {
   return (
     <>
-       <div style={{backgroundImage: `url(${'../Images/TermsCond.jpeg'})`,backgroundSize: "cover",backgroundRepeat : "no-repeat", width: "100%",height: "590px",marginTop: "105px"}}>
+       <div style={{backgroundImage: `url(${'../Images/TermsCond.jpeg'})`,backgroundSize: "cover",backgroundRepeat : "no-repeat", width: "100%",height: "590px"}}>
         </div>
 
         <div className='BlackBg' style={{height : '567px'}}>

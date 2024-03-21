@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
 import "./index.css";
-import {BrowserRouter} from "react-router-dom";
-import TermsCond from "./Components/TermsCond";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import PrivacyPolicy from "./Components/PrivacyPolicy";
-import CustomerSupport from "./Components/CustomerSupport";
+import {BrowserRouter} from "react-router-dom";
+// import App from "./App";
+// import TermsCond from "./Components/TermsCond";
+// import PrivacyPolicy from "./Components/PrivacyPolicy";
+// import CustomerSupport from "./Components/CustomerSupport";
+import TermsCondII from "./Components/TermsCondII";
 
 ReactDOM.render(
 <BrowserRouter>
@@ -16,5 +17,6 @@ ReactDOM.render(
 {/* <TermsCond /> */}
 {/* <PrivacyPolicy /> */}
 {/* <CustomerSupport /> */}
+<TermsCondII />
 <Footer />
 </BrowserRouter>,document.getElementById('root'));

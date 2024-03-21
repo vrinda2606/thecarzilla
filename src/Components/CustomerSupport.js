@@ -5,7 +5,7 @@ import React from 'react'
 const CustomerSupport = () => {
   return (
     <>
-        <div style={{backgroundImage: `url(${'../Images/CustomerSupport.png'})`,backgroundSize: "cover",backgroundRepeat : "no-repeat", width: "100%",height: "690px",marginTop: "10px"}}>
+        <div style={{backgroundImage: `url(${'../Images/CustomerSupport.png'})`,backgroundSize: "cover",backgroundRepeat : "no-repeat", width: "100%",height: "690px"}}>
         </div>
 
         <div className='BlackBg' style={{height : '588px'}}>

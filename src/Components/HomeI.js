@@ -15,7 +15,7 @@ const HomeI = () => {
 return (
      <div className='Home'>
 
-        <div className="homeI" style={{backgroundImage: `url(${images[1].url})`,backgroundSize: "cover", width: "100%",height: "590px",marginTop: "105px"}}>
+        <div className="homeI" style={{backgroundImage: `url(${images[1].url})`,backgroundSize: "cover", width: "100%",height: "590px"}}>
             <img  src="../Images/Harrier.png"  alt="Harrier" style={{width: "526px",height: "282px",marginTop: "320px",marginLeft: "899px"}}/>
         </div>
 
