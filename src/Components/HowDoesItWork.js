@@ -33,8 +33,8 @@ const HowDoesItWork = () => {
     <div className='WhiteBg' style={{height:"auto"}}>
         <div className='headingBoxWhite'>
           <div className='HeadingWhiteDiv'>
-            <span className='WhiteDivfirst'><hr/>TO Buy A New Car <hr/></span>
-            <span className='WhiteDivMiddle'><h1>Just follow three easy steps</h1></span>
+            <span className='WhiteDivfirst'><hr/>TO BUY A NEW CAR <hr/></span>
+            <span className='WhiteDivMiddle'><h1>Just Follow Three Easy Steps</h1></span>
             <span className='WhiteDivLast'>That's all you need to do!</span>
           </div>
         </div>
