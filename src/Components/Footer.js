@@ -36,7 +36,7 @@ const Footer = () => {
           <div class="footerTwo">
             <ul className='footerTwo-1'>
                 <h6>Company</h6>
-                <a className='links' href="/">Home</a>
+                <NavLink className='links' onClick={scrollToTop} to="/">Home</NavLink>
                 <NavLink className='links' onClick={scrollToTop} to="/AboutUs">About us</NavLink>
                 <NavLink className='links' onClick={scrollToTop} to="/">Services</NavLink>               
                 <NavLink className='links' onClick={scrollToTop} to="/">Blogs</NavLink>

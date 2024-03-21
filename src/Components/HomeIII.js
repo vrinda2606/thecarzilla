@@ -20,7 +20,7 @@ const HomeIII = () => {
            <div className='cardIcon' style={{backgroundColor: "#000000",width: "64px",height:"64px",color:"white",display: "flex", justifyContent: "center", alignItems: "center" }}>
            <FontAwesomeIcon icon={faLayerGroup} style={{ color: "white",width: "25px",height:"25px"}} />
            </div>
-           <div className='cardHeading' style={{width: "61px",height:"25px"}}><h6 style={{height:"100%",width:"100%",fontWeight: "600",fontSize: "18px",fontFamily: "Lexend Deca", lineHeight: "25.2px",color: "#03040A"}}>DREAM</h6></div>
+           <div className='cardHeading' style={{width: "61px",height:"25px"}}><h6 style={{height:"100%",width:"100%",fontWeight: "600",fontSize: "18px",fontFamily: "Lexend Deca", lineHeight: "25.2px",color: "#03040A"}}>Dream</h6></div>
            <div className='cardDesc' style={{width:" 280px",height:"80px"}}>
               <p style={{fontFamily: "Space Grotesk",fontWeight: "400",fontSize: "15px",lineHeight: "25px"}}>
               Fermentum luctus convallis non lectus. Aliquam at ut viverra non arcu massa laoreet commodo ac.
@@ -32,7 +32,7 @@ const HomeIII = () => {
            <div className='cardIcon' style={{backgroundColor: "#000000",width: "64px",height:"64px",color:"white",display: "flex", justifyContent: "center", alignItems: "center" }}>
            <FontAwesomeIcon icon={faLock} style={{ color: "white",width: "25px",height:"25px"}} />
            </div>
-           <div className='cardHeading' style={{width: "61px",height:"25px"}}><h6 style={{height:"100%",width:"100%",fontWeight: "600",fontSize: "18px",fontFamily: "Lexend Deca", lineHeight: "25.2px",color: "#03040A"}}>DEAL</h6></div>
+           <div className='cardHeading' style={{width: "61px",height:"25px"}}><h6 style={{height:"100%",width:"100%",fontWeight: "600",fontSize: "18px",fontFamily: "Lexend Deca", lineHeight: "25.2px",color: "#03040A"}}>Deal</h6></div>
            <div className='cardDesc' style={{width:" 280px",height:"80px"}}>
               <p style={{fontFamily: "Space Grotesk",fontWeight: "400",fontSize: "15px",lineHeight: "25px"}}>
               Fermentum luctus convallis non lectus. Aliquam at ut viverra non arcu massa laoreet commodo ac.
@@ -43,7 +43,7 @@ const HomeIII = () => {
            <div className='cardIcon' style={{backgroundColor: "#000000",width: "64px",height:"64px",color:"white",display: "flex", justifyContent: "center", alignItems: "center" }}>
            <FontAwesomeIcon icon={faHeadphones} style={{ color: "white",width: "25px",height:"25px"}} />
            </div>
-           <div className='cardHeading' style={{width: "61px",height:"25px"}}><h6 style={{height:"100%",width:"100%",fontWeight: "600",fontSize: "18px",fontFamily: "Lexend Deca", lineHeight: "25.2px",color: "#03040A"}}>DRIVE</h6></div>
+           <div className='cardHeading' style={{width: "61px",height:"25px"}}><h6 style={{height:"100%",width:"100%",fontWeight: "600",fontSize: "18px",fontFamily: "Lexend Deca", lineHeight: "25.2px",color: "#03040A"}}>Drive</h6></div>
            <div className='cardDesc' style={{width:" 280px",height:"80px"}}>
               <p style={{fontFamily: "Space Grotesk",fontWeight: "400",fontSize: "15px",lineHeight: "25px"}}>
               Fermentum luctus convallis non lectus. Aliquam at ut viverra non arcu massa laoreet commodo ac.

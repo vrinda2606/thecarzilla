@@ -90,7 +90,7 @@ export const PrivacyPolicyContent = [
                 <br /><br /><br />
                 Grievance Officer as follows:
                 <ul type='disc'>
-                    <li>Mr. Umang Sing <br />Email:umangsingh@thecarzilla.in</li>
+                    <li>Mr. Umang Singh <br />Email:umangsingh@thecarzilla.in</li>
                     <li>Please reference the Privacy Policy in your subject line. After investigating the matter internally, we will send our response within 5 working days.</li>
                 </ul>
             </div>

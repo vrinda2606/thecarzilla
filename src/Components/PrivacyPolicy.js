@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const PrivacyPolicy = () => {
   return (
@@ -21,7 +22,7 @@ const PrivacyPolicy = () => {
         </div>
             
             <div className='btnForMoreDiv' >
-            <button className='btnForMore'>Learn More</button>
+            <NavLink exact to='/PrivacyPolicy/:PrivacyPolicyII' onClick={() => { window.scrollTo({top: 0,behavior: "instant"})}}><button className='btnForMore'>Learn More</button></NavLink>
             </div>
 
             <div style={{width: "700px",backgroundColor: "white",margin:"51px auto", height: "3px"}} />

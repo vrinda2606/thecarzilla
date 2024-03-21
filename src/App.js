@@ -6,6 +6,8 @@ import TermsCons from './Components/TermsCond';
 import CustomerSupport from "./Components/CustomerSupport";
 import HowDoesItWorks from './Components/HowDoesItWork';
 import AboutUs from './Components/AboutUs';
+import TermsCondII from './Components/TermsCondII';
+import PrivacyPolicyII from './Components/PrivacyPolicyII';
 
 const App = () => {
   return(
@@ -18,6 +20,8 @@ const App = () => {
             <Route exact path="/HowItWorks" element={<HowDoesItWorks />} />
             <Route exact path="/Support" element={<CustomerSupport />} />
             <Route exact path="/AboutUs" element={<AboutUs />} />
+            <Route exact path="/TermsAndConditions/:TermsAndConditionsII" element={<TermsCondII/>} />
+            <Route exact path="/PrivacyPolicy/:PrivacyPolicyII" element={<PrivacyPolicyII />} />
             <Route path="*" element={<Function />} /> 
           </Routes>
          
