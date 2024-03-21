@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 const Team = () => {
   return (
@@ -10,6 +11,12 @@ const Team = () => {
             <span className='BlackDivLast'>A team dedicated towards their customers</span>
       </div>
       </div>
+      
+      <NavLink exact to='/AboutUs' onClick={() => { window.scrollTo({top: 0,behavior: "instant"})}}>
+      <div className="buttonContact">
+          <button className="btnContact">About Us</button>
+      </div>
+      </NavLink>
     </div>
   )
 }

@@ -10,7 +10,7 @@ return (
                <h1 style={{alignContent: "center",fontWeight: "700" ,fontFamily:"Lexend Deca", color: "white",lineHeight: "63px",fontSize: "45px" }}>Brands We Deal In</h1>
             </div>
             
-            <div className='brands' style={{width: "1169px",height : "124px",marginTop:"55px",marginLeft: "160px",display: "flex",justifyContent: "space-between"}}>
+            <div className='brands' style={{width: "75%",height : "124px",margin:"55px auto",display: "flex",justifyContent: "space-between"}}>
                <div className='TATA' style={{backgroundColor: "white",borderRadius: "10px",width: "124px",height : "124px"}}>
                  <img src='../Brands/TATA.png' alt='TATA' style={{padding:"10px 5px",objectFit: "contain",maxWidth : "124px",maxHeight : "124px"}} />
                </div>
@@ -31,7 +31,7 @@ return (
                </div>
             </div>
 
-            <div className='brands' style={{width: "1169px",height : "124px",marginTop:"55px",marginLeft: "160px",display: "flex",justifyContent: "space-between"}}>
+            <div className='brands' style={{width: "75%",height : "124px",margin:"55px auto",display: "flex",justifyContent: "space-between"}}>
                <div className='SKODA' style={{backgroundColor: "white",borderRadius: "10px",width: "124px",height : "124px",display: "flex", justifyContent: "center", alignItems: "center"}}>
                  <img src='../Brands/SKODA.png' alt='SKODA' style={{objectFit: "cover",Width : "100%",Height : "100%"}} />
                </div>
