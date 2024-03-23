@@ -464,3 +464,54 @@ ul .links{
 .IIPartSubHeading li{
   margin: 25px auto 30px;
 }
+
+/*TEAM*/
+.TeamCoordinators{
+  width: 80%;
+  height: 49%;
+  margin: 120px auto 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.TeamCoordinators .team-mates{
+  height: 100%;
+  width: 23%;
+  background-color: #F5F5F5;
+  position: relative;
+}
+.team-mates .team-mates-bg{
+  width: 90%;
+  height: 70%;
+  margin: 7% auto;
+  background-color: #292929;
+  background-repeat: repeat;
+  background-image : url('../public/Images/bgEffect.png');
+  background-size: auto;
+  background-blend-mode: overlay;
+}
+.team-mates-bg .team-mates-img{
+  width: 150%;
+  height: 110%;
+  position: absolute;
+  top: -35%; /* Move image 25% up from its original position */
+  left: -25%;
+}
+
+.team-mates .team-mates-names{
+  width: 100%;
+  height: auto;
+  color: #000000;
+  text-align: center;
+  font-family: 'Poppins';
+  margin-top: -8px;
+}
+.team-mates-names h4{
+  line-height: 40.5px;
+  font-weight: 700;
+  font-size: 27px;
+}
+.team-mates-names p{
+  line-height: 27px;
+  font-weight: 400;
+  font-size: 19px;
+}
