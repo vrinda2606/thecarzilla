@@ -612,3 +612,43 @@ ul .links{
 .appLite .playStore .playStoreBtnII{
   background-image: url('../public/Images/AppStoreBadge.jpg');
 }
+
+
+/*Login*/
+
+.login{
+  width: 100%;
+  height: 490px;
+  display: flex;
+}
+.login .loginLogo{
+  height: 500px;
+  width: 50%;
+  background-image: url('../public/Images/Login.png');
+  background-repeat: no-repeat;
+  margin-top: 85px;
+  margin-left: 20px;
+}
+.login .loginForm{
+  width: 50%;
+  height: 550px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -30px;
+}
+.loginForm .loginHeadin h1{
+  font-family: 'Lexend Deca';
+  font-size: 30px;
+  line-height: 42px;
+}
+.loginForm .loginDetails{
+  background-color: #2D2E2F;
+  width: 553px;
+  gap: 24px;
+  padding: 16px;
+  height: 310px;
+  border-radius: 24px;
+}
