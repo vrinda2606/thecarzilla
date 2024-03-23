@@ -37,6 +37,32 @@ body {
     color: black;
   }
 
+/*Home Find Car*/
+.Home{
+  width: 100%;
+  height: auto;
+}
+.Home .homeI{
+  background-image: url('../public/Images/Untitled1.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 590px;
+  padding-top: 120px;
+  padding-left: 5%;
+}
+.Home .homeFindCar{
+    width: 390px;
+    height: 370px;
+    border-radius: 11px;
+    background-color: #FFFFFF;
+}
+.homeFindCar h1{
+  font-size: 31px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+
 
 .iconContainerStyle {
     width: 40px;

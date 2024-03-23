@@ -7,7 +7,7 @@ export const images = [
     {
         id:2,
         desc:"homepage background image",
-        url:"../Images/home.jpeg"
+        url:"../Images/Untitled.png"
     },
     {
         id:3,
