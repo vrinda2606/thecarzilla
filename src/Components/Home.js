@@ -1,6 +1,4 @@
-import React,{useState,useEffect} from 'react';
-import { images } from '../utils/constants';
-import {brands} from '../utils/brands';
+import React from 'react';
 import HomeI from './HomeI';
 import HomeIII from './HomeIII';
 import ContactForm from './ContactForm';

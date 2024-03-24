@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Saira:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarala:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
@@ -12,7 +13,7 @@
     border: none;
     outline: none;
     scroll-behavior:smooth;
-    font-family: 'Pacifico', 'cursive','Poppins', sans-serif, 'Lexend Deca','Space Grotesk','Saira','Montserrat'; 
+    font-family: 'Pacifico', 'Plus Jakarta Sans','cursive','Poppins', sans-serif, 'Lexend Deca','Space Grotesk','Saira','Montserrat'; 
 }
 
 .header{
@@ -635,20 +636,107 @@ ul .links{
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   align-items: center;
-  margin-top: -30px;
+  margin-top: 55px;
 }
-.loginForm .loginHeadin h1{
+.loginForm .loginHeading h1{
   font-family: 'Lexend Deca';
   font-size: 30px;
   line-height: 42px;
 }
 .loginForm .loginDetails{
+  margin-top: 30px;
   background-color: #2D2E2F;
   width: 553px;
   gap: 24px;
   padding: 16px;
-  height: 310px;
+  height: 280px;
+  text-align: center;
   border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.loginDetails .loginDetailsDivI,
+.loginDetails .loginDetailsDivII,
+.loginDetails .loginDetailsDivIII,
+.loginDetails .loginDetailsDivIV{
+  width: 95%;
+  font-family: 'Plus Jakarta Sans';
+  text-align: center;
+}
+.loginDetails .loginDetailsDivI{
+  font-weight: 600;
+  font-size: 20px;
+  height: 32px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.loginDetails .loginDetailsDivII{
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 8px, 16px;
+  gap: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  border: 10px solid rgba(255, 255, 255, 0.1);
+}
+.loginDetailsDivII p{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+.loginDetails .loginDetailsDivIV{
+  background-color: #FF654D;
+  border-radius: 12px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px, 8px;
+  height: 48px;
+}
+.loginDetailsDivIV button{
+  line-height: 24px;
+  background-color: transparent;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+.loginDetails .loginDetailsDivIII{
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+.loginDetailsDivIII .Country_code,
+.loginDetailsDivIII .Phone_number_for_otp{
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 1.2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.loginDetailsDivIII .Country_code{
+  width: 12%;
+  height: 100%;
+  padding: 0px, 16px;
+  text-align: center;
+}
+.loginDetailsDivIII .Phone_number_for_otp{
+  width: 85%;
+  height: 100%;
+  padding: 8px, 16px;
+  padding-left: 12px;
+}
+.Phone_number_for_otp::-webkit-inner-spin-button,
+.Phone_number_for_otp::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

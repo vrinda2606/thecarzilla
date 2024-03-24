@@ -8,6 +8,8 @@ import HowDoesItWorks from './Components/HowDoesItWork';
 import AboutUs from './Components/AboutUs';
 import TermsCondII from './Components/TermsCondII';
 import PrivacyPolicyII from './Components/PrivacyPolicyII';
+import Login from "./Components/Login";
+import LoginII from "./Components/LoginII";
 
 const App = () => {
   return(
@@ -22,6 +24,8 @@ const App = () => {
             <Route exact path="/AboutUs" element={<AboutUs />} />
             <Route exact path="/TermsAndConditions/:TermsAndConditionsII" element={<TermsCondII/>} />
             <Route exact path="/PrivacyPolicy/:PrivacyPolicyII" element={<PrivacyPolicyII />} />
+            <Route exact path="/Login" element={<Login />} />
+            <Route exact path="/Login/:OtpVerify" element={<LoginII />} />
             <Route path="*" element={<Function />} /> 
           </Routes>
          

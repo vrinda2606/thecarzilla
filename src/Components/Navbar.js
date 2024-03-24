@@ -57,9 +57,11 @@ const Navbar = () => {
          <div className='setting' style={{...iconContainerStyle, marginRight : "14px"}}>
             <SettingsIcon style={iconStyle} />
          </div>
+         <NavLink exact to='/Login' onClick={() => { window.scrollTo({top: 0,behavior: "smooth"})}}>
          <div className='profile' style={{marginTop: "0px",width: "35px",height: "35px",borderRadius: "90px",display: "flex",justifyContent: "center",alignItems: "center",}}>
             <FontAwesomeIcon icon={faUser} style={{color: "black",fontSize: "25px"}} />
          </div>
+         </NavLink>
       </div>
      </Stack>
   )

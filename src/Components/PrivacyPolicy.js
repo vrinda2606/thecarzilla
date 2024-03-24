@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
         </div>
         
         <div className='DivContent' style={{height : '120px'}}>
-        We at IgniteX Solutions Private Limited are committed to serving you better and value you as our customer/user of our website. We respect your right to privacy. This privacy policy directs the way in which TheCarzilla.in collects, uses, maintains and discloses information collected from you in the course of using the website <a href='https://thecarzilla.in/'> thecarzilla.in</a>. This privacy policy applies to the website of TheCarzilla.in and all the services offered by TheCarzilla.in.
+        We at IgniteX Solutions Private Limited are committed to serving you better and value you as our customer/user of our website. We respect your right to privacy. This privacy policy directs the way in which TheCarzilla.in collects, uses, maintains and discloses information collected from you in the course of using the website <a href='https://thecarzilla.in/' style={{color : 'yellow'}}> thecarzilla.in</a>. This privacy policy applies to the website of TheCarzilla.in and all the services offered by TheCarzilla.in.
         </div>
             
             <div className='btnForMoreDiv' >

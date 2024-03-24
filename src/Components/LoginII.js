@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
 
-const Login = () => {
+const LoginII = () => {
   return (
     <div className='login'>
        <div className='loginLogo'></div>
@@ -20,7 +20,7 @@ const Login = () => {
                      <input className='Phone_number_for_otp' type='number' placeholder='Enter your phone number'/>
                </div>
                <div className='loginDetailsDivIV'>
-               <NavLink exact to='/Login/:OtpVerify' onClick={() => { window.scrollTo({top: 0,behavior: "smooth"})}}>
+               <NavLink exact to='/Home' onClick={() => { window.scrollTo({top: 0,behavior: "smooth"})}}>
                   <button>Send OTP</button>
                </NavLink>
                </div>
@@ -31,4 +31,4 @@ const Login = () => {
   )
 }
 
-export default Login;
+export default LoginII;

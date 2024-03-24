@@ -1,6 +1,7 @@
-import React,{useState,useEffect} from 'react';
-import { images } from '../utils/constants';
-import {brands} from '../utils/brands';
+import React from "react";
+// import React,{useState,useEffect} from 'react';
+// import { images } from '../utils/constants';
+// import {brands} from '../utils/brands';
 
 const HomeI = () => {
   //   const [currentImageIndex, setCurrentImageIndex] = useState(0);
