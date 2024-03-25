@@ -3,7 +3,7 @@ import React from 'react'
 const ContactForm = () => {
   return (
     <div className='BlackBg' style={{height : '550px'}}>
-      
+    <div className='contactFormDiv'>
       <div className='HeadingBoxBlack'>
       <div className='HeadingBlackDiv'>
          <span className='BlackDivfirst'><hr /><p>BOOK YOUR DREAM CAR</p><hr/></span>
@@ -32,15 +32,15 @@ const ContactForm = () => {
                 <div className="input-box">
                    <div className="input-field">
                        <label>Brand<span className='asterisk'>*</span></label><br/>
-                       <input className="brandChosen" id="brandChosen" type="text" placeholder="Choose..." required/>
+                       <input className="brandChosen" id="brandChosen" type="text" placeholder="For Eg: Maruti Suzuki" required/>
                    </div>
                    <div className="input-field">
                        <label>Model<span className='asterisk'>*</span></label><br/>
-                       <input className="modelChosen" id="modelChosen" type="text" placeholder="Choose..." required/>
+                       <input className="modelChosen" id="modelChosen" type="text" placeholder="Enter your model" required/>
                    </div>
                    <div className="input-field">
                        <label>City<span className='asterisk'>*</span></label><br/>
-                       <input className="cityChosen" id="cityChosen" type="text" placeholder="Choose..." required />
+                       <input className="cityChosen" id="cityChosen" type="text" placeholder="Enter your city" required />
                    </div>
                 </div>
 
@@ -49,8 +49,11 @@ const ContactForm = () => {
                 </div>
                </form>
       </div>
+    </div>
 
-
+      <div class="popup">
+        
+      </div>
     </div>
   )
 }

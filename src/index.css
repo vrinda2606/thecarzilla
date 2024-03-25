@@ -708,6 +708,7 @@ ul .links{
   font-size: 16px;
   color: #FFFFFF;
   font-weight: 700;
+  cursor: pointer;
 }
 .loginDetails .loginDetailsDivIII{
   height: 48px;
@@ -715,7 +716,8 @@ ul .links{
   justify-content: space-between;
 }
 .loginDetailsDivIII .Country_code,
-.loginDetailsDivIII .Phone_number_for_otp{
+.loginDetailsDivIII .Phone_number_for_otp,
+.loginDetailsDivIII .otp_for_verification{
   background-color: transparent;
   color: #FFFFFF;
   border: 1.2px solid rgba(255, 255, 255, 0.2);
@@ -736,7 +738,25 @@ ul .links{
   padding-left: 12px;
 }
 .Phone_number_for_otp::-webkit-inner-spin-button,
-.Phone_number_for_otp::-webkit-outer-spin-button {
+.Phone_number_for_otp::-webkit-outer-spin-button,
+.otp_for_verification::-webkit-inner-spin-button,
+.otp_for_verification::-webkit-outer-spin-button{
   -webkit-appearance: none;
   margin: 0;
+}
+
+.loginDetailsDivIII .otp_for_verification{
+  width: 100%;
+  height: 100%;
+  padding: 8px, 16px;
+  padding-left: 12px;
+}
+.loginDetailsDivV button{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: rgba(254, 135, 35, 1);
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
 }
