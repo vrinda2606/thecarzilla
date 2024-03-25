@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactForm = () => {
   return (
-    <div className='BlackBg' style={{height : '550px'}}>
+    <div id="contact-form" className='BlackBg' style={{height : '550px'}}>
     <div className='contactFormDiv'>
       <div className='HeadingBoxBlack'>
       <div className='HeadingBlackDiv'>

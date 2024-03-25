@@ -26,22 +26,32 @@ const iconContainerStyle = {
   
 
 const Navbar = () => {
+   const navbarHeight = 105; // Adjust acc to height of Navbar
+
+   const scrollToContactForm = () => {
+     const contactFormElement = document.getElementById('contact-form');
+     if (contactFormElement) {
+       const topPosition = contactFormElement.offsetTop - navbarHeight;
+       window.scrollTo({ top: topPosition, behavior: 'smooth' });
+     }
+   };
+
   return (
       <Stack direction="row" 
          alignItems="center" 
          p={2} 
          width= "100%"
          height="105px"
-         sx={{position: 'sticky', //position: 'sticky'
+         sx={{position: 'sticky',
               top: 0, zIndex: 999, background: 'white', justifyContent: 'space-between',backgroundColor: "white"}}>
-      <Link to="/" style={{display: 'flex' , alignItems: 'center'}} onClick={()=> window.scrollTo({top: 0,behavior: "instant"})}>
+      <Link to="/" style={{display: 'flex' , alignItems: 'center'}} onClick={()=> window.scrollTo({top: 0,behavior: "smooth"})}>
       <img src={images[0].url} alt="logo" style={{width: "172px",height: "180px", marginTop: "10px" ,marginLeft: "12px"}} />
       </Link>
       
 
       <div className='navLinks' style={{marginTop:"10px",fontWeight: 700,width:"460px",height: "25px",display: "flex", justifyContent: "space-between", alignItems: "center"}}>
         <NavLink  activeClassName='active' exact to="/" onClick={()=> window.scrollTo({top: 0,behavior: "instant"})}>Home</NavLink>
-        <NavLink  activeClassName='active' to="/">Buy New Car</NavLink>
+        <NavLink to="/" onClick={scrollToContactForm}>Buy New Car</NavLink>
         <NavLink  activeClassName='active' to="/">Blog</NavLink>
         <NavLink  activeClassName='active' to="/">Services</NavLink>
       </div>    
