@@ -547,6 +547,7 @@ ul .links{
 /*App Lite*/
 .AppLite{
   display: flex;
+  background-color: rgba(245, 245, 245, 1);
 }
 .WhiteBg .appLite{
   padding-top: 3%;
@@ -558,11 +559,15 @@ ul .links{
   justify-content: space-around;
 }
 .WhiteBg .mobileApp{
-  width: 45%;
+  width: 43%;
   height: 100%;
+  background-position: center;
+  background-image: url('../public/Images/AppLite.png');
+  background-repeat: no-repeat;
   position: relative;
+  background-size: 90%;
 }
-.mobileApp .mobileAppBg{
+/* .mobileApp .mobileAppBg{
   width: 85%;
   height: 86%;
   margin-top: 7%;
@@ -573,7 +578,7 @@ ul .links{
   position: absolute;
   top: 14%;
   left: 30%;
-}
+} */
 
 
 .appLite .para{

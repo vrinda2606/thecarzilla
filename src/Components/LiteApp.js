@@ -26,8 +26,8 @@ const LiteApp = () => {
                 </div>
            </div>
            <div className='mobileApp' >
-                <img className='mobileAppBg' src='../Images/LiteAppBg.png' alt='' />
-                <img className='LiteAppBgPhone' src='../Images/LiteAppBgPhone.png' alt=''/>
+                {/* <img className='mobileAppBg' src='../Images/LiteAppBg.png' alt='' />
+                <img className='LiteAppBgPhone' src='../Images/LiteAppBgPhone.png' alt=''/> */}
            </div>
     </div>
   )
