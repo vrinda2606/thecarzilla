@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Saira:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0px;
@@ -13,7 +14,7 @@
     border: none;
     outline: none;
     scroll-behavior:smooth;
-    font-family: 'Pacifico', 'Plus Jakarta Sans','cursive','Poppins', sans-serif, 'Lexend Deca','Space Grotesk','Saira','Montserrat'; 
+    font-family: "Work Sans",'Pacifico', 'Plus Jakarta Sans','cursive','Poppins', sans-serif, 'Lexend Deca','Space Grotesk','Saira','Montserrat'; 
 }
 
 .header{
@@ -891,4 +892,80 @@ ul .links{
   text-align: center;
   background-color: transparent;
   cursor: pointer;
+}
+
+/*testimonials*/
+
+.testimonialCarousel{
+  width: auto;
+  height: 395px;
+  display: flex;
+  justify-content: center;
+  font-family: "Work Sans";
+}
+.testimonialCarousel .testimonials{
+  height: 318px;
+  width: 345px;
+  box-shadow: 0px 2px 18px 0px #6E82D02B;
+  background: #FFFFFF01;
+  border-radius: 10px;
+  position: relative;
+}
+.testimonials .testimonialHeader{
+  margin: 40px auto 10px;
+  width: 88%;
+  height: 87px;
+  display: flex;
+  align-items: center;
+}
+.testimonialHeader .customerImage {
+  height: 80px;
+  width: 80px;
+  margin-right: 12px;
+}
+.customerImage img{
+  box-shadow: 0px 6px 20px 2px #D3DCE8;
+  border-radius: 80px;
+  border: 5px solid #FFFFFF;
+  width: 80px;
+  height: 80px; 
+}
+.customerNameReview {
+  flex-grow: 1;
+}
+.customerNameReview p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 33.6px;
+  color: #071537;
+  height: 28px;
+  width: auto;
+  font-weight: 600;
+}
+
+.testimonials .testimonailReview{
+  margin: auto;
+  width: 94%;
+  height: auto;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: left;
+  line-height: 26.6px;
+}
+
+.blackCircle {
+  position: absolute;
+  top: -30px;
+  right: -10%;
+  width: 72px;
+  height: 72px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  font-size: 24px; 
+  justify-content: center;
+  /* padding: 24px; */
 }
