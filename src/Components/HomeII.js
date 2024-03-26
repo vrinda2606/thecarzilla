@@ -3,8 +3,8 @@ import React from 'react';
 const HomeII = () => {
 return (
      <div className='Home'>
-        <div className='homeII' style={{padding: "20px",backgroundColor: "#292929", width: "100%" , height: "665px" ,backgroundRepeat: 'repeat',backgroundImage : `url('../Images/bgEffect.png')`,backgroundSize: "612px auto",backgroundBlendMode: "overlay"}}>
-            <div style={{width: "700px",backgroundColor: "white",margin:"42px auto 0px", height: "3px"}} />
+        <div className='homeII' style={{padding: "20px",backgroundColor: "#292929", width: "100%" , height: "680px" ,backgroundRepeat: 'repeat',backgroundImage : `url('../Images/bgEffect.png')`,backgroundSize: "612px auto",backgroundBlendMode: "overlay"}}>
+            <div className='WhiteHr' style={{margin : "42px auto 0px"}}/>
             
             <div style={{width: "501px",margin:"18px auto", height: "63px", textAlign: "center" }} >
                <h1 style={{alignContent: "center",fontWeight: "700" ,fontFamily:"Lexend Deca", color: "white",lineHeight: "63px",fontSize: "45px" }}>Brands We Deal In</h1>
@@ -58,7 +58,7 @@ return (
 
 
 
-            <div style={{width: "700px",backgroundColor: "white",margin:"51px auto", height: "3px"}} />
+            <div className='WhiteHr'/>
             
         </div>
 

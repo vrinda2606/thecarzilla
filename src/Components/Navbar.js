@@ -41,7 +41,7 @@ const Navbar = () => {
          alignItems="center" 
          p={2} 
          width= "100%"
-         height="105px"
+         height="90px"
          sx={{position: 'sticky',
               top: 0, zIndex: 999, background: 'white', justifyContent: 'space-between',backgroundColor: "white"}}>
       <Link to="/" style={{display: 'flex' , alignItems: 'center'}} onClick={()=> window.scrollTo({top: 0,behavior: "smooth"})}>

@@ -28,7 +28,7 @@ const AboutUs = () => {
             <button className='btnForMore'>Learn More</button>
             </div>
 
-            <div style={{width: "700px",backgroundColor: "white",margin:"51px auto", height: "3px"}} />
+            <div className='WhiteHr'/>
             
         </div>
 
