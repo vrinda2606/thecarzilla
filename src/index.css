@@ -34,11 +34,13 @@ body {
     outline:none;
     width:350px;
   }
-  a {
+a {
     text-decoration: none;
     color: black;
-  }
-
+}
+button{
+  cursor: pointer;
+}
 
 /*Home Find Car*/
 .Home{
@@ -897,9 +899,11 @@ ul .links{
 /*testimonials*/
 
 .testimonialCarousel{
-  width: auto;
+  margin: auto;
+  width: 85%;
   height: 395px;
   display: flex;
+  margin-top: 40px;
   justify-content: center;
   font-family: "Work Sans";
 }
@@ -909,6 +913,7 @@ ul .links{
   box-shadow: 0px 2px 18px 0px #6E82D02B;
   background: #FFFFFF01;
   border-radius: 10px;
+  margin-left: 40px;
   position: relative;
 }
 .testimonials .testimonialHeader{
