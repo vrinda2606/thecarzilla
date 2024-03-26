@@ -1,4 +1,7 @@
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import Form from 'react-bootstrap/Form';
 // import React,{useState,useEffect} from 'react';
 // import { images } from '../utils/constants';
 // import {brands} from '../utils/brands';
@@ -18,8 +21,55 @@ return (
 
         <div className="homeI">
             <div className='homeFindCar'>
-               <h1>Find your right car</h1>
+               
+               <div className="FindCarHeading">
+                  <h1>Find your right car</h1>
+               </div>
+               
+               <div className="FindCarType">
+                  <div className="CarTypeNew">New Car</div>
+                  <div className="CarTypeUsed">Used Car</div>
+               </div>
+               
+               <div className="FindCarBudgetBrand">
+               <Form>
+                  <div key={`inline-radio`} className="radio-group">
+                     <Form.Check
+                         inline
+                         label="By Budget"
+                         name="group1"
+                         type='radio'
+                         id={`inline-radio-1`}
+                         checked
+                     />
+                     <Form.Check
+                         inline
+                         label="By Brand"
+                         name="group1"
+                         type='radio'
+                         id={`inline-radio-2`}
+                     />
+                  </div>
+               </Form>
+               </div>
+
+               <div className="FindCarSelection">
+                    <select className="FindCarBudget">
+                        <option value="Select Budget" selected>Select Budget</option>
+                     </select>
+                     <select className="FindCarVehicleType">
+                        <option value="All Vehicle Type" selected>All Vehicle Type</option>
+                     </select>
+               </div>
+
+               <div className="FindCarSelectBtn">
+                  <button>Search</button>
+               </div>
+
+               <div className="FindCarAdvancedSearch"><p>Advance Search <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></p></div>
+
             </div>
+
         </div>
      </div>
   )
