@@ -723,8 +723,9 @@ ul .links{
   font-weight: 400;
   font-family: 'Space Grotesk';
   font-size: 15px;
-  width: 700px;
+  width: 660px;
   text-align: center;
+  margin-top: -25px;
 }
 .appLite h6{
   text-align: center;

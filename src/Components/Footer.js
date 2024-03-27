@@ -20,7 +20,7 @@ const Footer = () => {
         <div className='footer'>
           <div className='footerOne' style={{width:"371px",height:'200px',display: 'flex',flexDirection: "column",justifyContent: "space-between"}}>
               <div style={{display: 'flex' , alignItems: 'center',width:"172px" ,height:"69px"}}>
-              <img src='../Images/logo2.png' alt='logo' style={{width:"100%",height:"100%",objectFit: "cover"}} />
+              <img src='../Images/logo2.png' alt='logo' style={{width:"150%",height:"150%",objectFit: "cover",marginLeft : '-28px', marginTop: '45px'}} />
               </div>
               <div style={{width: '371px',height: "55px",color:'#E5E6E8'}}>
                 <p style={{fontFamily:'Space Grotesk',fontWeight: "400",fontSize:"15px",lineHeight:"25px"}}>4th Floor, Pre-Incubation Lab, TBI-KIET, Ghaziabad - 201206</p>

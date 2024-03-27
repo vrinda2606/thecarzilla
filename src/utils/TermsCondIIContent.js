@@ -91,7 +91,7 @@ export const TAndCContent = [
         content : (
             <ul type='disc'>
                 <li>The refund of booking amount would be made, subject to deduction of the platform fees levied on the car/online booking. Customer should drop a mail to hello@thecarzilla.in in case he wants to proceed with his/her cancellation. In case of standard waiting period booking, Thecarzilla.in will charge a platform fee of INR 1500 if the customer cancels his/her standard delivery car after getting the car allotted from TheCarzilla.in or the dealer assigned by TheCarzilla.in.</li>
-                <li>In case of Express delivery booking, ACKO Drive will charge a platform fee of INR 3,000 if the customer cancels his/her express delivery car after getting the car allotted from  TheCarzilla.in or the dealer assigned by TheCarzilla.in.</li>
+                <li>In case of Express delivery booking, TheCarzilla.in will charge a platform fee of INR 3,000 if the customer cancels his/her express delivery car after getting the car allotted from  TheCarzilla.in or the dealer assigned by TheCarzilla.in.</li>
             </ul>
         )
     },
@@ -108,7 +108,7 @@ export const TAndCContent = [
     {
         id : 13,
         title : "PRIVACY POLICY",
-        content : "In the process of using this Website, the Privacy Policy as set forth in the Website www.ackodrive.com shall be applicable."
+        content : "In the process of using this Website, the Privacy Policy as set forth in the Website www.TheCarzilla.in shall be applicable."
     },
     {
         id : 14,
@@ -190,14 +190,14 @@ export const TAndCContent = [
             <div>
                 You may always submit your concerns / grievances regarding our Terms & Conditions or our privacy practices to the designated Grievance Officer as follows:
                 <ul type='disc'>
-                <li>Mr. Umang Sing <br/>Email:umangsingh@thecarzilla.in</li>
+                <li>Mr. Umang Singh <br/>Email:umangsingh@thecarzilla.in</li>
                 <li>Please reference the Terms & Conditions or Privacy Policy, as the case may be, in your subject line. We will attempt to respond to all reasonable concerns or inquiries within reasonable time.</li>
                 <li>Thank you for visiting our website at www.TheCarzilla.in.</li>
                 <li>IgniteX Solutions Private Limited</li>
-                <li>Registered Office: 36/5, Hustlehub One East, Somasandrapalya,27th Main Rd, Sector 2, HSR Layout, Bengaluru, Karnataka 560102</li>
-                <li>Date of Incorporation: September 7, 2016</li>
-                <li>CIN: U74110KA2016PTC120161</li>
-                <li>TERMS & CONDITIONS GOVERNING THE USE OF TheCarzilla.in’s WEBSITE BY VISITORS, CUSTOMERS AND REGISTERED USERS.</li>
+                <li>Registered Office: 00,NAGESHWAR MANDIR KE SA,SHANTI NIKETAN,NAGESHWAR,Bulandshahr,Bulandshahr,Bulandshahr-203001,Uttar Pradesh</li>
+                <li>Date of Incorporation: June 7, 2023</li>
+                <li>CIN: U62099UP2023PTC183706</li>
+                <li>TERMS & CONDITIONS GOVERNING THE USE OF TheCarzilla.in's WEBSITE BY VISITORS, CUSTOMERS AND REGISTERED USERS.</li>
                 </ul>
             </div>
         )

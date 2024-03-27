@@ -36,11 +36,11 @@ const ContactForm = () => {
                    </div>
                    <div className="input-field">
                        <label>Model<span className='asterisk'>*</span></label><br/>
-                       <input className="modelChosen" id="modelChosen" type="text" placeholder="Enter your model" required/>
+                       <input className="modelChosen" id="modelChosen" type="text" placeholder="For Eg: Swift ZXI+" required/>
                    </div>
                    <div className="input-field">
                        <label>City<span className='asterisk'>*</span></label><br/>
-                       <input className="cityChosen" id="cityChosen" type="text" placeholder="Enter your city" required />
+                       <input className="cityChosen" id="cityChosen" type="text" placeholder="For Eg: Jaipur" required />
                    </div>
                 </div>
 

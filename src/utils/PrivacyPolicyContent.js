@@ -7,7 +7,7 @@ export const PrivacyPolicyContent = [
                 <li>While using the website of TheCarzilla.in, some personal identification information may be collected in a number of ways. We collect your personal information as stated by you when you visit our website, register on the website, subscribe to the website's newsletter, respond to a survey, fill out a form, and perform a transaction/action on the website in connection with other activities, services, features or resources we make available on our website.</li>
                 <li>While using the website, a user may be asked personal information as appropriate. This could include, but may not be restricted to, name, email address, mailing address, phone number, credit card or net banking service information, the user individual's / asset's information, the personal information, preferences and interests of the users. This information is necessary to maintain our records about you to service you better at all times. The Company shall not be responsible for the authenticity of the personal information shared by you.</li>
                 <li>You have the option to provide demographic information (such as occupation, education and gender) to the Company; we encourage you to submit this information so we can provide you a more personalized experience on our site. We use your information to assist sellers in handling orders, deliver products and services, process payments, communicate with you about orders, products, services and promotional offers, update our records and generally maintain your accounts with us and recommend merchandise and services that might be of interest to you.</li>
-                <li> If you choose to use our referral service to tell a friend about our site, we will ask you for your friend's name and email address. We will automatically send your friend a one-time email inviting him or her to visit the site. AckoDrive.com does store this information and the information is used for the sole purpose of sending this one-time email and tracking the success of our referral program.</li>
+                <li> If you choose to use our referral service to tell a friend about our site, we will ask you for your friend's name and email address. We will automatically send your friend a one-time email inviting him or her to visit the site. TheCarzilla.in does store this information and the information is used for the sole purpose of sending this one-time email and tracking the success of our referral program.</li>
             </ul>
         )
     },
@@ -41,7 +41,7 @@ export const PrivacyPolicyContent = [
     },
     {
         id : 5,
-        title : "HOW ACKODRIVE PROTECTS YOUR INFORMATION",
+        title : "HOW TheCarzilla.in PROTECTS YOUR INFORMATION",
         content : (
             <div>
             We at TheCarzilla.in have appropriate data collection, storage, and processing practices. Our security measures protect against unauthorized access, alteration, disclosure or destruction of your personal information, username, password, transaction information and data stored on our website. 

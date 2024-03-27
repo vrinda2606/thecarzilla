@@ -15,7 +15,7 @@ const LiteApp = () => {
                 </div>
 
                 <div className="buttonContact">
-                    <button className="btnContact" style={{borderRadius : '0'}}>Coming Soon</button>
+                    <button className="btnContact" style={{marginTop: "-75px" ,borderRadius : '0'}}>Coming Soon</button>
                 </div>
 
                 <p className='para'>An App that caters all your car needs, Including Genuine Spare Parts, Fastag Recharge & many more</p>
