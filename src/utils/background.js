@@ -1,0 +1,22 @@
+export const background = [
+    {
+        id:1,
+        url:"../Images/Untitled0.jpg"
+    },
+    {
+        id:2,
+        url:"../Images/Untitled1.jpg"
+    },
+    {
+        id:3,
+        url:"../Images/home.png"
+    },
+    {
+        id:4,
+        url:"../Images/PrivacyPolicy.png"
+    },
+    {
+        id:5,
+        url:"../Images/TermsCond.png"
+    }
+]

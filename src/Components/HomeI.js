@@ -1,23 +1,37 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 import Form from 'react-bootstrap/Form';
-// import React,{useState,useEffect} from 'react';
+import React,{useState,useEffect} from 'react';
 // import { images } from '../utils/constants';
 // import {brands} from '../utils/brands';
+import {background} from '../utils/background';
 
 const HomeI = () => {
-  //   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false); // State for transition animation
 
-//   useEffect(() => {
-//     const intervalId = setInterval(() => {
-//       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-//     }, 2000);
-//     return () => clearInterval(intervalId); // Cleanup function to clear the interval when component unmounts or rerenders
-//     }, []);
-// currentImageIndex instead of 1
-return (
-     <div className='Home'>
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setIsTransitioning(true); // Start transition animation
+      setTimeout(() => { // Timer for transition duration
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % background.length);
+        setIsTransitioning(false); // End transition animation
+      }, 300); // Adjust transition duration in milliseconds (300ms here)
+    }, 2000); // Update interval in milliseconds (2 seconds here)
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  return (
+    <div
+      className='Home'
+      style={{
+        backgroundImage: `url(${background[currentImageIndex].url})`,
+        backgroundSize : 'cover',
+        transition: 'opacity 0.5s ease-in-out',
+        opacity: isTransitioning ? 0.9 : 1, 
+      }}
+    >
 
         <div className="homeI">
             <div className='homeFindCar'>

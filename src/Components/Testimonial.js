@@ -47,8 +47,8 @@ const Testimonial = () => {
                                 <Carousel 
                                     responsive={responsive} infinite={true} 
                                     className='testimonial_slider' 
-                                    // autoPlay 
-                                    // autoPlaySpeed={3000} 
+                                    autoPlay 
+                                    autoPlaySpeed={3000} 
                                     additionalTransfrom={0} 
                                     arrows centerMode={false} 
                                     containerClass="container" 

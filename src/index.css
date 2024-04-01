@@ -48,7 +48,7 @@ button{
   height: auto;
 }
 .Home .homeI{
-  background-image: url('../public/Images/Untitled1.jpg');
+  /* background-image: url('../public/Images/Untitled1.jpg'); */
   background-size: cover;
   width: 100%;
   height: 605px;
