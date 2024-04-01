@@ -26,14 +26,14 @@ const Footer = () => {
                 <p style={{fontFamily:'Space Grotesk',fontWeight: "400",fontSize:"15px",lineHeight:"25px"}}>4th Floor, Pre-Incubation Lab, TBI-KIET, Ghaziabad - 201206</p>
               </div>
               <div className='contactSocial' style={{width:"206px",height: "38px",display: 'flex',justifyContent: 'space-between'}}>
-                <div className='X social'><a href='/'><FontAwesomeIcon icon={faXTwitter} /></a></div>
-                <div className='instagram social'><a href='/'><FontAwesomeIcon icon={faInstagram} /></a></div>
-                <div className='youtube social'><a href='/'><FontAwesomeIcon icon={faYoutube} /></a></div>
-                <div className='linkedIn social'><a href='/'><FontAwesomeIcon icon={faLinkedin} style={{ color: 'white' }}/></a></div>
+                <div className='X social'><a href='/' target='blank'><FontAwesomeIcon icon={faXTwitter} /></a></div>
+                <div className='instagram social'><a href='https://www.instagram.com/thecarzilla.in?igsh=MW12ZWF0YzIyeXkzYg%3D%3D&utm_source=qr' target='blank'><FontAwesomeIcon icon={faInstagram} /></a></div>
+                <div className='youtube social'><a href='https://www.youtube.com/@thecarzilla' target='blank'><FontAwesomeIcon icon={faYoutube} /></a></div>
+                <div className='linkedIn social'><a href='https://www.linkedin.com/company/thecarzilla-in/' target='blank'><FontAwesomeIcon icon={faLinkedin} style={{ color: 'white' }}/></a></div>
               </div>
           </div>
            
-          <div class="footerTwo">
+          <div className="footerTwo">
             <ul className='footerTwo-1'>
                 <h6>Company</h6>
                 <NavLink className='links' onClick={scrollToTop} to="/">Home</NavLink>

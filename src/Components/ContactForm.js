@@ -51,7 +51,7 @@ const ContactForm = () => {
       </div>
     </div>
 
-      <div class="popup">
+      <div className="popup">
         
       </div>
     </div>

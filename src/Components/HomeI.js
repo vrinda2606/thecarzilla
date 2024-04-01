@@ -40,7 +40,7 @@ return (
                          name="group1"
                          type='radio'
                          id={`inline-radio-1`}
-                         checked
+                         defaultChecked
                      />
                      <Form.Check
                          inline
@@ -55,10 +55,10 @@ return (
 
                <div className="FindCarSelection">
                     <select className="FindCarBudget">
-                        <option value="Select Budget" selected>Select Budget</option>
+                        <option value="Select Budget" defaultValue>Select Budget</option>
                      </select>
                      <select className="FindCarVehicleType">
-                        <option value="All Vehicle Type" selected>All Vehicle Type</option>
+                        <option value="All Vehicle Type" defaultValue>All Vehicle Type</option>
                      </select>
                </div>
 

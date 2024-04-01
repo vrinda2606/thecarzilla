@@ -8,6 +8,31 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell, faUser } from '@fortawesome/free-solid-svg-icons';
 
+
+const options = ['home', 'services', 'about us','blogs','customer support','how it works','terms and conditions','privacy policy'];
+
+const handleSelect = (selectedOption) => {
+   let pathToComponent;
+   switch (selectedOption) {
+     case 'home':
+       pathToComponent = '/';
+       break;
+     case 'services':
+       pathToComponent = '/services'; // Assuming your services component is at '/services'
+       break;
+     case 'about us':
+       pathToComponent = '/Aboutus'; // Assuming your about us component is at '/about-us'
+       break;
+     // Add similar cases for other options
+     default:
+       pathToComponent = '/'; // Handle unexpected options (optional)
+   }
+ 
+   // Use Link component directly for redirection (replace NavLink if not using exact path matching)
+   return <Link to={pathToComponent}>{selectedOption}</Link>;
+ };
+ 
+
 const iconContainerStyle = {
     width: "40px",
     height: "40px",
@@ -21,7 +46,7 @@ const iconContainerStyle = {
   
   const iconStyle = {
     color: "#596780",
-    fontSize: "20px", // Note: fontSize should be a string, not inside quotes
+    fontSize: "20px" // Note: fontSize should be a string, not inside quotes
   };
   
 
@@ -50,13 +75,13 @@ const Navbar = () => {
       
 
       <div className='navLinks' style={{marginTop:"10px",fontWeight: 700,width:"460px",height: "25px",display: "flex", justifyContent: "space-between", alignItems: "center"}}>
-        <NavLink  activeClassName='active' exact to="/" onClick={()=> window.scrollTo({top: 0,behavior: "instant"})}>Home</NavLink>
+        <NavLink exact activeclassname ='active' to="/" onClick={()=> window.scrollTo({top: 0,behavior: "instant"})}>Home</NavLink>
         <NavLink to="/" onClick={scrollToContactForm}>Buy New Car</NavLink>
-        <NavLink  activeClassName='active' to="/">Blog</NavLink>
-        <NavLink  activeClassName='active' to="/">Services</NavLink>
+        <NavLink activeclassname ='active' to="/">Blog</NavLink>
+        <NavLink activeclassname ='active' to="/">Services</NavLink>
       </div>    
 
-      <SearchBar />
+      <SearchBar options={options} handleSelect={handleSelect} />
       <div className='options' style={{ display: "flex",marginTop:"10px",marginRight:"30px",justifyContent: "space-evenly"}}>
          <div className='like' style={{...iconContainerStyle, marginRight : "14px"}}>
             <FavoriteIcon style={iconStyle} />
