@@ -70,7 +70,7 @@ const Navbar = () => {
          sx={{position: 'sticky',
               top: 0, zIndex: 999, background: 'white', justifyContent: 'space-between',backgroundColor: "white"}}>
       <Link to="/" style={{display: 'flex' , alignItems: 'center'}} onClick={()=> window.scrollTo({top: 0,behavior: "smooth"})}>
-      <img src={images[0].url} alt="logo" style={{width: "172px",height: "180px", marginTop: "10px" ,marginLeft: "12px"}} />
+      <img src={images[0].url} alt="logo" style={{width: "172px",height: "56px" ,marginLeft: "12px"}} />
       </Link>
       
 

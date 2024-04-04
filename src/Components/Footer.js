@@ -19,8 +19,8 @@ const Footer = () => {
 
         <div className='footer'>
           <div className='footerOne' style={{width:"371px",height:'200px',display: 'flex',flexDirection: "column",justifyContent: "space-between"}}>
-              <div style={{display: 'flex' , alignItems: 'center',width:"172px" ,height:"69px"}}>
-              <img src='../Images/logo2.png' alt='logo' style={{width:"150%",height:"150%",objectFit: "cover",marginLeft : '-28px', marginTop: '45px'}} />
+              <div style={{display: 'flex' , alignItems: 'center',width:"172px" ,height:"70px"}}>
+              <img src='../Images/logo2.png' alt='logo' style={{width:"100%",height:"100%",objectFit: "cover"}} />
               </div>
               <div style={{width: '371px',height: "55px",color:'#E5E6E8'}}>
                 <p style={{fontFamily:'Space Grotesk',fontWeight: "400",fontSize:"15px",lineHeight:"25px"}}>4th Floor, Pre-Incubation Lab, TBI-KIET, Ghaziabad - 201206</p>
@@ -63,8 +63,8 @@ const Footer = () => {
                   <p style={{width: '300px',color: '#FFFFFF',height:'28px',fontFamily :'Saira',fontWeight : '600',fontSize :'20px',lineHeight : '15px'}}>Proudly Recognized By</p>
                 </div>
                 <div className='startUpLogoImg'>
-                  <img className='imageLogoStartup' src='../Images/StartUpLogo1.png' alt='Startup logo' style={{position: 'relative',width: '100%',height: '100%',objectFit: 'cover',margin: '-57px 0px 0px -45px'}}/>
-                  <img className='imageLogoStartup' src='../Images/StartupLogo2.png' alt='Startup logo 2' style={{width: '60%',height:'30%', margin: '0 0 0 -20px'}}></img>
+                  <img className='imageLogoStartup' src='../Images/StartUpLogo1.png' alt='Startup logo' style={{height: '100%'}}/>
+                  <img className='imageLogoStartup' src='../Images/StartupLogo2.png' alt='Startup logo 2' style={{height:'100%'}}></img>
                 </div>
             </div>
           </div>
