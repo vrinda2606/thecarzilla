@@ -45,7 +45,8 @@ const Testimonial = () => {
                         <Col>
                               <div className='testimonial-box'>
                                 <Carousel 
-                                    responsive={responsive} infinite={true} 
+                                    responsive={responsive} 
+                                    infinite={true} 
                                     className='testimonial_slider' 
                                     autoPlay 
                                     autoPlaySpeed={3000} 
@@ -53,11 +54,11 @@ const Testimonial = () => {
                                     arrows centerMode={false} 
                                     containerClass="container" 
                                     dotListClass="" 
-                                    focusOnSelect={true} 
+                                    // focusOnSelect={true} 
                                     itemClass="" 
-                                    keyBoardControl
+                                    keyBoardControl={true}
                                     minimumTouchDrag={50} 
-                                    pauseOnHover
+                                    pauseOnHover ={false}
                                     renderArrowsWhenDisabled={false}
                                     renderButtonGroupOutside={true}
                                     renderDotsOutside = {true}
