@@ -1,8 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 const ContactForm = () => {
+
+
+  const [popupVis , setPopupVis] = useState(false);
+  
+  const openPopup = (e) => {
+  
+  const nameInput = document.getElementById('fname').value.trim();
+  const emailInput = document.getElementById('email').value.trim();
+  const numberInput = document.getElementById('number').value.trim();
+  const brandInput = document.getElementById('brandChosen').value.trim();
+  const modelInput = document.getElementById('modelChosen').value.trim();
+  const cityInput = document.getElementById('cityChosen').value.trim();
+
+  if (nameInput && emailInput && numberInput && brandInput && modelInput && cityInput) {
+    e.preventDefault();
+    setPopupVis(true);
+    console.log(popupVis);
+  } else {
+    alert('Please fill in all the required fields.');
+  }
+  };
+
+  const closePopup = () => {
+    setPopupVis(false);
+    console.log(popupVis);
+  };
+
   return (
-    <div id="contact-form" className='BlackBg' style={{height : '550px'}}>
+    <div id="contact-form-container" className='BlackBg' style={{height : '550px'}}>
     <div className='contactFormDiv'>
       <div className='HeadingBoxBlack'>
       <div className='HeadingBlackDiv'>
@@ -45,14 +72,17 @@ const ContactForm = () => {
                 </div>
 
                 <div className="buttonContact">
-                   <button type="submit" className="btnContact">Enquire Now</button>
+                   <button type="submit" className="btnContact" onClick={openPopup}>Enquire Now</button>
                 </div>
                </form>
       </div>
     </div>
 
-      <div className="popup">
-        
+      <div className={`popup ${popupVis ? 'active' : ''}`}>
+           <div>
+            <button id='close_popup' onClick={closePopup}>click</button>
+           </div>
+          <h2>Heyyyyaaa</h2>
       </div>
     </div>
   )

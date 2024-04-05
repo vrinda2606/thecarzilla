@@ -1,22 +1,29 @@
+import img1 from '../Components/Images/Untitled0.jpg';
+import img2 from '../Components/Images/Untitled1.jpg';
+import img3 from '../Components/Images/home.png';
+import img4 from '../Components/Images/PrivacyPolicy.png';
+import img5 from '../Components/Images/TermsCond.png';
+
+
 export const background = [
     {
         id:1,
-        url:"../Images/Untitled0.jpg"
+        url:img1
     },
     {
         id:2,
-        url:"../Images/Untitled1.jpg"
+        url:img2
     },
     {
         id:3,
-        url:"../Images/home.png"
+        url:img3
     },
     {
         id:4,
-        url:"../Images/PrivacyPolicy.png"
+        url:img4
     },
     {
         id:5,
-        url:"../Images/TermsCond.png"
+        url:img5
     }
 ]

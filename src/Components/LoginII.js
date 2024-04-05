@@ -13,7 +13,7 @@ const Login = () => {
            <div className='loginDetails'>
                <div className='loginDetailsDivI'>Login to Your Account</div>
                <div className='loginDetailsDivIII'>
-                    <input className='otp_for_verification' type='number' placeholder='Enter OTP'/>
+                    <input className='otp_for_verification' type='password' placeholder='Enter OTP'/>
                </div>
                <div className='loginDetailsDivIV'>
                <NavLink exact to='/Home' onClick={() => { window.scrollTo({top: 0,behavior: "smooth"})}}>

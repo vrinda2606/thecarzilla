@@ -16,22 +16,20 @@ const HomeI = () => {
       setTimeout(() => { // Timer for transition duration
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % background.length);
         setIsTransitioning(false); // End transition animation
-      }, 300); // Adjust transition duration in milliseconds (300ms here)
-    }, 2000); // Update interval in milliseconds (2 seconds here)
+      }, 500); // Adjust transition duration in milliseconds (300ms here)
+    }, 3000); // Update interval in milliseconds (2 seconds here)
 
     return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <div
-      className='Home'
-      style={{
-        backgroundImage: `url(${background[currentImageIndex].url})`,
-        backgroundSize : 'cover',
-        transition: 'opacity 0.5s ease-in-out',
-        opacity: isTransitioning ? 0.9 : 1, 
-      }}
-    >
+    <div className='Home'>
+    <img src={background[currentImageIndex].url} alt="" style={{
+      width: '100%',
+      height: '100%',
+        transition: 'opacity 1s ease-in-out',
+        opacity: isTransitioning ? 0.8 : 1, 
+      }} />
 
         <div className="homeI">
             <div className='homeFindCar'>
