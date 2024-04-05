@@ -54,7 +54,7 @@ const Navbar = () => {
    const navbarHeight = 105; // Adjust acc to height of Navbar
 
    const scrollToContactForm = () => {
-     const contactFormElement = document.getElementById('contact-form');
+     const contactFormElement = document.getElementById('contact-form-container');
      if (contactFormElement) {
        const topPosition = contactFormElement.offsetTop - navbarHeight;
        window.scrollTo({ top: topPosition, behavior: 'smooth' });

@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleXmark} from '@fortawesome/free-solid-svg-icons';
+
 
 const ContactForm = () => {
 
@@ -17,20 +20,17 @@ const ContactForm = () => {
   if (nameInput && emailInput && numberInput && brandInput && modelInput && cityInput) {
     e.preventDefault();
     setPopupVis(true);
-    console.log(popupVis);
   } else {
-    alert('Please fill in all the required fields.');
   }
   };
 
   const closePopup = () => {
     setPopupVis(false);
-    console.log(popupVis);
   };
 
   return (
     <div id="contact-form-container" className='BlackBg' style={{height : '550px'}}>
-    <div className='contactFormDiv'>
+    <div className={`contactFormDiv ${popupVis ? 'active' : ''}`}>
       <div className='HeadingBoxBlack'>
       <div className='HeadingBlackDiv'>
          <span className='BlackDivfirst'><hr /><p>BOOK YOUR DREAM CAR</p><hr/></span>
@@ -78,11 +78,18 @@ const ContactForm = () => {
       </div>
     </div>
 
-      <div className={`popup ${popupVis ? 'active' : ''}`}>
-           <div>
-            <button id='close_popup' onClick={closePopup}>click</button>
-           </div>
-          <h2>Heyyyyaaa</h2>
+      <div className={`BlackBg popup ${popupVis ? 'active' : ''}`}>
+              <span className='popupCloseDiv'>
+                 <button id='close_popup' onClick={closePopup}><FontAwesomeIcon className='popupCloseDivIcon' icon={faCircleXmark}></FontAwesomeIcon></button>
+              </span>
+              <div className='HeadingBoxBlack'>
+              <div className='HeadingBlackDiv'>
+                 <span className='BlackDivfirst'><p>INQUIRY SUBMITTED</p></span>
+                 <span className='BlackDivMiddle'><h1>VROOM-VROOM!!</h1></span>
+                 <span className='BlackDivMiddle'><h1>Your query has been heard</h1></span>
+                 <span className='BlackDivLast'>Our team will contact you soon</span>
+              </div>
+              </div>
       </div>
     </div>
   )
