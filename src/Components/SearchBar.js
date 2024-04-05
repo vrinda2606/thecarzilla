@@ -1,48 +1,36 @@
-import React, { useState, useEffect } from 'react';
-import { Paper, Menu, MenuItem, IconButton, Tooltip } from '@mui/material';
+import React, {useState} from 'react';
+import { Paper, Menu, IconButton, Tooltip } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import SortIcon from '@mui/icons-material/Sort';
+import { Link } from 'react-router-dom';
 
-const SearchBar = ({ options, handleSelect }) => {
-  const [searchTerm, setSearchTerm] = useState('');
+const SearchBar = () => {
+
+  const [searchQuery, setSearchQuery] = useState('');
   const [filteredOptions, setFilteredOptions] = useState([]);
-  const [anchorEl, setAnchorEl] = useState(null); // State for dropdown visibility
 
-  useEffect(() => {
-    const filterOptions = () => {
-      if (searchTerm.length >= 3) {
-        const suggestions = options.filter((option) =>
-          option.toLowerCase().startsWith(searchTerm.length >= 3 && searchTerm.toLowerCase())
-        );
-        setFilteredOptions(suggestions);
-      } else {
-        setFilteredOptions([]); // Clear suggestions when term is less than 3 chars
-      }
-    };
+  let options = ['Home', 'Services', 'AboutUs', 'TermsAndConditions','PrivacyPolicy','HowItWorks','Support','Login']
 
-    filterOptions();
-  }, [searchTerm, options]);
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+  const handleSearch = (e) => {
+      const query = e.target.value;
+      setSearchQuery(query);
   
+      // Filter options based on search query
+      const filtered = query!=='' ? options.filter(option =>
+        option.toLowerCase().includes(query.toLowerCase())
+      ) : [];
+      setFilteredOptions(filtered);
+    };
+  const selectedOption = () => {
+    setSearchQuery('');
+    setFilteredOptions([]);
+  }
 
-  const handleSelectOption = (selectedOption) => {
-    handleSelect(selectedOption); // Pass selected option to parent
-    setSearchTerm(''); // Clear search term after selection
-    handleClose(); // Close dropdown
-  };
 
   return (
     <>
       <Paper
         component="form"
-        onSubmit={handleClose} // Prevent form submission (handled elsewhere)
         sx={{
           borderRadius: 20,
           border: '1px solid #C3D4E966',
@@ -60,9 +48,9 @@ const SearchBar = ({ options, handleSelect }) => {
         <SearchIcon type="submit" style={{ width: '25px', height: '25px' }} />
         <input
           className="search-bar"
+          value={searchQuery}
+          onChange={handleSearch}
           placeholder="Search something here..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
           style={{
             width: '240px',
             height: '20px',
@@ -73,24 +61,25 @@ const SearchBar = ({ options, handleSelect }) => {
             lineHeight: '21px',
           }}
         />
+        <div className='dropdown'>
+            {filteredOptions.length > 0 && (
+                <ul>
+                {filteredOptions.map((option, index) => (
+                    <li key={index} onClick={selectedOption}><Link to={option} >{option}</Link></li>
+                ))}
+                </ul>
+            )}
+        </div>
+
         <Tooltip title="Click to show options">
-          <IconButton onClick={handleClick}>
+          <IconButton>
             <SortIcon />
           </IconButton>
         </Tooltip>
         <Menu
           id="search-menu"
-          anchorEl={anchorEl}
-          open={Boolean(anchorEl)}
-          onClose={handleClose}
           sx={{ maxHeight: 250 }} // Limit dropdown height
         >
-          {filteredOptions.length > 0 &&
-            filteredOptions.map((option, index) => (
-              <MenuItem key={index} onClick={() => handleSelectOption(option)}>
-                {option}
-              </MenuItem>
-            ))}
         </Menu>
       </Paper>
     </>

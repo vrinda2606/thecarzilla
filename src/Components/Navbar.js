@@ -1,6 +1,6 @@
 import React from 'react'
-import { Stack } from "@mui/material"; // used to create layout with a horizontal/vertcal stack of elements
-import {Link, NavLink} from "react-router-dom"; // creates links for navigation within React appn
+import { Stack } from "@mui/material"; 
+import {Link, NavLink} from "react-router-dom";
 import {images} from '../utils/constants';
 import SearchBar from  './SearchBar';
 import FavoriteIcon from '@mui/icons-material/Favorite';
@@ -8,30 +8,13 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell, faUser } from '@fortawesome/free-solid-svg-icons';
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "instant" // Smooth scrolling animation
+  });
+};
 
-const options = ['home', 'services', 'about us','blogs','customer support','how it works','terms and conditions','privacy policy'];
-
-const handleSelect = (selectedOption) => {
-   let pathToComponent;
-   switch (selectedOption) {
-     case 'home':
-       pathToComponent = '/';
-       break;
-     case 'services':
-       pathToComponent = '/services'; // Assuming your services component is at '/services'
-       break;
-     case 'about us':
-       pathToComponent = '/Aboutus'; // Assuming your about us component is at '/about-us'
-       break;
-     // Add similar cases for other options
-     default:
-       pathToComponent = '/'; // Handle unexpected options (optional)
-   }
- 
-   // Use Link component directly for redirection (replace NavLink if not using exact path matching)
-   return <Link to={pathToComponent}>{selectedOption}</Link>;
- };
- 
 
 const iconContainerStyle = {
     width: "40px",
@@ -78,10 +61,10 @@ const Navbar = () => {
         <NavLink exact activeclassname ='active' to="/" onClick={()=> window.scrollTo({top: 0,behavior: "instant"})}>Home</NavLink>
         <NavLink to="/" onClick={scrollToContactForm}>Buy New Car</NavLink>
         <NavLink activeclassname ='active' to="/">Blog</NavLink>
-        <NavLink activeclassname ='active' to="/">Services</NavLink>
+        <NavLink activeclassname ='active' onClick={scrollToTop} to="/Services">Services</NavLink>
       </div>    
 
-      <SearchBar options={options} handleSelect={handleSelect} />
+      <SearchBar />
       <div className='options' style={{ display: "flex",marginTop:"10px",marginRight:"30px",justifyContent: "space-evenly"}}>
          <div className='like' style={{...iconContainerStyle, marginRight : "14px"}}>
             <FavoriteIcon style={iconStyle} />

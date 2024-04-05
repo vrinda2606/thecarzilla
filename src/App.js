@@ -11,6 +11,7 @@ import PrivacyPolicyII from './Components/PrivacyPolicyII';
 import Login from "./Components/Login";
 import LoginII from "./Components/LoginII";
 import Footer from "./Components/Footer";
+import Services from "./Components/Services";
 
 const App = () => {
   const location = useLocation();
@@ -31,6 +32,7 @@ const App = () => {
         <Route exact path="/PrivacyPolicy/:PrivacyPolicyII" element={<PrivacyPolicyII />} />
         <Route exact path="/Login" element={<Login />} />
         <Route exact path="/Login/:OtpVerify" element={<LoginII />} />
+        <Route exact path="/Services" element={<Services />} />
         <Route path="*" element={<Function />} /> 
       </Routes>
 

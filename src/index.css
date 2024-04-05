@@ -42,6 +42,31 @@ button{
   cursor: pointer;
 }
 
+/*Search bar */
+.dropdown {
+  position: absolute;
+  top: calc(80%);
+  width: 240px;
+  background-color: #fff;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+}
+
+.dropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown ul li {
+  padding: 8px;
+}
+
+.dropdown ul li:hover {
+  background-color: #f0f0f0;
+}
+
+
 /*Home Find Car*/
 .Home{
   width: 100%;
