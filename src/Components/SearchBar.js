@@ -22,6 +22,7 @@ const SearchBar = () => {
       setFilteredOptions(filtered);
     };
   const selectedOption = () => {
+    window.scrollTo({top: 0,behavior: "instant"})
     setSearchQuery('');
     setFilteredOptions([]);
   }
@@ -65,7 +66,7 @@ const SearchBar = () => {
             {filteredOptions.length > 0 && (
                 <ul>
                 {filteredOptions.map((option, index) => (
-                    <li key={index} onClick={selectedOption}><Link to={option} >{option}</Link></li>
+                    <li key={index} onClick={selectedOption} ><Link to={option} >{option}</Link></li>
                 ))}
                 </ul>
             )}

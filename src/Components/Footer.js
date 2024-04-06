@@ -19,7 +19,7 @@ const Footer = () => {
 
         <div className='footer'>
           <div className='footerOne' style={{width:"371px",height:'200px',display: 'flex',flexDirection: "column",justifyContent: "space-between"}}>
-              <div style={{display: 'flex' , alignItems: 'center',width:"172px" ,height:"70px"}}>
+              <div style={{display: 'flex' , alignItems: 'center',width:"180px" ,height:"70px"}}>
               <img src='../Images/logo2.png' alt='logo' style={{width:"100%",height:"100%",objectFit: "cover"}} />
               </div>
               <div style={{width: '371px',height: "55px",color:'#E5E6E8'}}>
@@ -74,7 +74,7 @@ const Footer = () => {
         <div className='bottom' style={{marginTop: '100px'}}>
             <hr width="1140px" style={{border: "1px solid #E5E6E8",margin:"auto"}}></hr>
             <div style={{display:"flex",justifyContent: "space-between",width: "1140px" ,height:"27px",color :"#E5E6E8",margin:"32px 0px 0px",fontFamily:"Space Grotesk",fontWeight: "400",fontSize :"12px"}}>
-               <p style={{width: "159px", height:"100%", lineHeight:"27px"}}>Copyright ©2024 IgniteX</p>
+               <p style={{width: "258px", height:"100%", lineHeight:"27px"}}>Copyright ©2024 IgniteX Solutions Pvt. Ltd.</p>
                <p style={{width: "179px", height:"100%", lineHeight:"27px"}}>Designed by IgniteX Solutions </p>
             </div>
         </div>

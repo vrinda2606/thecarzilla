@@ -4,7 +4,7 @@ import { faHeadphones, faLayerGroup, faLock } from '@fortawesome/free-solid-svg-
 
 const HomeIII = () => {
   return (
-    <div className='WhiteBg' style={{height:"560px"}}>
+    <div className='WhiteBg' style={{height:"590px",marginTop: '60px'}}>
       <div className='headingBoxWhite'>
       <div className='HeadingWhiteDiv'>
         <span className='WhiteDivfirst'><hr/>Why Choose Us <hr/></span>

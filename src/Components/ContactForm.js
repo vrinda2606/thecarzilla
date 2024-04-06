@@ -84,10 +84,10 @@ const ContactForm = () => {
               </span>
               <div className='HeadingBoxBlack'>
               <div className='HeadingBlackDiv'>
-                 <span className='BlackDivfirst'><p>INQUIRY SUBMITTED</p></span>
-                 <span className='BlackDivMiddle'><h1>VROOM-VROOM!!</h1></span>
-                 <span className='BlackDivMiddle'><h1>Your query has been heard</h1></span>
-                 <span className='BlackDivLast'>Our team will contact you soon</span>
+                 <span className='BlackDivfirst' style={{color: 'black'}}><p>INQUIRY SUBMITTED</p></span>
+                 <span className='BlackDivMiddle' style={{color: 'black'}}><h1>VROOM-VROOM!!</h1></span>
+                 <span className='BlackDivMiddle' style={{color: 'black'}}><h1>Your query has been heard</h1></span>
+                 <span className='BlackDivLast' style={{color: 'black'}}>Our team will contact you soon</span>
               </div>
               </div>
       </div>
