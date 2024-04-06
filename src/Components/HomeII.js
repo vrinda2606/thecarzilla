@@ -4,7 +4,7 @@ import {images} from '../utils/constants';
 const HomeII = () => {
 return (
      <div className='Home'>
-        <div className='homeII' style={{padding: "20px",backgroundColor: "#292929", width: "100%" , height: "680px" ,backgroundRepeat: 'repeat',backgroundImage : `url('../Images/bgEffect.png')`,backgroundSize: "612px auto",backgroundBlendMode: "overlay"}}>
+        <div className='homeII' style={{padding: "20px",backgroundColor: "#292929", width: "100%" , height: "680px" ,backgroundRepeat: 'repeat',backgroundImage : `url(${images[23].url})`,backgroundSize: "612px auto",backgroundBlendMode: "overlay"}}>
             <div className='WhiteHr' style={{margin : "42px auto 0px"}}/>
             
             <div style={{width: "501px",margin:"18px auto", height: "63px", textAlign: "center" }} >
