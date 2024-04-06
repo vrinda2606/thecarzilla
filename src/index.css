@@ -451,7 +451,7 @@ ul .links{
   background-color: #292929;
   width: 100%;
   background-repeat: repeat;
-  background-image : url('../public/Images/bgEffect.png');
+  background-image : url('./Components/Images/bgEffect.png');
   background-size: 612px auto;
   background-blend-mode: overlay;
  }
@@ -659,7 +659,7 @@ ul .links{
 .getInTouch .getInTouchPic{
   height: 95%;
   width: 35%;
-  background-image: url('../public/Images/getInTouch.png');
+  background-image: url('./Components/Images/getInTouch.png');
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute; /* Position absolutely within the parent .getInTouch */
@@ -734,7 +734,7 @@ ul .links{
   margin: 7% auto;
   background-color: #292929;
   background-repeat: repeat;
-  background-image : url('../public/Images/bgEffect.png');
+  background-image : url('./Components/Images/bgEffect.png');
   background-size: auto;
   background-blend-mode: overlay;
 }
@@ -783,7 +783,7 @@ ul .links{
   width: 43%;
   height: 100%;
   background-position: center;
-  background-image: url('../public/Images/AppLite.png');
+  background-image: url('./Components/Images/AppLite.png'); /*Done*/
   background-repeat: no-repeat;
   position: relative;
   background-size: 90%;
@@ -835,10 +835,10 @@ ul .links{
   background-size: contain;
 }
 .appLite .playStore .playStoreBtnI{
-  background-image: url('../public/Images/GooglePlayBadge.jpg');
+  background-image: url('./Components/Images/GooglePlayBadge.jpg'); /*Done*/
 }
 .appLite .playStore .playStoreBtnII{
-  background-image: url('../public/Images/AppStoreBadge.jpg');
+  background-image: url('./Components/Images/AppStoreBadge.jpg');  /*Done*/
 }
 
 
@@ -852,7 +852,7 @@ ul .links{
 .login .loginLogo{
   height: 500px;
   width: 50%;
-  background-image: url('../public/Images/Login.png');
+  background-image: url('./Components/Images/Login.png');
   background-repeat: no-repeat;
   margin-top: 85px;
   margin-left: 20px;

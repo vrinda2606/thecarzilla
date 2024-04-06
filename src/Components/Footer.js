@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import {NavLink} from "react-router-dom";
+import {images} from '../utils/constants';
 
 const Footer = () => {
 
@@ -20,7 +21,7 @@ const Footer = () => {
         <div className='footer'>
           <div className='footerOne' style={{width:"371px",height:'200px',display: 'flex',flexDirection: "column",justifyContent: "space-between"}}>
               <div style={{display: 'flex' , alignItems: 'center',width:"180px" ,height:"70px"}}>
-              <img src='../Images/logo2.png' alt='logo' style={{width:"100%",height:"100%",objectFit: "cover"}} />
+              <img src={images[16].url} alt='logo' style={{width:"100%",height:"100%",objectFit: "cover"}} />
               </div>
               <div style={{width: '371px',height: "55px",color:'#E5E6E8'}}>
                 <p style={{fontFamily:'Space Grotesk',fontWeight: "400",fontSize:"15px",lineHeight:"25px"}}>4th Floor, Pre-Incubation Lab, TBI-KIET, Ghaziabad - 201206</p>
@@ -38,7 +39,7 @@ const Footer = () => {
                 <h6>Company</h6>
                 <NavLink className='links' onClick={scrollToTop} to="/">Home</NavLink>
                 <NavLink className='links' onClick={scrollToTop} to="/AboutUs">About us</NavLink>
-                <NavLink className='links' onClick={scrollToTop} to="/">Services</NavLink>               
+                <NavLink className='links' onClick={scrollToTop} to="/Services">Services</NavLink>               
                 <NavLink className='links' onClick={scrollToTop} to="/">Blogs</NavLink>
             </ul>
             <ul className='footerTwo-1'>
@@ -63,8 +64,8 @@ const Footer = () => {
                   <p style={{width: '300px',color: '#FFFFFF',height:'28px',fontFamily :'Saira',fontWeight : '600',fontSize :'20px',lineHeight : '15px'}}>Proudly Recognized By</p>
                 </div>
                 <div className='startUpLogoImg'>
-                  <img className='imageLogoStartup' src='../Images/StartUpLogo1.png' alt='Startup logo' style={{height: '100%'}}/>
-                  <img className='imageLogoStartup' src='../Images/StartupLogo2.png' alt='Startup logo 2' style={{height:'100%'}}></img>
+                  <img className='imageLogoStartup' src={images[17].url} alt='Startup logo' style={{height: '100%'}}/>
+                  <img className='imageLogoStartup' src={images[18].url} alt='Startup logo 2' style={{height:'100%'}}></img>
                 </div>
             </div>
           </div>

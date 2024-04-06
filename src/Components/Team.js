@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import {images} from '../utils/constants';
 
 const Team = () => {
   return (
@@ -22,7 +23,7 @@ const Team = () => {
          </div>
          <div className='team-mates'>
             <div className='team-mates-bg'>
-               <img className='team-mates-img' src='../Images/Team/MGimage.png' alt='mgImage' />
+               <img className='team-mates-img' src={images[13].url} alt='mgImage' />
             </div>
             <div className='team-mates-names'>
                <h4>Madhav Garg</h4>

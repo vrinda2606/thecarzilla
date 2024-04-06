@@ -1,10 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { images } from '../utils/constants';
 
 const TermsCond = () => {
   return (
     <>
-       <div style={{backgroundImage: `url(${'../Images/TermsCond.jpeg'})`,backgroundSize: "cover",backgroundRepeat : "no-repeat", width: "100%",height: "590px"}}>
+       <div style={{backgroundImage: `url(${images[21].url})`,backgroundSize: "cover",backgroundRepeat : "no-repeat", width: "100%",height: "590px"}}>
         </div>
 
         <div className='BlackBg' style={{height : '567px'}}>

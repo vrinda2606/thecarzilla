@@ -1,11 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneVolume , faEnvelopeOpenText} from '@fortawesome/free-solid-svg-icons';
-import React from 'react'
+import React from 'react';
+import {images} from '../utils/constants';
 
 const CustomerSupport = () => {
   return (
     <>
-        <div style={{backgroundImage: `url(${'../Images/CustomerSupport.png'})`,backgroundSize: "cover",backgroundRepeat : "no-repeat", width: "100%",height: "690px"}}>
+        <div style={{backgroundImage: `url(${images[19].url})`,backgroundSize: "cover",backgroundRepeat : "no-repeat", width: "100%",height: "690px"}}>
         </div>
 
         <div className='BlackBg' style={{height : '588px'}}>
@@ -36,7 +37,7 @@ const CustomerSupport = () => {
         <div className='getInTouch'>
             <div className='getInTouchForm'>
                <div className='TouchFormHeading'>
-                  <img src='../Images/Get in Touch.jpg' alt= 'Get In Touch' width='60%'/>
+                  <img src={images[20].url} alt= 'Get In Touch' width='60%'/>
                   <p className='TouchFormHeadingHead'>Unlocking endless support for your car buying needs</p>
                </div>
 
