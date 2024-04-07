@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/thecarzilla/static/css/main.3908e511.css",
+    "main.js": "/thecarzilla/static/js/main.4ea3eea0.js",
+    "static/media/home.png": "/thecarzilla/static/media/home.c2a1276a90e61cf077c8.png",
+    "static/media/PrivacyPolicy.png": "/thecarzilla/static/media/PrivacyPolicy.4dde12ba40c4bd4b61f7.png",
+    "static/media/Untitled1.jpg": "/thecarzilla/static/media/Untitled1.a5178128a77b540147a8.jpg",
+    "static/media/Untitled0.jpg": "/thecarzilla/static/media/Untitled0.7fb45779d1e5e30f5b9c.jpg",
+    "static/media/TermsCond.png": "/thecarzilla/static/media/TermsCond.e15f043695b7705b26c8.png",
+    "static/media/PrivacyPolicy.jpeg": "/thecarzilla/static/media/PrivacyPolicy.92638f4bfef544d7a228.jpeg",
+    "static/media/CustomerSupport.png": "/thecarzilla/static/media/CustomerSupport.cb39f9cb55701a9a342a.png",
+    "static/media/TermsCond.jpeg": "/thecarzilla/static/media/TermsCond.ce8ef6ffb903ada7826f.jpeg",
+    "static/media/CustomerImage.png": "/thecarzilla/static/media/CustomerImage.56b4c37b5ecd3bc8f599.png",
+    "static/media/SUZUKI.png": "/thecarzilla/static/media/SUZUKI.42e867cc9f27d301ccda.png",
+    "static/media/getInTouch.png": "/thecarzilla/static/media/getInTouch.7bd0b93f5f6284506397.png",
+    "static/media/MGimage.png": "/thecarzilla/static/media/MGimage.3db6a6f59a113d82667d.png",
+    "static/media/Login.png": "/thecarzilla/static/media/Login.ecefff7a41c2c34e4e28.png",
+    "static/media/TATA.png": "/thecarzilla/static/media/TATA.721ffbd05c41ea66edd8.png",
+    "static/media/VOLKSWAGON.png": "/thecarzilla/static/media/VOLKSWAGON.bc4c70dba371db15ab61.png",
+    "static/media/bgEffect.png": "/thecarzilla/static/media/bgEffect.046ee48924b4f22ef9b2.png",
+    "static/media/HYUNDAI.png": "/thecarzilla/static/media/HYUNDAI.6101bebb44464affe30a.png",
+    "static/media/KIA.png": "/thecarzilla/static/media/KIA.3cf1bee5eb60f2b6950f.png",
+    "static/media/TOYOTA.png": "/thecarzilla/static/media/TOYOTA.457b91f9e9d656ab4a87.png",
+    "static/media/NISSAN.png": "/thecarzilla/static/media/NISSAN.17c4f5d2a86014eb15e9.png",
+    "static/media/AppLite.png": "/thecarzilla/static/media/AppLite.ea9cb3146d79d28aca4e.png",
+    "static/media/Get in Touch.jpg": "/thecarzilla/static/media/Get in Touch.1c2a39af3341d11fa06b.jpg",
+    "static/media/SKODA.png": "/thecarzilla/static/media/SKODA.08052788246f9ca560ec.png",
+    "static/media/JEEP.png": "/thecarzilla/static/media/JEEP.e90c99841f23aec36af7.png",
+    "static/media/StartUpLogo1.png": "/thecarzilla/static/media/StartUpLogo1.60d4354b988db2ac605e.png",
+    "static/media/CITROEN.png": "/thecarzilla/static/media/CITROEN.052d40b692a55a361405.png",
+    "static/media/revicons.eot": "/thecarzilla/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/thecarzilla/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/logo.png": "/thecarzilla/static/media/logo.3d95b147c7183af0774c.png",
+    "static/media/revicons.woff": "/thecarzilla/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/thecarzilla/index.html",
+    "main.3908e511.css.map": "/thecarzilla/static/css/main.3908e511.css.map",
+    "main.4ea3eea0.js.map": "/thecarzilla/static/js/main.4ea3eea0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3908e511.css",
+    "static/js/main.4ea3eea0.js"
+  ]
+}

@@ -330,7 +330,7 @@ button{
   height: 45px;
   width: 282px;
   margin-top: -15px;
-  padding: 10px, 24px, 10px, 24px;
+  padding: 10px 24px 10px 24px;
   gap: 10px;
   text-indent: 20px;
 }
@@ -353,7 +353,7 @@ button{
   font-size: 14px;
   text-align: center;
   border-radius: 10px;
-  padding: 20px, 24px;
+  padding: 20px 24px;
 }
 
 .footer{
@@ -905,7 +905,7 @@ ul .links{
 .loginDetails .loginDetailsDivII{
   background-color: #FFFFFF;
   border-radius: 8px;
-  padding: 8px, 16px;
+  padding: 8px 16px;
   gap: 8px;
   display: flex;
   justify-content: center;
@@ -926,7 +926,7 @@ ul .links{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px, 8px;
+  padding: 12px 8px;
   height: 48px;
 }
 .loginDetailsDivIV button{
@@ -975,7 +975,7 @@ ul .links{
 .loginDetailsDivIII .otp_for_verification{
   width: 100%;
   height: 100%;
-  padding: 8px, 16px;
+  padding: 8px 16px;
   padding-left: 12px;
 }
 .loginDetailsDivV button{
