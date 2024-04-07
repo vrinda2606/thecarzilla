@@ -961,7 +961,7 @@ ul .links{
 .loginDetailsDivIII .Phone_number_for_otp{
   width: 85%;
   height: 100%;
-  padding: 8px, 16px;
+  padding: 8px 16px;
   padding-left: 12px;
 }
 .Phone_number_for_otp::-webkit-inner-spin-button,
