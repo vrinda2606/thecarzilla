@@ -48,6 +48,7 @@ const Footer = () => {
                 <NavLink className='links' onClick={scrollToTop} to="/HowItWorks">How It Works</NavLink>
                 <NavLink className='links' onClick={scrollToTop} to="/TermsAndConditions">Terms & Conditions</NavLink>
                 <NavLink className='links' onClick={scrollToTop} to="/PrivacyPolicy">Privacy Policy</NavLink>
+                <NavLink className='links' onClick={scrollToTop} to="/CancellationAndRefundPolicy">Cancellation & Refund Policy</NavLink>
             </ul>
           </div>
 
