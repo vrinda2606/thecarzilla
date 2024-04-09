@@ -4,7 +4,7 @@ import {images} from '../utils/constants';
 
 const Team = () => {
   return (
-    <div className='BlackBg' style={{height : '780px'}}>
+    <div className='BlackBg' style={{height : '840px'}}>
         <div className='HeadingBoxBlack'>
         <div className='HeadingBlackDiv'>
             <span className='BlackDivfirst'><hr/><p >OUR TEAM</p><hr/></span>

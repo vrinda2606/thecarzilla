@@ -258,7 +258,7 @@ button{
 
 .contact-form{
   width: 900px;
-  height: 261px;
+  height: 290px;
   margin: 35px auto;
   display: flex;
   flex-direction: column;
@@ -343,6 +343,7 @@ button{
   align-items: center;
   margin: 0 auto;
 }
+
 .buttonContact button{
   background-color: #000000;
   color: #FFFFFF;
@@ -353,7 +354,7 @@ button{
   font-size: 14px;
   text-align: center;
   border-radius: 10px;
-  padding: 20px 24px;
+  padding: 0px 24px;
 }
 
 .footer{
@@ -584,15 +585,25 @@ ul .links{
   background-image: linear-gradient(to right, #FFFFFF 75%, #000000 25%);
   box-shadow: 0px 141px 200px -80px #193A4B4D;
   font-family: 'Montserrat';
-  /* display: flex; */
-  position: relative;
 }
+
+.getInTouch .getInTouchDiv{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%
+}
+
 .getInTouch .getInTouchForm{
   width: 40%;
   height: 80%;
-  position: absolute;
-  top: 15%;
-  left: 10%;
+  /* position: absolute; */
+  /* top: 15%;
+  left: 10%; */
+  padding-top: 39px;
+  padding-left: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -662,9 +673,11 @@ ul .links{
   background-image: url('./Components/Images/getInTouch.png');
   background-repeat: no-repeat;
   background-size: contain;
-  position: absolute; /* Position absolutely within the parent .getInTouch */
-  top: 5%;
-  right: 0%; 
+  margin-top: 39px;
+  margin-right: -50px;
+  /* position: absolute; Position absolutely within the parent .getInTouch */
+  /* top: 5%;
+  right: 0%;  */
 }
 
 /*TermsCondII*/
@@ -718,7 +731,7 @@ ul .links{
 .TeamCoordinators{
   width: 80%;
   height: 49%;
-  margin: 120px auto 30px;
+  margin: 120px auto 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -955,7 +968,7 @@ ul .links{
 .loginDetailsDivIII .Country_code{
   width: 12%;
   height: 100%;
-  padding: 0px 16px;
+  padding: 0px;
   text-align: center;
 }
 .loginDetailsDivIII .Phone_number_for_otp{

@@ -74,7 +74,7 @@ const ContactForm = () => {
                 <div className="buttonContact">
                    <button type="submit" className="btnContact" onClick={openPopup}>Enquire Now</button>
                 </div>
-               </form>
+      </form>
       </div>
     </div>
 
