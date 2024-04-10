@@ -43,6 +43,26 @@ button{
 }
 
 /*Search bar */
+.menuIconNav{
+  display: none;
+  font-size: 1.8em;
+}
+.options{
+  display: flex;
+  margin-top: 10px;
+  margin-right: 30px;
+  justify-content: space-evenly;
+}
+.navLinks{
+  margin-top:10px;
+  font-weight: 700;
+  width: 460px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .dropdown {
   position: absolute;
   top: calc(80%);
@@ -1162,3 +1182,26 @@ ul .links{
   justify-content: center;
   /* padding: 24px; */
 } 
+
+
+
+
+
+
+
+/*Responsiveness*/
+@media (max-width : 1180px) {
+  .menuIconNav{
+    display: flex;
+  }
+  .navbarIcons{
+    display: none;
+  }
+  .menuIconDiv{
+    background-color: green;
+    width: 100px;
+    height: 400px;
+    position: absolute;
+  }
+  
+}

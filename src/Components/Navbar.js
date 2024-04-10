@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Stack } from "@mui/material"; 
 import {Link, NavLink} from "react-router-dom";
 import {images} from '../utils/constants';
@@ -6,7 +6,8 @@ import SearchBar from  './SearchBar';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import SettingsIcon from '@mui/icons-material/Settings';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faBell,faUser, faX } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
 
 const scrollToTop = () => {
   window.scrollTo({
@@ -14,7 +15,6 @@ const scrollToTop = () => {
     behavior: "instant" // Smooth scrolling animation
   });
 };
-
 
 const iconContainerStyle = {
     width: "40px",
@@ -34,7 +34,17 @@ const iconContainerStyle = {
   
 
 const Navbar = () => {
-   const navbarHeight = 105; // Adjust acc to height of Navbar
+
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuBarIcon, setMenuBarIcon] = useState(faBars); 
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+    setMenuBarIcon(menuOpen ? faBars : faX);
+  };
+
+
+  const navbarHeight = 105; // Adjust acc to height of Navbar
 
    const scrollToContactForm = () => {
      const contactFormElement = document.getElementById('contact-form-container');
@@ -51,13 +61,17 @@ const Navbar = () => {
          width= "100%"
          height="90px"
          sx={{position: 'sticky',
-              top: 0, zIndex: 999, background: 'white', justifyContent: 'space-between',backgroundColor: "white"}}>
+              top: 0, 
+              zIndex: 999, 
+              background: 'white', 
+              justifyContent: 'space-between',
+              backgroundColor: "white"}}>
       <Link to="/" style={{display: 'flex' , alignItems: 'center'}} onClick={()=> window.scrollTo({top: 0,behavior: "smooth"})}>
       <img src={images[0].url} alt="logo" style={{width: "172px",height: "56px" ,marginLeft: "12px"}} />
       </Link>
       
 
-      <div className='navLinks' style={{marginTop:"10px",fontWeight: 700,width:"460px",height: "25px",display: "flex", justifyContent: "space-between", alignItems: "center"}}>
+      <div className='navLinks navbarIcons'>
         <NavLink exact activeclassname ='active' to="/" onClick={()=> window.scrollTo({top: 0,behavior: "instant"})}>Home</NavLink>
         <NavLink to="/" onClick={scrollToContactForm}>Buy New Car</NavLink>
         <NavLink activeclassname ='active' to="/">Blog</NavLink>
@@ -65,7 +79,7 @@ const Navbar = () => {
       </div>    
 
       <SearchBar />
-      <div className='options' style={{ display: "flex",marginTop:"10px",marginRight:"30px",justifyContent: "space-evenly"}}>
+      <div className='options navbarIcons'>
          <div className='like' style={{...iconContainerStyle, marginRight : "14px"}}>
             <FavoriteIcon style={iconStyle} />
          </div>
@@ -80,6 +94,13 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faUser} style={{color: "black",fontSize: "25px"}} />
          </div>
          </NavLink>
+      </div>
+
+      <div className='MenuRespons'>
+         <FontAwesomeIcon icon={menuBarIcon} className='menuIconNav' onClick={toggleMenu}/>
+         <div className='menuIconDiv' >
+            
+         </div>
       </div>
      </Stack>
   )
