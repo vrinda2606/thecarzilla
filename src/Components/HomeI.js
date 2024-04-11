@@ -17,7 +17,7 @@ const HomeI = () => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % background.length);
         setIsTransitioning(false); // End transition animation
       }, 500); // Adjust transition duration in milliseconds (300ms here)
-    }, 3000); // Update interval in milliseconds (2 seconds here)
+    }, 5000); // Update interval in milliseconds (2 seconds here)
 
     return () => clearInterval(intervalId);
   }, []);
@@ -28,7 +28,7 @@ const HomeI = () => {
       width: '100%',
       height: '100%',
         transition: 'opacity 1s ease-in-out',
-        opacity: isTransitioning ? 0.8 : 1, 
+        opacity: isTransitioning ? 0.7 : 1, 
       }} />
 
         <div className="homeI">

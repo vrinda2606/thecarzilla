@@ -1,4 +1,5 @@
 import img1 from '../Components/Images/Customers/jaspreet singh.webp';
+import img5 from '../Components/Images/Customers/Ajab Singh.jpg';
 import img6 from '../Components/Images/Customers/dr puneet garg.png';
 
 export const testimonialContent = [
@@ -32,7 +33,7 @@ export const testimonialContent = [
     },
     {
         id : 5,
-        img : img1,
+        img : img5,
         name : "Ajab Singh",
         rating : '⭐⭐⭐⭐⭐',
         review : "Choosing the Honda Elevate from theCarzilla.in was a decision I'll never regret. From their extensive selection to their impeccable service, theCarzilla.in made my car buying journey smooth and satisfying.",
