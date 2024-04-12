@@ -1198,3 +1198,30 @@ button{
 } 
 
 /*Services */
+.servicesI{
+  width: 100%;
+  height: 35vw;
+  padding-top: 6vw;
+  background-image: linear-gradient(to top, #C7C1C0, #F6F7F9);
+  display: flex;
+  font-family: 'Lexend Deca';
+}
+.servicesI .servicesIImage{
+  height: 82%;
+  margin-left: 4vw;
+  width: 40%;
+}
+.servicesI .servicesIContent{
+  width: 48%;
+  height: 80%;
+  padding-left: 5%;
+}
+.servicesIContentHeading h1{
+  font-size: 3vw;
+  font-weight: 700;
+}
+.servicesIContentHeading p{
+  font-size: 1.3vw;
+  font-weight: 400;
+  padding-top: 1vw;
+}
