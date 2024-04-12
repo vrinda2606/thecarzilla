@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/thecarzilla/static/css/main.43c65acf.css",
+    "main.css": "/thecarzilla/static/css/main.e90d063e.css",
     "main.js": "/thecarzilla/static/js/main.9bcca578.js",
     "static/media/PrivacyPolicy.jpeg": "/thecarzilla/static/media/PrivacyPolicy.92638f4bfef544d7a228.jpeg",
     "static/media/CustomerSupport.png": "/thecarzilla/static/media/CustomerSupport.cb39f9cb55701a9a342a.png",
@@ -33,11 +33,11 @@
     "static/media/logo.png": "/thecarzilla/static/media/logo.3d95b147c7183af0774c.png",
     "static/media/revicons.woff": "/thecarzilla/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/thecarzilla/index.html",
-    "main.43c65acf.css.map": "/thecarzilla/static/css/main.43c65acf.css.map",
+    "main.e90d063e.css.map": "/thecarzilla/static/css/main.e90d063e.css.map",
     "main.9bcca578.js.map": "/thecarzilla/static/js/main.9bcca578.js.map"
   },
   "entrypoints": [
-    "static/css/main.43c65acf.css",
+    "static/css/main.e90d063e.css",
     "static/js/main.9bcca578.js"
   ]
 }
