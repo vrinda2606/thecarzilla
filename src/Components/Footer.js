@@ -15,18 +15,18 @@ const Footer = () => {
 
 
   return (
-    <div style={{backgroundColor:"#03040A",width:"100%",height:"432px",display: 'flex',flexDirection: 'column',alignItems: 'center'}}>
+    <div className='footerMain'>
         
 
         <div className='footer'>
-          <div className='footerOne' style={{width:"371px",height:'200px',display: 'flex',flexDirection: "column",justifyContent: "space-between"}}>
-              <div style={{display: 'flex' , alignItems: 'center',width:"180px" ,height:"70px"}}>
+          <div className='footerOne'>
+              <div style={{display: 'flex' , alignItems: 'center',width:"13vw" ,height:"5vw"}}>
               <img src={images[16].url} alt='logo' style={{width:"100%",height:"100%",objectFit: "cover"}} />
               </div>
-              <div style={{width: '371px',height: "55px",color:'#E5E6E8'}}>
-                <p style={{fontFamily:'Space Grotesk',fontWeight: "400",fontSize:"15px",lineHeight:"25px"}}>4th Floor, Pre-Incubation Lab, TBI-KIET, Ghaziabad - 201206</p>
+              <div style={{width: '100%',height: "9vh",color:'#E5E6E8'}}>
+                <p style={{fontFamily:'Space Grotesk',fontWeight: "400",fontSize:"1vw",lineHeight:"4.5vh"}}>4th Floor, Pre-Incubation Lab, TBI-KIET, Ghaziabad - 201206</p>
               </div>
-              <div className='contactSocial' style={{width:"206px",height: "38px",display: 'flex',justifyContent: 'space-between'}}>
+              <div className='contactSocial'>
                 <div className='X social'><a href='/' target='blank'><FontAwesomeIcon icon={faXTwitter} /></a></div>
                 <div className='instagram social'><a href='https://www.instagram.com/thecarzilla.in?igsh=MW12ZWF0YzIyeXkzYg%3D%3D&utm_source=qr' target='blank'><FontAwesomeIcon icon={faInstagram} /></a></div>
                 <div className='youtube social'><a href='https://www.youtube.com/@thecarzilla' target='blank'><FontAwesomeIcon icon={faYoutube} /></a></div>
@@ -53,31 +53,31 @@ const Footer = () => {
           </div>
 
           <div className='footerThree'>
-            <div className='subscribe' style={{width: '300px',height: '180px',gap : '20px'}}>
-                <h6 style={{height : '28px',width:'100%' ,fontFamily : 'Lexend Deca',fontWeight :'600',fontSize : '20px',lineHeight : '28px',color : '#FFFFFF'}}>
+            <div className='subscribe' >
+                <h6 style={{height : '1.9vw',width:'100%' ,fontFamily : 'Lexend Deca',fontWeight :'600',fontSize : '1.2vw',lineHeight : '28px',color : '#FFFFFF'}}>
                 Subscribe To Newsletter
                 </h6>
-                <input type='text' placeholder='Enter your email...' style={{textIndent: '20px',color: '#000000',fontFamily : 'Space Grotesk',fontWeight : '400',fontSize: '12px',lineHeight : '25px',height:'45px',width : '100%'}}></input>
-                <button style={{backgroundColor: '#FF3F00',fontWeight: '500',fontSize:'14px',lineHeight :'18px',color : '#FFFFFF',width :'112px',height: '45px',padding : '16px, 20px, 16px, 20px',gap :'10px',fontFamily : 'Lexend Deca'}}>Subscribe</button>
+                <input type='text' placeholder='Enter your email...' style={{textIndent: '20px',color: '#000000',fontFamily : 'Space Grotesk',fontWeight : '400',fontSize: '0.8vw',lineHeight : '1.6vw',height:'3.2vw',width : '100%'}}></input>
+                <button style={{backgroundColor: '#FF3F00',fontWeight: '500',fontSize:'1vw',lineHeight :'1.2vw',color : '#FFFFFF',width :'8vw',height: '3.1vw',padding : '1vw 1.1vw',gap :'1vh',fontFamily : 'Lexend Deca'}}>Subscribe</button>
             </div>
-            <div className='startUpLogo' style={{width:'300px'}}>
+            <div className='startUpLogo'>
                 <div>
-                  <p style={{width: '300px',color: '#FFFFFF',height:'28px',fontFamily :'Saira',fontWeight : '600',fontSize :'20px',lineHeight : '15px'}}>Proudly Recognized By</p>
+                  <p style={{width: '100%',color: '#FFFFFF',height:'1.7vw',fontFamily :'Saira',fontWeight : '600',fontSize :'1.3vw',lineHeight : '1.7vw'}}>Proudly Recognized By</p>
                 </div>
                 <div className='startUpLogoImg'>
-                  <img className='imageLogoStartup' src={images[17].url} alt='Startup logo' style={{height: '100%'}}/>
-                  <img className='imageLogoStartup' src={images[18].url} alt='Startup logo 2' style={{height:'100%'}}></img>
+                  <img className='imageLogoStartup' src={images[17].url} alt='Startup logo'/>
+                  <img className='imageLogoStartup' src={images[18].url} alt='Startup logo 2'></img>
                 </div>
             </div>
           </div>
 
         </div>
 
-        <div className='bottom' style={{marginTop: '100px'}}>
-            <hr width="1140px" style={{border: "1px solid #E5E6E8",margin:"auto"}}></hr>
-            <div style={{display:"flex",justifyContent: "space-between",width: "1140px" ,height:"27px",color :"#E5E6E8",margin:"32px 0px 0px",fontFamily:"Space Grotesk",fontWeight: "400",fontSize :"12px"}}>
-               <p style={{width: "258px", height:"100%", lineHeight:"27px"}}>Copyright ©2024 IgniteX Solutions Pvt. Ltd.</p>
-               <p style={{width: "179px", height:"100%", lineHeight:"27px"}}>Designed by IgniteX Solutions </p>
+        <div className='bottom'>
+            <hr width="100%" style={{border: "1px solid #E5E6E8",margin:"auto"}}></hr>
+            <div style={{display:"flex",justifyContent: "space-between",width: "100%" ,height:"3.5vh",color :"#E5E6E8",margin:"3.5vh 0vh 0vh",fontFamily:"Space Grotesk",fontWeight: "400",fontSize :"1.7vh"}}>
+               <p >Copyright ©2024 IgniteX Solutions Pvt. Ltd.</p>
+               <p >Designed by IgniteX Solutions </p>
             </div>
         </div>
     </div>

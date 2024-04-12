@@ -43,10 +43,6 @@ button{
 }
 
 /*Search bar */
-.menuIconNav{
-  display: none;
-  font-size: 1.8em;
-}
 .options{
   display: flex;
   margin-top: 10px;
@@ -83,7 +79,7 @@ button{
 }
 
 .dropdown ul li:hover {
-  background-color: #f0f0f0;
+  background-color: #e0d7d7;
 }
 
 
@@ -377,16 +373,35 @@ button{
   padding: 0px 24px;
 }
 
+
+/*footer*/
+.footerMain{
+  background-color: #03040A;
+  width: 100%;
+  height: 67vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .footer{
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
-  width: 1140px;
+  padding-top: 9vh;
+  width: 75vw;
 }
 
-.footerOne .contactSocial {
+.footerOne{
+  width: 25vw;
+  height: 14vw;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footerOne .contactSocial {
+  width:14vw;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footerOne .contactSocial .social{
@@ -405,15 +420,10 @@ button{
 .footerOne .contactSocial .social a{
     color: white;
 }
-.startUpLogo .imageLogoStartup{
-  width: 142px;
-  height: 60px;
-}
-
 .footerTwo{
-  width: 270px;
-  height: 200px;
-  gap : 25px;
+  width: 18vw;
+  height: 32vh;
+  gap : 2.5vw;
   display: flex;
   justify-content: space-between;
 }
@@ -421,21 +431,21 @@ button{
   width: auto;
   height: 100%; 
 }
-ul h6{
+.footerTwo-1 h6{
   width: 100%;
-  height: 30px;
+  height: 5vh;
   color: #FFFFFF;
   font-family : 'Lexend Deca';
   font-weight : 600;
-  font-size :20px;
-  line-height : 28px;
+  font-size : 1.3vw;
+  line-height : 5vh;
 }
-ul .links{
+.footerTwo-1 .links{
   width: 100%;
   font-family : 'Space Grotesk';
   font-weight: 400;
-  font-size: 15px;
-  line-height :25px;
+  font-size: 1vw;
+  line-height : 3.5vh;
   color : #E5E6E8;
   display: block;
   justify-content: space-around;
@@ -446,25 +456,43 @@ ul .links{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 210px;
+  height: auto;
 }
 
 .footerThree .subscribe{
   display: flex;
   flex-direction: column;
+  width: 20vmax;
+  height: auto;
+  gap : 3vh;
 }
 .footerThree .startUpLogo{
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .startUpLogo{
-  padding-top: 25px;
+  padding-top: 2vw;
+  height: 7.2vw;
 }
 .startUpLogoImg {
   display: flex;
   justify-content: space-between;
- }
+}
+.startUpLogo .imageLogoStartup{
+  width: 9vw;
+  height: 100%;
+}
 
+.bottom{
+  margin-top: 3.3vw;
+  width: 75vw;
+}
+.bottom p{
+  width: auto;
+  height: 100%;
+  line-height: 2vh;
+}
 
 /* Black bg headings*/
  .BlackBg{
@@ -1187,21 +1215,40 @@ ul .links{
 
 
 
-
+/*Navbar*/
+.Navbar{
+  height : 6vw;
+}
+.MenuRespons{
+  display: none;
+  font-size: 2.5vw;
+}
 
 /*Responsiveness*/
 @media (max-width : 1180px) {
-  .menuIconNav{
+  .MenuRespons{
     display: flex;
+    position: relative;
   }
   .navbarIcons{
     display: none;
+  }  
+  .footerOne{
+    width: 30vw;
   }
-  .menuIconDiv{
-    background-color: green;
-    width: 100px;
-    height: 400px;
-    position: absolute;
+  .footerOne .contactSocial .social{
+    width: 25px;
+    height: 25px;
   }
-  
+  .footerMain{
+    height: 52vh;
+  }
+  .footer,
+  .bottom{
+    width: 94%;
+  }
+  .footerThree {
+    width: 27vw;
+    height: 20vw;
+  }
 }

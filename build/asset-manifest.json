@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/thecarzilla/static/css/main.aa895083.css",
-    "main.js": "/thecarzilla/static/js/main.f1b5f76b.js",
-    "static/media/home.png": "/thecarzilla/static/media/home.c2a1276a90e61cf077c8.png",
-    "static/media/PrivacyPolicy.png": "/thecarzilla/static/media/PrivacyPolicy.4dde12ba40c4bd4b61f7.png",
-    "static/media/Untitled1.jpg": "/thecarzilla/static/media/Untitled1.a5178128a77b540147a8.jpg",
-    "static/media/Untitled0.jpg": "/thecarzilla/static/media/Untitled0.7fb45779d1e5e30f5b9c.jpg",
-    "static/media/TermsCond.png": "/thecarzilla/static/media/TermsCond.e15f043695b7705b26c8.png",
+    "main.css": "/thecarzilla/static/css/main.43c65acf.css",
+    "main.js": "/thecarzilla/static/js/main.9bcca578.js",
     "static/media/PrivacyPolicy.jpeg": "/thecarzilla/static/media/PrivacyPolicy.92638f4bfef544d7a228.jpeg",
     "static/media/CustomerSupport.png": "/thecarzilla/static/media/CustomerSupport.cb39f9cb55701a9a342a.png",
     "static/media/TermsCond.jpeg": "/thecarzilla/static/media/TermsCond.ce8ef6ffb903ada7826f.jpeg",
+    "static/media/hero section image 3.png": "/thecarzilla/static/media/hero section image 3.76bf4017f10d01ff50aa.png",
+    "static/media/HERO SECTION IMAGE 1.png": "/thecarzilla/static/media/HERO SECTION IMAGE 1.3658a71e66ab01d8797a.png",
+    "static/media/HERO SECTION IMAGE 2.png": "/thecarzilla/static/media/HERO SECTION IMAGE 2.b9e246ce673d4bdc4117.png",
     "static/media/dr puneet garg.png": "/thecarzilla/static/media/dr puneet garg.3701f3dd0ee942b9a7ce.png",
     "static/media/SUZUKI.png": "/thecarzilla/static/media/SUZUKI.42e867cc9f27d301ccda.png",
     "static/media/getInTouch.png": "/thecarzilla/static/media/getInTouch.7bd0b93f5f6284506397.png",
@@ -17,6 +15,7 @@
     "static/media/Login.png": "/thecarzilla/static/media/Login.ecefff7a41c2c34e4e28.png",
     "static/media/TATA.png": "/thecarzilla/static/media/TATA.721ffbd05c41ea66edd8.png",
     "static/media/VOLKSWAGON.png": "/thecarzilla/static/media/VOLKSWAGON.bc4c70dba371db15ab61.png",
+    "static/media/Ajab Singh.jpg": "/thecarzilla/static/media/Ajab Singh.6ecb152ada43d9b4a682.jpg",
     "static/media/bgEffect.png": "/thecarzilla/static/media/bgEffect.046ee48924b4f22ef9b2.png",
     "static/media/HYUNDAI.png": "/thecarzilla/static/media/HYUNDAI.6101bebb44464affe30a.png",
     "static/media/KIA.png": "/thecarzilla/static/media/KIA.3cf1bee5eb60f2b6950f.png",
@@ -34,11 +33,11 @@
     "static/media/logo.png": "/thecarzilla/static/media/logo.3d95b147c7183af0774c.png",
     "static/media/revicons.woff": "/thecarzilla/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/thecarzilla/index.html",
-    "main.aa895083.css.map": "/thecarzilla/static/css/main.aa895083.css.map",
-    "main.f1b5f76b.js.map": "/thecarzilla/static/js/main.f1b5f76b.js.map"
+    "main.43c65acf.css.map": "/thecarzilla/static/css/main.43c65acf.css.map",
+    "main.9bcca578.js.map": "/thecarzilla/static/js/main.9bcca578.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa895083.css",
-    "static/js/main.f1b5f76b.js"
+    "static/css/main.43c65acf.css",
+    "static/js/main.9bcca578.js"
   ]
 }

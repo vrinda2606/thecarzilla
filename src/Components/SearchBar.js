@@ -41,7 +41,7 @@ const SearchBar = () => {
           color: '#596780',
           width: '332px',
           height: '44px',
-          display: {md:'flex',sm :'none'},
+          display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
         }}

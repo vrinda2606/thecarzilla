@@ -44,7 +44,7 @@ const Navbar = () => {
   };
 
 
-  const navbarHeight = 105; // Adjust acc to height of Navbar
+  const navbarHeight = '6vw'; // Adjust acc to height of Navbar
 
    const scrollToContactForm = () => {
      const contactFormElement = document.getElementById('contact-form-container');
@@ -59,7 +59,7 @@ const Navbar = () => {
          alignItems="center" 
          p={2} 
          width= "100%"
-         height="90px"
+         className='Navbar'
          sx={{position: 'sticky',
               top: 0, 
               zIndex: 999, 
@@ -67,7 +67,7 @@ const Navbar = () => {
               justifyContent: 'space-between',
               backgroundColor: "white"}}>
       <Link to="/" style={{display: 'flex' , alignItems: 'center'}} onClick={()=> window.scrollTo({top: 0,behavior: "smooth"})}>
-      <img src={images[0].url} alt="logo" style={{width: "172px",height: "56px" ,marginLeft: "12px"}} />
+      <img src={images[0].url} alt="logo" style={{width: "12vw",height: "4vw" ,marginLeft: "12px"}} />
       </Link>
       
 
@@ -78,7 +78,9 @@ const Navbar = () => {
         <NavLink activeclassname ='active' onClick={scrollToTop} to="/Services">Services</NavLink>
       </div>    
 
-      <SearchBar />
+      <div className='navbarIcons'>
+        <SearchBar />
+      </div>
       <div className='options navbarIcons'>
          <div className='like' style={{...iconContainerStyle, marginRight : "14px"}}>
             <FavoriteIcon style={iconStyle} />
@@ -98,9 +100,6 @@ const Navbar = () => {
 
       <div className='MenuRespons'>
          <FontAwesomeIcon icon={menuBarIcon} className='menuIconNav' onClick={toggleMenu}/>
-         <div className='menuIconDiv' >
-            
-         </div>
       </div>
      </Stack>
   )
