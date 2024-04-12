@@ -21,6 +21,7 @@ import img20 from '../Components/Images/Get in Touch.jpg';
 import img21 from '../Components/Images/TermsCond.jpeg';
 import img22 from '../Components/Images/PrivacyPolicy.jpeg';
 import img23 from '../Components/Images/bgEffect.png';
+import img24 from '../Components/Images/Login.png';
 
 export const images = [
     {
@@ -116,5 +117,9 @@ export const images = [
     {
         id : 23,
         url : img23
+    },
+    {
+        id: 24,
+        url : img24
     }
 ]

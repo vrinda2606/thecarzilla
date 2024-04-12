@@ -1,10 +1,13 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
+import { images } from '../utils/constants';
 
 const Login = () => {
   return (
     <div className='login'>
-       <div className='loginLogo'></div>
+       <div className='loginLogo'>
+         <img src={images[24].url} alt='Login' style={{objectFit : 'contain',height: '100%',width : '100%'}} />
+       </div>
        <div className='loginForm'>
            <div className='loginHeading'>
               <h1>Welcome To</h1>

@@ -42,6 +42,15 @@ button{
   cursor: pointer;
 }
 
+/*Navbar*/
+.Navbar{
+  height : 6vw;
+}
+.MenuRespons{
+  display: none;
+  font-size: 2.5vw;
+}
+
 /*Search bar */
 .options{
   display: flex;
@@ -954,148 +963,6 @@ button{
   background-image: url('./Components/Images/AppStoreBadge.jpg');  /*Done*/
 }
 
-/*
-.login .loginLogo{
-  height: 25vw;
-  width: 50%;
-  background-image: url('./Components/Images/Login.png');
-  background-repeat: no-repeat;
-  margin-top: 6vw;
-  margin-left: 4vw;
-}
-.login .loginForm{
-  width: 50%;
-  height: auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 3.5vw;
-}
-.loginForm .loginHeading h1{
-  font-family: 'Lexend Deca';
-  font-size: 2vw;
-  line-height: 2.7vw;
-}
-.loginForm .loginDetails{
-  margin-top: 2vw;
-  background-color: #2D2E2F;
-  width: 36vw;
-  gap: 1.3vw;
-  padding: 1vw;
-  height: 40vh;
-  text-align: center;
-  border-radius: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.loginDetails .loginDetailsDivI,
-.loginDetails .loginDetailsDivII,
-.loginDetails .loginDetailsDivIII,
-.loginDetails .loginDetailsDivIV{
-  width: 95%;
-  font-family: 'Plus Jakarta Sans';
-  text-align: center;
-}
-.loginDetails .loginDetailsDivI{
-  font-weight: 600;
-  font-size: 20px;
-  height: 32px;
-  line-height: 32px;
-  color: #FFFFFF;
-}
-.loginDetails .loginDetailsDivII{
-  background-color: #FFFFFF;
-  border-radius: 8px;
-  padding: 8px 16px;
-  gap: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 44px;
-  border: 10px solid rgba(255, 255, 255, 0.1);
-}
-.loginDetailsDivII p{
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-}
-.loginDetails .loginDetailsDivIV{
-  background-color: #FF654D;
-  border-radius: 12px;
-  color: #FFFFFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 8px;
-  height: 48px;
-}
-.loginDetailsDivIV button{
-  line-height: 24px;
-  background-color: transparent;
-  font-size: 16px;
-  color: #FFFFFF;
-  font-weight: 700;
-  cursor: pointer;
-}
-.loginDetails .loginDetailsDivIII{
-  height: 48px;
-  display: flex;
-  justify-content: space-between;
-}
-.loginDetailsDivIII .Country_code,
-.loginDetailsDivIII .Phone_number_for_otp,
-.loginDetailsDivIII .otp_for_verification{
-  background-color: transparent;
-  color: #FFFFFF;
-  border: 1.2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  font-weight: 500;
-  font-size: 16px;
-}
-.loginDetailsDivIII .Country_code{
-  width: 12%;
-  height: 100%;
-  padding: 0px;
-  text-align: center;
-}
-.loginDetailsDivIII .Phone_number_for_otp{
-  width: 85%;
-  height: 100%;
-  padding: 8px 16px;
-  padding-left: 12px;
-}
-.Phone_number_for_otp::-webkit-inner-spin-button,
-.Phone_number_for_otp::-webkit-outer-spin-button,
-.otp_for_verification::-webkit-inner-spin-button,
-.otp_for_verification::-webkit-outer-spin-button{
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.loginDetailsDivIII .otp_for_verification{
-  width: 100%;
-  height: 100%;
-  padding: 8px 16px;
-  padding-left: 12px;
-}
-.loginDetailsDivV button{
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 28px;
-  color: rgba(254, 135, 35, 1);
-  text-align: center;
-  background-color: transparent;
-  cursor: pointer;
-}
-*/
-
-
-
 /*Login*/
 
 .login{
@@ -1108,34 +975,31 @@ button{
   margin-top: 6vw;
   margin-left: 4vw;
   width: 50%;
-  background-image: url('./Components/Images/Login.png');
-  background-repeat: no-repeat;
-  
 }
 .login .loginForm{
+  height: auto;
   width: 50%;
-  height: 550px;
+  margin-top: 3.5vw;
   text-align: center;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-evenly; */
   align-items: center;
-  margin-top: 55px;
+  
 }
 .loginForm .loginHeading h1{
   font-family: 'Lexend Deca';
-  font-size: 30px;
-  line-height: 42px;
+  font-size: 2vw;
+  line-height: 2.7vw;
 }
 .loginForm .loginDetails{
-  margin-top: 30px;
-  background-color: #2D2E2F;
-  width: 553px;
-  gap: 24px;
-  padding: 16px;
-  height: 280px;
+  margin-top: 2vw;
+  width: 36vw;
+  gap: 1.3vw;
+  padding: 1vw; 
+  height: 40vh;
   text-align: center;
-  border-radius: 24px;
+  background-color: #2D2E2F;
+  border-radius: 2vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1152,48 +1016,48 @@ button{
 }
 .loginDetails .loginDetailsDivI{
   font-weight: 600;
-  font-size: 20px;
-  height: 32px;
-  line-height: 32px;
+  font-size: 1.3vw;
+  height: 2vw;
+  line-height: 2.2vw;
   color: #FFFFFF;
 }
 .loginDetails .loginDetailsDivII{
   background-color: #FFFFFF;
-  border-radius: 8px;
-  padding: 8px 16px;
-  gap: 8px;
+  border-radius: 0.5vw;
+  padding: 0.5vw 1vw;
+  gap: 0.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 44px;
-  border: 10px solid rgba(255, 255, 255, 0.1);
+  height: 3.1vw;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .loginDetailsDivII p{
   font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.9vw;
+  line-height: 1.1vw;
   text-align: center;
 }
 .loginDetails .loginDetailsDivIV{
   background-color: #FF654D;
-  border-radius: 12px;
+  border-radius: 0.7vw;
   color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px 8px;
-  height: 48px;
+  /* padding: 1.1vw 0.7vw; */
+  height: 3.1vw;
 }
 .loginDetailsDivIV button{
-  line-height: 24px;
+  display: flex;
   background-color: transparent;
-  font-size: 16px;
+  font-size: 1.1vw;
   color: #FFFFFF;
   font-weight: 700;
   cursor: pointer;
 }
 .loginDetails .loginDetailsDivIII{
-  height: 48px;
+  height: 3.1vw;
   display: flex;
   justify-content: space-between;
 }
@@ -1203,21 +1067,21 @@ button{
   background-color: transparent;
   color: #FFFFFF;
   border: 1.2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
+  border-radius: 0.7vw;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1vw;
 }
 .loginDetailsDivIII .Country_code{
   width: 12%;
   height: 100%;
-  padding: 0px;
+  padding: 0vw;
   text-align: center;
 }
 .loginDetailsDivIII .Phone_number_for_otp{
   width: 85%;
   height: 100%;
-  padding: 8px 16px;
-  padding-left: 12px;
+  padding: 0.8vw 1vw;
+  padding-left: 1vw;
 }
 .Phone_number_for_otp::-webkit-inner-spin-button,
 .Phone_number_for_otp::-webkit-outer-spin-button,
@@ -1230,13 +1094,13 @@ button{
 .loginDetailsDivIII .otp_for_verification{
   width: 100%;
   height: 100%;
-  padding: 8px 16px;
-  padding-left: 12px;
+  padding: 0.8vw 1vw;
+  padding-left: 1vw;
 }
-.loginDetailsDivV button{
+.loginDetailsDivI button{
   font-weight: 600;
-  font-size: 14px;
-  line-height: 28px;
+  font-size: 0.9vw;
+  line-height: normal;
   color: rgba(254, 135, 35, 1);
   text-align: center;
   background-color: transparent;
@@ -1331,55 +1195,3 @@ button{
   justify-content: center;
   /* padding: 24px; */
 } 
-
-
-
-
-
-/*Navbar*/
-.Navbar{
-  height : 6vw;
-}
-.MenuRespons{
-  display: none;
-  font-size: 2.5vw;
-}
-
-/*Responsiveness*/
-@media (max-width : 1180px) {
-  .MenuRespons{
-    display: flex;
-    position: relative;
-  }
-  .navbarIcons{
-    display: none;
-  }  
-  .footerOne{
-    width: 30vw;
-  }
-  .footerOne .contactSocial .social{
-    width: 25px;
-    height: 25px;
-  }
-  .footerMain{
-    height: 50vh;
-  }
-  .footer{
-    padding-top: 5vh;
-  }
-  .footer,
-  .bottom{
-    width: 94%;
-  }
-  .footerThree {
-    width: 27vw;
-    height: 20vw;
-  }.login{
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .login .loginLogo{
-    height: 52vh;
-    width: 90%;
-  }
-}
