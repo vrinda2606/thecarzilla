@@ -466,19 +466,20 @@ button{
   flex-direction: column;
   justify-content: space-between;
   height: auto;
+  max-width: 20vw;
 }
 
 .footerThree .subscribe{
   display: flex;
   flex-direction: column;
-  width: 20vmax;
+  width: 20vw;
   height: auto;
   gap : 3vh;
 }
 .footerThree .startUpLogo{
   display: flex;
   flex-direction: column;
-  width: 20vmax;
+  width: 20vw;
 }
 .startUpLogo{
   padding-top: 2vw;
@@ -1195,3 +1196,5 @@ button{
   justify-content: center;
   /* padding: 24px; */
 } 
+
+/*Services */
