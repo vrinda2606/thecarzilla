@@ -808,28 +808,28 @@ button{
 .IIPart{
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 6vw;
 }
 .IIPartHeading{
   font-family: 'Lexend Deca';
   font-weight: 500;
-  font-size: 52px;
-  line-height: 70px;
+  font-size: 3.4vw;
+  line-height: 4vw;
   width: auto;
-  height: 70px;
-  margin: 55px auto 60px;
+  height: 4vw;
+  margin: 3.9vw auto 4vw;
   display: flex;
   justify-content: center;
 }
 .IIPartSubHeading h5{
-  width: 95%;
-  height: 32px;
+  width: auto;
+  height: 2vw;
   font-family: 'Space Grotesk';
   font-weight: 700;
-  font-size: 25px;
-  line-height: 31.9px;
-  margin-top: 20px;
-  margin-left: 35px;
+  font-size: 1.7vw;
+  line-height: 2vw;
+  margin-top: 1.7vw;
+  margin-left: 2.3vw;
   color: #000000;
 }
 .IIPartSubHeading p{
@@ -837,18 +837,18 @@ button{
   height: auto;
   font-family: 'Poppins';
   font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 15px;
-  margin-left: 35px;
+  font-size: 1.3vw;
+  line-height: 2vw;
+  margin-top: 1.7vw;
+  margin-left: 2.3vw;
   color: #000000B2;
 }
 .IIPartSubHeading ol,
 .IIPartSubHeading ul{
-  margin-left: 20px;
+  margin-left: 1.4vw;
 }
 .IIPartSubHeading li{
-  margin: 25px auto 30px;
+  margin: 1.4vw auto 1.7vw;
 }
 
 /*TEAM*/
