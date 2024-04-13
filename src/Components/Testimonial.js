@@ -31,6 +31,7 @@ const Testimonial = () => {
 
       return (
     <div className='WhiteBg' style={{height: "745px"}}>
+    <div className='WhiteBgContent'>
         <div className='headingBoxWhite'>
         <div className='HeadingWhiteDiv'>
               <span className='WhiteDivfirst'><hr/>Reviews<hr/></span>
@@ -89,7 +90,7 @@ const Testimonial = () => {
                   </Row>
             </Container>
       </div>
-        
+     </div>
     </div>
   )
 }

@@ -4,7 +4,8 @@ import { faHeadphones, faLayerGroup, faLock } from '@fortawesome/free-solid-svg-
 
 const HomeIII = () => {
   return (
-    <div className='WhiteBg' style={{height:"590px",marginTop: '60px'}}>
+    <div className='WhiteBg' style={{height:"600px"}}>
+     <div className='WhiteBgContent'>
       <div className='headingBoxWhite'>
       <div className='HeadingWhiteDiv'>
         <span className='WhiteDivfirst'><hr/>Why Choose Us <hr/></span>
@@ -15,7 +16,7 @@ const HomeIII = () => {
 
 
 
-      <div style={{textAlign:"center",maxWidth: "942px",maxHeight: "210px",display:"flex",flexDirection:"row",justifyContent: "space-between",margin: "70px auto"}}>
+      <div style={{textAlign:"center",maxWidth: "942px",maxHeight: "210px",display:"flex",flexDirection:"row",justifyContent: "space-between",margin: "90px auto"}}>
          <div className='card' style={{width: "280px",height: "209px",display: 'flex',flexDirection: "column",alignItems: "center",justifyContent: "space-around"}}>
            <div className='cardIcon' style={{backgroundColor: "#000000",width: "64px",height:"64px",color:"white",display: "flex", justifyContent: "center", alignItems: "center" }}>
            <FontAwesomeIcon icon={faLayerGroup} style={{ color: "white",width: "25px",height:"25px"}} />
@@ -51,7 +52,7 @@ const HomeIII = () => {
            </div>
          </div>
       </div>
-
+      </div>
     </div>
   )
 }

@@ -33,7 +33,8 @@ const AboutUs = () => {
         </div>
 
 
-    <div className='WhiteBg' style={{height:"845px"}}>
+    <div className='WhiteBg' style={{height:"810px"}}>
+    <div className='WhiteBgContent'>
         <div className='headingBoxWhite'>
           <div className='HeadingWhiteDiv'>
             <span className='WhiteDivfirst'><hr/>OUR PLUS POINTS<hr/></span>
@@ -43,7 +44,7 @@ const AboutUs = () => {
         </div>
 
 
-
+      <div>
       <div style={{textAlign:"center",maxWidth: "942px",maxHeight: "210px",display:"flex",flexDirection:"row",justifyContent: "space-between",margin: "70px auto"}}>
          <div className='card' style={{width: "280px",height: "209px",display: 'flex',flexDirection: "column",alignItems: "center",justifyContent: "space-around"}}>
            <div className='cardIcon' style={{backgroundColor: "#000000",width: "64px",height:"64px",color:"white",display: "flex", justifyContent: "center", alignItems: "center" }}>
@@ -117,7 +118,8 @@ const AboutUs = () => {
            </div>
          </div>
       </div>
-    
+      </div>
+       </div>
     </div>
     </>
   )

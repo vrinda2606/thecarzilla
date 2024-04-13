@@ -565,37 +565,47 @@ button{
 .WhiteBg{
   background-color: #F6F7F9;
   width: 100%;
+  /* padding: 3.5vw; */
   font-family: "Space Grotesk";
 }
+.WhiteBgContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  padding-top: 1vw;
+}
 .WhiteBg .headingBoxWhite{
-  padding: 2px;
   margin: auto;
 }
 .WhiteBg .HeadingWhiteDiv{
-  width: 700px;
-  height: 145px;
-  margin: 46px auto;
+  width: auto;
+  height: 9.5vw;
+  margin: 3vw auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-weight: 500;
+  font-size: 1.1vw;
 }
 .HeadingWhiteDiv .WhiteDivfirst hr{
-  width: 16px;
-  border: 1px solid black;
-  margin: auto 10px;
+  width: 1.9vw;
+  border-top: 0.2vw solid black;
+  margin: auto 0.9vw;
 }
 .HeadingWhiteDiv .WhiteDivLast{
   font-weight: 700;
   color : #7F808E;
-  line-height: 25px;
-  font-size: 20px;
-  height: 25px;
-  margin-top: 17px;
+  line-height: 1.5vw;
+  font-size: 1.3vw;
+  height: 2vw;
+  margin-top: 1.1vw;
 }
 .HeadingWhiteDiv .WhiteDivMiddle,
 .HeadingBlackDiv .BlackDivMiddle{
   margin-top : 1vw;
+  font-family: 'Lexend Deca';
 }
 
 /* button for more*/
@@ -603,29 +613,29 @@ button{
 .WhiteHr{
   width: 48vw;
   background-color: white;
-  margin: 4.5vw auto; 
+  margin: 2.5vw auto; 
   height: 0.2vw;
 }
 
 .btnForMoreDiv{
-  width: 501px;
-  margin: -26px auto;
-  height: 63px;
+  width: 9vw;
+  height: 2.3vw;
+  margin:auto;
   text-align: center; 
+  display: flex; /* Added for vertical alignment */
+  align-items: center;
 }
 .btnForMore{
   font-family: 'Lexend Deca';
-  line-height: 21px;
+  /* line-height: 1.5vw; */
   letter-spacing: 0em;
-  text-align: center;
-  font-size: 15px;
+  font-size: 1vw;
   font-weight: 400;
   background-color: white;
-  width: 135px;
-  height: 35px;
+  width: 100%;
+  height: 100%;
   color: black;
-  border-radius: 10px;
-  margin: 40px auto;
+  border-radius: 0.7vw;
   cursor: pointer;
 }
 
@@ -1283,7 +1293,7 @@ button{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 4vw auto;
+  margin: 4vw auto 1.5vw;
 }
 .servIIcon{
   width: 23%;
@@ -1314,4 +1324,24 @@ button{
   font-weight: 500;
   font-size: 0.99vw;
   line-height: 1.8vw;
+}
+
+/*ServicesIII*/
+.servicesIII{
+  width: 100%;
+  height: 47vw;
+}
+.servicesIIIContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.servIIIDivIcon{
+  /* margin-top: 3vw; */
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
 }

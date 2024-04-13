@@ -8,6 +8,11 @@ import img5 from '../Components/Images/Services/promiseIcon2.png';
 import img6 from '../Components/Images/Services/promiseIcon3.png';
 import img7 from '../Components/Images/Services/promiseIcon4.png';
 
+import img8 from '../Components/Images/Services/checklist.png';
+import img9 from '../Components/Images/Services/checklistImg.jpg';
+
+import img10 from '../Components/Images/Services/FAQs.png';
+
 export const images=[
     {
         id:0,
@@ -40,5 +45,17 @@ export const images=[
     {
         id:7,
         url:img7
-    }
+    },
+    {
+        id:8,
+        url:img8
+    },
+    {
+        id:9,
+        url:img9
+    },
+    {
+        id:10,
+        url:img10
+    },
 ]

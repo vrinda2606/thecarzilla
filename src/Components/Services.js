@@ -60,8 +60,30 @@ const Services = () => {
                     <div className='servIIDivHeading'><h1>Fair Price</h1></div>
                     <div className='servIIDivContent'><p>Enjoy transparent pricing and value-for-money services.</p></div>
                 </div>
-
             </div>
+
+            <div className='btnForMoreDiv'>
+            <button className='btnForMore'>More Brands</button>
+            </div>
+            <div className='WhiteHr'/>
+      </div>
+
+      <div className='servicesIII WhiteBg' style={{backgroundColor : "white"}}>
+        <div className='servicesIIIContent'>
+          <div className='headingBoxWhite'>
+          <div className='HeadingWhiteDiv'>
+            <span className='WhiteDivfirst'><hr/>Why Choose Us <hr/></span>
+            <span className='WhiteDivMiddle'><h1>About the Process</h1></span>
+            <span className='WhiteDivLast'>Buy your dream car in just three easy steps</span>
+          </div>
+          </div>
+        
+          <div className='servIIIDivIcon'>
+            <img src={images[8].url} alt='' width='43%' height='75%' style={{marginLeft: '3vw'}}/>
+            <img src={images[9].url} alt='' width='40%' height='70%'style={{marginTop : '1vw',marginRight : '3vw'}}/>
+          </div>
+
+        </div>
       </div>
     </>
   )
