@@ -95,7 +95,7 @@ button{
 /*Home Find Car*/
 .Home{
   width: 100%;
-  height: 605px;
+  height: 40vw;
   position: relative;
 }
 .Home .homeI{
@@ -106,34 +106,34 @@ button{
   left: 0;
   width: 100%;
   height: 100%;
-  padding-top: 80px;
+  padding-top: 5.2vw;
   padding-left: 5%;
 }
 .Home .homeFindCar{
-    width: 390px;
-    height: 370px;
+    width: 25.5vw;
+    height: 24.4vw;
     font-weight: 900;
-    border-radius: 11px;
+    border-radius: 0.7vw;
     background-color: rgba(255, 255, 255, 1);
     font-family: 'Lexend Deca';
 }
 .homeFindCar .FindCarHeading h1{
-  font-size: 31px;
-  line-height: 42px;
-  width: 298px;
+  font-size: 2vw;
+  line-height: 2.8vw;
+  width: 80%;
   margin: auto;
   color: rgba(0, 0, 0, 1);
   text-align: center;
-  margin-bottom: 20px; 
-  padding-top: 15px;
+  margin-bottom: 1.5vw; 
+  padding-top: 1vw;
 }
 
 .homeFindCar .FindCarType{
-  height: 40px;
-  font-size: 20px;
-  line-height: 28px;
+  height: 2.7vw;
+  font-size: 1.3vw;
+  line-height: 1.4vw;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.3vw;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -141,7 +141,7 @@ button{
 .FindCarType .CarTypeNew,
 .FindCarType .CarTypeUsed{
   height: 100%;
-  width: 118px;
+  width: 8vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,55 +151,104 @@ button{
 .FindCarType .CarTypeUsed{
   background-color: #FFFFFF;
   color: #000000;
-  border: 2px solid #000000;
+  border: 0.17vw solid #000000;
 }
 
 .homeFindCar .FindCarBudgetBrand{
-  margin-bottom: 30px;
-}
-.FindCarBudgetBrand .radio-group {
-  display: flex; /* Use flexbox layout */
-  gap: 20px; /* Adjust spacing between radio buttons */
-  align-items: center; /* Align items vertically */
-  line-height: 21px;
-  font-size: 16px;
-  margin-left: 51px; /* Add margin to the left side of the form */
+  margin-bottom: 1.8vw;
 }
 .homeFindCar .FindCarBudgetBrand .radio-group {
-  display: flex; /* Use flexbox layout */
-  gap: 20px; /* Adjust spacing between radio buttons */
-  align-items: center; /* Align items vertically */
-  line-height: 21px;
-  font-size: 16px;
+  display: flex;
+  gap: 1.3vw; 
+  align-items: center;
+  line-height: 1.5vw;
+  font-size: 1.1vw;
+  margin-left: 3vw;
 }
+
 .FindCarBudgetBrand .radio-group .form-check {
-  margin-right: 40px; /* Adjust the distance between radio buttons */
+  margin-right: 2.4vw; /* distance between radio buttons */
 }
 .FindCarBudgetBrand .radio-group .form-check label {
     /* margin-left: auto;  */
     vertical-align: middle;
 }
 .FindCarBudgetBrand .radio-group .form-check-input[type="radio"] {
-  width: 20px;
-  height: 20px; 
+  width: 1.3vw;
+  height: 1.3vw; 
   vertical-align: middle;
-  margin-top: -1px;
   display: none;
 }
 .FindCarBudgetBrand .radio-group .form-check-input[type="radio"]:checked::before {
   background-color: black; 
 }
 
+/*HomeIII*/
+.HomeIII{
+  text-align: center;
+  width: 62vw;
+  height: 60vw;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  margin: 4.1vw auto
+}
+.HomeIII .card{
+  width: 40vw;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.HomeIII .cardIcon{
+  background-color: #000000;
+  width: 4.3vw;
+  height:4.3vw;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HomeIII .cardHeading{
+  width: auto;
+  height: 2vw;
+}
+.HomeIII .cardHeading h6{
+  height:100%;
+  width:100%;
+  font-weight: 600;
+  font-size: 1.2vw;
+  font-family: 'Lexend Deca';
+  line-height: 2vw;
+  color: #03040A;
+}
+.HomeIII .cardDesc{
+  width: auto;
+  height: 6vw;
+}
+.HomeIII .cardDesc p{
+  font-family: 'Space Grotesk';
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 2.1vw;
+  color: #7F808E;
+}
+.HomeIII .cardIcon .cardIconLogo{
+  color: white;
+  width: 2vw;
+  height: 2vw;
+}
 
 /* Custom radio button */
 .FindCarBudgetBrand .radio-group .form-check-input[type="radio"] + .form-check-label:before {
   content: "";
   display: inline-block;
-  width: 20px; /* Adjust the width */
-  height: 20px; /* Adjust the height */
-  border: 2px solid black; /* Border color */
+  width: 1.3vw; /* Adjust the width */
+  height: 1.3vw; /* Adjust the height */
+  border: 0.14vw solid black; /* Border color */
   border-radius: 50%; /* Make it a circle */
-  margin-right: 8px; /* Adjust spacing between the radio button and label */
+  margin-right: 0.7vw; /* Adjust spacing between the radio button and label */
   vertical-align: middle;
 }
 
@@ -209,15 +258,17 @@ button{
 }
 
 .homeFindCar .FindCarSelection{
-  width: 290px;
-  height: 74px;
-  margin: auto auto 20px;
+  width: 19vw;
+  height: 4.8vw;
+  margin: auto auto 1.6vw;
+  display: flex;
+  flex-direction: column;
 }
 .FindCarSelection select{
   width: 100%;
-  height: 50%;
-  border: 1px solid #00000080;
-  
+  height: 2.4vw;
+  font-size: 0.9vw;
+  border: 0.1vw solid #00000080; 
 }
 
 .homeFindCar .FindCarSelectBtn{
@@ -227,23 +278,23 @@ button{
 }
 .homeFindCar button{
   width: 100%;
-  max-width: 290px;
-  height: 32px;
+  max-width: 18vw;
+  height: 2.2vw;
   background-color: #000000;
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 1.3vw;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 2.2vw;
 }
 
 .homeFindCar .FindCarAdvancedSearch{
   color: #000000;
-  font-size: 13px;
+  font-size: 0.9vw;
   font-weight: 400;
-  height: 18px;
-  line-height: 17.5px;
-  margin-top: 15px;
-  margin-right: 15px;
+  height: 1vw;
+  line-height: 1vw;
+  margin-top: 1vw;
+  margin-right: 1vw;
   float: right;
 }
 
@@ -644,7 +695,7 @@ button{
   width: 87%;
   font-family: 'Poppins';
   font-weight: 500;
-  font-size: 1.4vw;
+  font-size: 1.5vw;
   line-height: 2.3vw;
   color: #FFFFFF;
   margin: 3vw auto 2vw auto;
@@ -1209,6 +1260,74 @@ button{
   justify-content: center;
   /* padding: 24px; */
 } 
+
+/*How It Works*/
+.howItWorks{
+  text-align: center;
+  width: 55vw;
+  max-height: 54vw;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  margin: 3vw auto 4vw;
+}
+.howItWorks .card{
+  width: 40vw;
+  height: 14vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.howItWorks .cardIcon{
+  background-color: #000000;
+  width: 4.3vw;
+  height:4.3vw;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center 
+}
+.howItWorks .cardHeading{
+  width: auto;
+  height: 2vw;
+}
+.howItWorks .cardHeading h6{
+  height:100%;
+  width:100%;
+  font-weight: 600;
+  font-size: 1.2vw;
+  font-family: 'Lexend Deca';
+  line-height: 2vw;
+  color: #03040A;
+}
+.howItWorks .cardDesc{
+  width: auto;
+  height: 6vw;
+}
+.howItWorks .cardDesc p{
+  font-family: 'Space Grotesk';
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 2.5vw;
+  color: #7F808E;
+}
+.howItWorksContent{
+  color : #000000B2;
+  font-family : 'Poppins';
+  font-weight : 600;
+  font-size : 1.3vw;
+  line-height : 2.7vw;
+  width : 93%;
+  text-align: center;
+  margin: -4vw auto;
+  padding-bottom: 20vw;
+}
+.howItWorks .cardIcon .cardIconLogo{
+  color: white;
+  width: 2vw;
+  height: 2vw;
+}
 
 /*Services */
 /*ServicesI*/

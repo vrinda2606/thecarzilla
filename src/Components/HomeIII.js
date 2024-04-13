@@ -4,7 +4,7 @@ import { faHeadphones, faLayerGroup, faLock } from '@fortawesome/free-solid-svg-
 
 const HomeIII = () => {
   return (
-    <div className='WhiteBg' style={{height:"600px"}}>
+    <div className='WhiteBg' style={{height:"45vw"}}>
      <div className='WhiteBgContent'>
       <div className='headingBoxWhite'>
       <div className='HeadingWhiteDiv'>
@@ -16,39 +16,33 @@ const HomeIII = () => {
 
 
 
-      <div style={{textAlign:"center",maxWidth: "942px",maxHeight: "210px",display:"flex",flexDirection:"row",justifyContent: "space-between",margin: "90px auto"}}>
-         <div className='card' style={{width: "280px",height: "209px",display: 'flex',flexDirection: "column",alignItems: "center",justifyContent: "space-around"}}>
-           <div className='cardIcon' style={{backgroundColor: "#000000",width: "64px",height:"64px",color:"white",display: "flex", justifyContent: "center", alignItems: "center" }}>
-           <FontAwesomeIcon icon={faLayerGroup} style={{ color: "white",width: "25px",height:"25px"}} />
+      <div className='HomeIII'>
+         <div className='card'>
+           <div className='cardIcon'>
+           <FontAwesomeIcon className='cardIconLogo' icon={faLayerGroup}/>
            </div>
-           <div className='cardHeading' style={{width: "61px",height:"25px"}}><h6 style={{height:"100%",width:"100%",fontWeight: "600",fontSize: "18px",fontFamily: "Lexend Deca", lineHeight: "25.2px",color: "#03040A"}}>Dream</h6></div>
-           <div className='cardDesc' style={{width:" 280px",height:"80px"}}>
-              <p style={{fontFamily: "Space Grotesk",fontWeight: "400",fontSize: "15px",lineHeight: "25px"}}>
-              Fermentum luctus convallis non lectus. Aliquam at ut viverra non arcu massa laoreet commodo ac.
-              </p>
+           <div className='cardHeading'><h6>Dream</h6></div>
+           <div className='cardDesc'>
+              <p>Fermentum luctus convallis non lectus. Aliquam at ut viverra non arcu massa laoreet commodo ac.</p>
            </div>
          </div>
 
-         <div className='card' style={{width: "280px",height: "209px",display: 'flex',flexDirection: "column",alignItems: "center",justifyContent: "space-around"}}>
-           <div className='cardIcon' style={{backgroundColor: "#000000",width: "64px",height:"64px",color:"white",display: "flex", justifyContent: "center", alignItems: "center" }}>
-           <FontAwesomeIcon icon={faLock} style={{ color: "white",width: "25px",height:"25px"}} />
+         <div className='card'>
+           <div className='cardIcon'>
+           <FontAwesomeIcon className='cardIconLogo' icon={faLock}/>
            </div>
-           <div className='cardHeading' style={{width: "61px",height:"25px"}}><h6 style={{height:"100%",width:"100%",fontWeight: "600",fontSize: "18px",fontFamily: "Lexend Deca", lineHeight: "25.2px",color: "#03040A"}}>Deal</h6></div>
-           <div className='cardDesc' style={{width:" 280px",height:"80px"}}>
-              <p style={{fontFamily: "Space Grotesk",fontWeight: "400",fontSize: "15px",lineHeight: "25px"}}>
-              Fermentum luctus convallis non lectus. Aliquam at ut viverra non arcu massa laoreet commodo ac.
-              </p>
+           <div className='cardHeading'><h6>Deal</h6></div>
+           <div className='cardDesc'>
+              <p>Fermentum luctus convallis non lectus. Aliquam at ut viverra non arcu massa laoreet commodo ac.</p>
            </div>
          </div>
-         <div className='card' style={{width: "280px",height: "209px",display: 'flex',flexDirection: "column",alignItems: "center",justifyContent: "space-around"}}>
-           <div className='cardIcon' style={{backgroundColor: "#000000",width: "64px",height:"64px",color:"white",display: "flex", justifyContent: "center", alignItems: "center" }}>
-           <FontAwesomeIcon icon={faHeadphones} style={{ color: "white",width: "25px",height:"25px"}} />
+         <div className='card'>
+           <div className='cardIcon'>
+           <FontAwesomeIcon className='cardIconLogo' icon={faHeadphones}/>
            </div>
-           <div className='cardHeading' style={{width: "61px",height:"25px"}}><h6 style={{height:"100%",width:"100%",fontWeight: "600",fontSize: "18px",fontFamily: "Lexend Deca", lineHeight: "25.2px",color: "#03040A"}}>Drive</h6></div>
-           <div className='cardDesc' style={{width:" 280px",height:"80px"}}>
-              <p style={{fontFamily: "Space Grotesk",fontWeight: "400",fontSize: "15px",lineHeight: "25px"}}>
-              Fermentum luctus convallis non lectus. Aliquam at ut viverra non arcu massa laoreet commodo ac.
-              </p>
+           <div className='cardHeading'><h6>Drive</h6></div>
+           <div className='cardDesc'>
+              <p>Fermentum luctus convallis non lectus. Aliquam at ut viverra non arcu massa laoreet commodo ac.</p>
            </div>
          </div>
       </div>

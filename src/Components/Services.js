@@ -63,7 +63,7 @@ const Services = () => {
             </div>
 
             <div className='btnForMoreDiv'>
-            <button className='btnForMore'>More Brands</button>
+            <button className='btnForMore'>More Services</button>
             </div>
             <div className='WhiteHr'/>
       </div>

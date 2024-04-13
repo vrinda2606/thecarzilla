@@ -7,7 +7,7 @@ const AboutUs = () => {
   return (
     <>
       <HomeI />
-      <div className='BlackBg' style={{height : 'auto'}}>
+      <div className='BlackBg' style={{height : '42vw'}}>
             
         <div className='HeadingBoxBlack'>
         <div className='HeadingBlackDiv'>
@@ -17,10 +17,10 @@ const AboutUs = () => {
         </div>
         </div>
         
-        <div className='DivContent' style={{height : '110px'}}>
+        <div className='DivContent' style={{height : '7vw'}}>
         TheCarzilla.in is the beginning of a new era. One that is built on the foundation of transparent and meaningful automotive content in India. At TheCarzilla.in we will bring you the latest news, reviews, tech content and more to help you get closer to your buying decision.
         </div>
-        <div className='DivContent' style={{height : '110px'}}>
+        <div className='DivContent' style={{height : '7vw'}}>
         TheCarzilla.in also promises to give the best prices and fastest delivery of your dream new car.TheCarzilla.in, thus provides you with what you want - Credible reviews, exclusive content and cars at the best prices!
         </div>
             
@@ -33,7 +33,7 @@ const AboutUs = () => {
         </div>
 
 
-    <div className='WhiteBg' style={{height:"810px"}}>
+    <div className='WhiteBg' style={{height:"55vw"}}>
     <div className='WhiteBgContent'>
         <div className='headingBoxWhite'>
           <div className='HeadingWhiteDiv'>

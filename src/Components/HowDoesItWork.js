@@ -7,7 +7,7 @@ const HowDoesItWork = () => {
   return (
     <>
         <HomeI />
-        <div className='BlackBg' style={{height : '495px'}}>
+        <div className='BlackBg' style={{height : '32.4vw'}}>
             
         <div className='HeadingBoxBlack'>
         <div className='HeadingBlackDiv'>
@@ -17,7 +17,7 @@ const HowDoesItWork = () => {
         </div>
         </div>
         
-        <div className='DivContent' style={{height : '110px'}}>
+        <div className='DivContent' style={{height : '8vw'}}>
         We understand that a car is not just a high-ticket purchase for you, it's a dream! And we want to assure you that we will be alongside you throughout this journey from car selection to car purchase to car maintenance and beyond.
         </div>
             
@@ -30,7 +30,7 @@ const HowDoesItWork = () => {
         </div>
 
 
-    <div className='WhiteBg' style={{height:"700px"}}>
+    <div className='WhiteBg' style={{height:"46vw"}}>
     <div className='WhiteBgContent'>
         <div className='headingBoxWhite'>
           <div className='HeadingWhiteDiv'>
@@ -42,44 +42,38 @@ const HowDoesItWork = () => {
 
 
 
-      <div style={{textAlign:"center",maxWidth: "942px",maxHeight: "210px",display:"flex",flexDirection:"row",justifyContent: "space-between",margin: "70px auto"}}>
-         <div className='card' style={{width: "280px",height: "209px",display: 'flex',flexDirection: "column",alignItems: "center",justifyContent: "space-around"}}>
-           <div className='cardIcon' style={{backgroundColor: "#000000",width: "64px",height:"64px",color:"white",display: "flex", justifyContent: "center", alignItems: "center" }}>
-           <FontAwesomeIcon icon={faLayerGroup} style={{ color: "white",width: "25px",height:"25px"}} />
+      <div className='howItWorks'>
+         <div className='card'>
+           <div className='cardIcon'>
+           <FontAwesomeIcon className='cardIconLogo' icon={faLayerGroup} />
            </div>
-           <div className='cardHeading' style={{width: "61px",height:"25px"}}><h6 style={{height:"100%",width:"100%",fontWeight: "600",fontSize: "18px",fontFamily: "Lexend Deca", lineHeight: "25.2px",color: "#03040A"}}>Inquire</h6></div>
-           <div className='cardDesc' style={{width:" 280px",height:"80px"}}>
-              <p style={{fontFamily: "Space Grotesk",fontWeight: "400",fontSize: "15px",lineHeight: "25px",color: '#7F808E'}}>
-              Fill the Inquiry Form
-              </p>
+           <div className='cardHeading'><h6>Inquire</h6></div>
+           <div className='cardDesc'>
+              <p>Fill the Inquiry Form</p>
            </div>
          </div>
 
-         <div className='card' style={{width: "280px",height: "209px",display: 'flex',flexDirection: "column",alignItems: "center",justifyContent: "space-around"}}>
-           <div className='cardIcon' style={{backgroundColor: "#000000",width: "64px",height:"64px",color:"white",display: "flex", justifyContent: "center", alignItems: "center" }}>
-           <FontAwesomeIcon icon={faLock} style={{ color: "white",width: "25px",height:"25px"}} />
+         <div className='card'>
+           <div className='cardIcon'>
+           <FontAwesomeIcon className='cardIconLogo' icon={faLock} />
            </div>
-           <div className='cardHeading' style={{width: "61px",height:"25px"}}><h6 style={{height:"100%",width:"100%",fontWeight: "600",fontSize: "18px",fontFamily: "Lexend Deca", lineHeight: "25.2px",color: "#03040A"}}>Booking</h6></div>
-           <div className='cardDesc' style={{width:" 280px",height:"80px"}}>
-              <p style={{fontFamily: "Space Grotesk",fontWeight: "400",fontSize: "15px",lineHeight: "25px",color: '#7F808E'}}>
-              Book your dream car
-              </p>
+           <div className='cardHeading'><h6>Booking</h6></div>
+           <div className='cardDesc'>
+              <p>Book your dream car</p>
            </div>
          </div>
-         <div className='card' style={{width: "280px",height: "209px",display: 'flex',flexDirection: "column",alignItems: "center",justifyContent: "space-around"}}>
-           <div className='cardIcon' style={{backgroundColor: "#000000",width: "64px",height:"64px",color:"white",display: "flex", justifyContent: "center", alignItems: "center" }}>
-           <FontAwesomeIcon icon={faHeadphones} style={{ color: "white",width: "25px",height:"25px"}} />
+         <div className='card'>
+           <div className='cardIcon'>
+           <FontAwesomeIcon className='cardIconLogo' icon={faHeadphones} />
            </div>
-           <div className='cardHeading' style={{width: "61px",height:"25px"}}><h6 style={{height:"100%",width:"100%",fontWeight: "600",fontSize: "18px",fontFamily: "Lexend Deca", lineHeight: "25.2px",color: "#03040A"}}>Delivery</h6></div>
-           <div className='cardDesc' style={{width:" 280px",height:"80px"}}>
-              <p style={{fontFamily: "Space Grotesk",fontWeight: "400",fontSize: "15px",lineHeight: "25px",color: '#7F808E'}}>
-              Get the car delivered
-              </p>
+           <div className='cardHeading'><h6>Delivery</h6></div>
+           <div className='cardDesc'>
+              <p>Get the car delivered</p>
            </div>
          </div>
       </div>
       
-      <div style={{color : '#000000B2',fontFamily : 'Poppins',fontWeight : '600', fontSize : '20px',lineHeight : '30px',width : '93%',textAlign: 'center',margin: '-50px auto',paddingBottom: '100px'}}>
+      <div className='howItWorksContent'>
       Along with you, investors like AY Ventures , Shakunt Finance and TBI-KIET  have also put their trust in us. And we promise to uphold the trust you all have put in us. By the way, we love all cars, new or old and if in case you want to give your old darling a farewell, we will get you the best price for that beauty as well :)
       </div>
 

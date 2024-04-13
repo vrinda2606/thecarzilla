@@ -24,14 +24,14 @@ const HomeI = () => {
 
   return (
     <div className='Home'>
-    <img src={background[currentImageIndex].url} alt="" style={{
-      width: '100%',
-      height: '100%',
-        transition: 'opacity 1s ease-in-out',
-        opacity: isTransitioning ? 0.7 : 1, 
-      }} />
+       <img src={background[currentImageIndex].url} alt="" style={{
+            width: '100%',
+            height: '100%',
+            transition: 'opacity 1s ease-in-out',
+            opacity: isTransitioning ? 0.7 : 1, 
+        }} />
 
-        <div className="homeI">
+       <div className="homeI">
             <div className='homeFindCar'>
                
                <div className="FindCarHeading">
