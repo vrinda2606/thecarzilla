@@ -506,55 +506,59 @@ button{
 
 /* Black bg headings*/
  .BlackBg{
-  padding: 20px;
+  padding: 1.2vw;
   background-color: #292929;
   width: 100%;
   background-repeat: repeat;
   background-image : url('./Components/Images/bgEffect.png');
-  background-size: 612px auto;
+  background-size: 39vw auto;
   background-blend-mode: overlay;
  }
 .HeadingBoxBlack{
-  width: 700px;
-  height: 142px;
+  width: 46vw;
+  height: 9vw;
   margin: auto;
   color: #ffffff;
 }
 .HeadingBoxBlack .HeadingBlackDiv{
-  width: 700px;
-  height: 142px;
-  margin: 40px auto;
+  width: 46vw;
+  height: 9vw;
+  margin: 2.3vw auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .HeadingBlackDiv .BlackDivfirst,
 .HeadingWhiteDiv .WhiteDivfirst{
-  margin-top: 0px;
+  margin-top: 0vw;
   display: flex;
   align-items: center;
 }
 .HeadingBlackDiv .BlackDivfirst hr{
-  width: 16px;
-  border: 1px solid;
-  margin: auto 10px;
+  width: 1.3vw;
+  border: 0.1vw solid;
+  margin: auto 0.9vw;
+}
+.HeadingBlackDiv .BlackDivfirst p{
+  font-size: 1vw;
+  font-weight: 500;
 }
 .HeadingBlackDiv h1,
 .HeadingWhiteDiv h1{
   font-family: 'Lexend Deca';
   font-weight: 600;
-  font-size: 45px;
-  line-height: 63px;
-  gap: 20px;
+  font-size: 3vw;
+  line-height: 4.1vw;
+  gap: 1vw;
 }
 .HeadingBlackDiv .BlackDivLast{
   font-family: "Space Grotesk";
   font-weight: 700;
   color : #FFFFFF;
-  line-height: 25px;
-  font-size: 20px;
-  height: 25px;
-  margin-top: 17px;
+  line-height: 100%;
+  font-size: 1.3vw;
+  height: 1.5vw;
+  margin-top: 1.3vw;
 }
 
 /* White bg headings*/
@@ -591,16 +595,16 @@ button{
 }
 .HeadingWhiteDiv .WhiteDivMiddle,
 .HeadingBlackDiv .BlackDivMiddle{
-  margin-top : 13px;
+  margin-top : 1vw;
 }
 
 /* button for more*/
 
 .WhiteHr{
-  width: 700px;
+  width: 48vw;
   background-color: white;
-  margin: 70px auto; 
-  height: 3px;
+  margin: 4.5vw auto; 
+  height: 0.2vw;
 }
 
 .btnForMoreDiv{
@@ -1198,6 +1202,7 @@ button{
 } 
 
 /*Services */
+/*ServicesI*/
 .servicesI{
   width: 100%;
   height: 35vw;
@@ -1264,4 +1269,49 @@ button{
 .servIContentIcon .servIIconPara p{
   font-weight: 400;
   font-size: 1vw;
+}
+
+/*ServicesII*/
+.servicesII{
+  width: 100%;
+  height: 39vw;
+  color: #FFFFFF;
+}
+.servicesII .servicesIIContent{
+  width: 86%;
+  height: 19vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4vw auto;
+}
+.servIIcon{
+  width: 23%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.servIIcon .servIIDivIcon{
+  width: 8.7vw;
+  height: 9vw;
+  background-color: #FFFFFF;
+  border-radius: 0.7vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.servIIcon .servIIDivHeading{
+  font-weight: 700;
+  font-size: 1vw;
+  line-height: 3.5vw;
+  /* text-align: center;  */
+}
+.servIIcon .servIIDivContent{
+  font-family: 'Space Grotesk';
+  font-weight: 500;
+  font-size: 0.99vw;
+  line-height: 1.8vw;
 }

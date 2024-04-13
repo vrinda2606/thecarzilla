@@ -33,7 +33,36 @@ const Services = () => {
          </div>
       </div>
 
-      
+      <div className='servicesII BlackBg'>
+            <div className='WhiteHr' style={{margin : "1.2vw auto 0vw"}}/>
+            <div style={{width: "35vw",margin:"1vw auto", height: "3.7vw", textAlign: "center" }} >
+               <h1 style={{alignContent: "center",fontWeight: "700" ,fontFamily:"Lexend Deca", color: "white",lineHeight: "3.7vw",fontSize: "3vw" }}>What We Promise</h1>
+            </div>
+
+            <div className='servicesIIContent'>
+                <div className='servIIcon'>
+                    <div className='servIIDivIcon'><img src={images[4].url} alt='' width='70%' height='70%'/></div>
+                    <div className='servIIDivHeading'><h1>Privacy</h1></div>
+                    <div className='servIIDivContent'><p>Personal information and car records are kept strictly confidential.</p></div>
+                </div>
+                <div className='servIIcon'>
+                    <div className='servIIDivIcon'><img src={images[5].url} alt='' width='70%' height='70%'/></div>
+                    <div className='servIIDivHeading'><h1>Support</h1></div>
+                    <div className='servIIDivContent'><p>Dedicated team available to assist you with any car-related queries.</p></div>
+                </div>
+                <div className='servIIcon'>
+                    <div className='servIIDivIcon'><img src={images[6].url} alt='' width='70%' height='70%'/></div>
+                    <div className='servIIDivHeading'><h1>Instant Service</h1></div>
+                    <div className='servIIDivContent'><p>Book car services anytime, anywhere, with Instant Service at your fingertips!</p></div>
+                </div>
+                <div className='servIIcon'>
+                    <div className='servIIDivIcon'><img src={images[7].url} alt='' width='70%' height='70%'/></div>
+                    <div className='servIIDivHeading'><h1>Fair Price</h1></div>
+                    <div className='servIIDivContent'><p>Enjoy transparent pricing and value-for-money services.</p></div>
+                </div>
+
+            </div>
+      </div>
     </>
   )
 }

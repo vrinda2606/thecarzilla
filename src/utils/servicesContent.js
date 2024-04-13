@@ -3,6 +3,11 @@ import img1 from '../Components/Images/Services/servicesHome1.png';
 import img2 from '../Components/Images/Services/servicesHome2.png';
 import img3 from '../Components/Images/Services/servicesHome3.png';
 
+import img4 from '../Components/Images/Services/promiseIcon1.png';
+import img5 from '../Components/Images/Services/promiseIcon2.png';
+import img6 from '../Components/Images/Services/promiseIcon3.png';
+import img7 from '../Components/Images/Services/promiseIcon4.png';
+
 export const images=[
     {
         id:0,
@@ -20,4 +25,20 @@ export const images=[
         id:3,
         url:img3
     },
+    {
+        id:4,
+        url:img4
+    },
+    {
+        id:5,
+        url:img5
+    },
+    {
+        id:6,
+        url:img6
+    },
+    {
+        id:7,
+        url:img7
+    }
 ]

@@ -5,12 +5,10 @@ const HomeII = () => {
 return (
      <div className='Home'>
         <div className='homeII' style={{padding: "20px",backgroundColor: "#292929", width: "100%" , height: "680px" ,backgroundRepeat: 'repeat',backgroundImage : `url(${images[23].url})`,backgroundSize: "612px auto",backgroundBlendMode: "overlay"}}>
-            <div className='WhiteHr' style={{margin : "42px auto 0px"}}/>
-            
-            <div style={{width: "501px",margin:"18px auto", height: "63px", textAlign: "center" }} >
-               <h1 style={{alignContent: "center",fontWeight: "700" ,fontFamily:"Lexend Deca", color: "white",lineHeight: "63px",fontSize: "45px" }}>Brands We Deal In</h1>
+        <div className='WhiteHr' style={{margin : "2vw auto 0vw"}}/>
+            <div style={{width: "35vw",margin:"1.5vw auto", height: "3.7vw", textAlign: "center" }} >
+               <h1 style={{alignContent: "center",fontWeight: "700" ,fontFamily:"Lexend Deca", color: "white",lineHeight: "3.7vw",fontSize: "3vw" }}>Brands We Deal In</h1>
             </div>
-            
             <div className='brands' style={{width: "75%",height : "124px",margin:"55px auto",display: "flex",justifyContent: "space-between"}}>
                <div className='TATA' style={{backgroundColor: "white",borderRadius: "10px",width: "124px",height : "124px"}}>
                  <img src={images[1].url} alt='TATA' style={{padding:"10px 5px",objectFit: "contain",maxWidth : "124px",maxHeight : "124px"}} />
