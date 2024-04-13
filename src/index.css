@@ -535,8 +535,8 @@ button{
   align-items: center;
 }
 .HeadingBlackDiv .BlackDivfirst hr{
-  width: 1.3vw;
-  border: 0.1vw solid;
+  width: 1.9vw;
+  border-top: 0.2vw solid;
   margin: auto 0.9vw;
 }
 .HeadingBlackDiv .BlackDivfirst p{
@@ -641,11 +641,11 @@ button{
 
 /* DivContent */
 .DivContent{
-  width: 90%;
+  width: 87%;
   font-family: 'Poppins';
   font-weight: 500;
-  font-size: 1.3vw;
-  line-height: 2vw;
+  font-size: 1.4vw;
+  line-height: 2.3vw;
   color: #FFFFFF;
   margin: 3vw auto 2vw auto;
   text-align: center;
@@ -653,9 +653,9 @@ button{
 
 .getInTouch{
   width: 100%;
-  height: 750px;
+  height: 48vw;
   background-image: linear-gradient(to right, #FFFFFF 75%, #000000 25%);
-  box-shadow: 0px 141px 200px -80px #193A4B4D;
+  box-shadow: 0vw 141px 200px -80px #193A4B4D;  /*No responsiveness*/
   font-family: 'Montserrat';
 }
 
@@ -676,19 +676,19 @@ button{
   /* position: absolute; */
   /* top: 15%;
   left: 10%; */
-  padding-top: 39px;
-  padding-left: 30px;
+  padding-top: 2.5vw;
+  padding-left: 2vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .getInTouchForm .TouchFormHeading{
   width: 100%;
-  height: 100px;
-  gap: 20px;
+  height: 6.5vw;
+  gap: 1.5vw;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1vw;
+  line-height: 1.7vw;
   color: #000000;
   display: flex;
   flex-direction: column;
@@ -701,21 +701,21 @@ button{
 .getInTouchFormDetails button,
 .getInTouchFormDetails select{
   width: 100%;
-  height: 50px;
-  margin: 12px 20px 12px 0px;
+  height: 3.4vw;
+  margin: 0.7vw 1.1vw 0.8vw 0vw;
   
 }
 .getInTouchFormDetails input,
 .getInTouchFormDetails select{
   border: 1px solid #E0E0E0;
-  font-size: 14px;
-  padding-left: 20px;
+  font-size: 1vw;
+  padding-left: 1.2vw;
 }
 .getInTouchFormDetails button{
   background-color: #000000;
   color: #FFFFFF;
   font-weight: 600;
-  font-size: 16px;  
+  font-size: 1.1vw;  
 }
 
 .getInTouchForm .getInTouchFormContact{
@@ -729,10 +729,10 @@ button{
   align-items: center;
 }
 .FormContactPhone .contactIcon {
-  margin-right: 25px;
+  margin-right: 0.8vw;
   height: 100%;
-  width: 15px;
-  font-size: 30px;
+  width: 2vw;
+  font-size: 2vw;
 }
 .contactPhoneheadings {
   flex-grow: 1;
@@ -740,6 +740,8 @@ button{
 .contactPhoneheadings p {
   margin: 0;
   font-weight: 600;
+  font-size: 1.1vw;
+  line-height: 1.5vw;
 }
 .getInTouch .getInTouchPic{
   height: 95%;
@@ -747,11 +749,8 @@ button{
   background-image: url('./Components/Images/getInTouch.png');
   background-repeat: no-repeat;
   background-size: contain;
-  margin-top: 39px;
-  margin-right: -50px;
-  /* position: absolute; Position absolutely within the parent .getInTouch */
-  /* top: 5%;
-  right: 0%;  */
+  margin-top: 2.5vw;
+  margin-right: -5vw;
 }
 
 /*Get In Touch Popup*/
@@ -768,10 +767,10 @@ button{
   position: absolute;
   width: 65%;
   height: 65%;
-  filter: blur(0px);
+  filter: blur(0vw);
   background-color: white;
-  box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.5);
-  border-radius: 6px;
+  box-shadow: 0.1vw 0.1vw 0.5vw 0.5vw rgba(0, 0, 0, 0.5);
+  border-radius: 0.7vw;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%) scale(.8);
@@ -788,13 +787,13 @@ button{
 .popup2 .popupCloseDiv2{
   display: flex;
   justify-content: flex-end;
-  padding-bottom: 50px;
+  padding-bottom: 3.5vw;
 }
 .popup2 .popupCloseDiv2 button{
-  margin-bottom: -17px;
+  margin-bottom: -4vw;
   background-color: transparent;
-  height: 28px;
-  width: 28px;
+  height: 2.3vw;
+  width: 2.3vw;
 }
 .popup2 .popupCloseDiv2 .popupCloseDivIcon2{
   background-color: white;
