@@ -644,10 +644,10 @@ button{
   width: 90%;
   font-family: 'Poppins';
   font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.3vw;
+  line-height: 2vw;
   color: #FFFFFF;
-  margin: 40px auto -30px auto;
+  margin: 3vw auto 2vw auto;
   text-align: center;
 }
 
