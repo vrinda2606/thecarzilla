@@ -44,7 +44,7 @@ const Navbar = () => {
   };
 
 
-  const navbarHeight = '6vw'; // Adjust acc to height of Navbar
+  const navbarHeight = 90; // Adjust acc to height of Navbar
 
    const scrollToContactForm = () => {
      const contactFormElement = document.getElementById('contact-form-container');
