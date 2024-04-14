@@ -5,12 +5,12 @@ import ContactForm from './ContactForm';
 import Team from './Team';
 import Testimonial from './Testimonial';
 import LiteApp from './LiteApp';
-import HomeII from './HomeII';
+// import HomeII from './HomeII';
 
 const Home = () => {
       return(<>
       <HomeI />
-      <HomeII />
+      {/* <HomeII /> */}
       <HomeIII />
       <ContactForm />
       <Testimonial />

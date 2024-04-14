@@ -2,7 +2,7 @@ import React from 'react';
 
 const LiteApp = () => {
   return (
-    <div className='WhiteBg AppLite' style={{height: "615px"}}>
+    <div className='WhiteBg AppLite' style={{height: "40vw"}}>
            <div className='appLite'>
                 <div className='appLiteHeading'>
                     <div className='headingBoxWhite'>
@@ -14,8 +14,8 @@ const LiteApp = () => {
                     </div>
                 </div>
 
-                <div className="buttonContact">
-                    <button className="btnContact" style={{marginTop: "-75px" ,borderRadius : '0'}}>Coming Soon</button>
+                <div className="buttonContactApp">
+                    <button className="btnContactApp">Coming Soon</button>
                 </div>
 
                 <p className='para'>An App that caters all your car needs, Including Genuine Spare Parts, Fastag Recharge & many more</p>
