@@ -184,24 +184,27 @@ button{
 }
 
 /*HomeIII*/
-.HomeIII{
+.HomeIII,
+.AboutUs{
   text-align: center;
-  width: 62vw;
-  height: 60vw;
+  width: 70vw;
+  height: 40%;
   display:flex;
   flex-direction:row;
   justify-content: space-between;
-  margin: 4.1vw auto
+  margin: 1.5% auto
 }
-.HomeIII .card{
-  width: 40vw;
-  height: 95%;
+.HomeIII .card,
+.AboutUs .cardAboutUs{
+  width: 21vw;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-.HomeIII .cardIcon{
+.HomeIII .cardIcon,
+.AboutUs .cardIconAboutUs{
   background-color: #000000;
   width: 4.3vw;
   height:4.3vw;
@@ -210,11 +213,13 @@ button{
   justify-content: center;
   align-items: center;
 }
-.HomeIII .cardHeading{
+.HomeIII .cardHeading,
+.AboutUs .cardHeadingAboutUs{
   width: auto;
   height: 2vw;
 }
-.HomeIII .cardHeading h6{
+.HomeIII .cardHeading h6,
+.AboutUs .cardHeadingAboutUs h6{
   height:100%;
   width:100%;
   font-weight: 600;
@@ -223,18 +228,21 @@ button{
   line-height: 2vw;
   color: #03040A;
 }
-.HomeIII .cardDesc{
+.HomeIII .cardDesc,
+.AboutUs .cardDescAboutUs{
   width: auto;
   height: 6vw;
 }
-.HomeIII .cardDesc p{
+.HomeIII .cardDesc p,
+.AboutUs .cardDescAboutUs p{
   font-family: 'Space Grotesk';
   font-weight: 400;
   font-size: 1vw;
   line-height: 2.1vw;
   color: #7F808E;
 }
-.HomeIII .cardIcon .cardIconLogo{
+.HomeIII .cardIcon .cardIconLogo,
+.AboutUs .cardIconAboutUs .cardIconLogoAboutUs{
   color: white;
   width: 2vw;
   height: 2vw;
@@ -1497,3 +1505,22 @@ button{
   display: flex;
   justify-content: space-between;
 }
+
+/* AboutUs
+.AboutUs{
+  text-align:center;
+  max-width: 942px;
+  max-height: 210px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  margin: 70px auto;
+}
+.AboutUs .cardAboutUs{
+  width: 280px;
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+} */
