@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Saira:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-    margin: 0px;
+    margin: 0vw;
     padding: 0%;
     box-sizing: border-box;
     text-decoration: none;
@@ -378,7 +378,7 @@ button{
 }
 
 #contact-form-container .active{
-  filter: blur(15px);
+  filter: blur(1.2vw);
   pointer-events: none;
 }
 
@@ -450,7 +450,7 @@ button{
   line-height: 2vw;
   height: 1.7vw;
   width: 100%;
-  margin-bottom: -10px;
+  margin-bottom: -10px; /*keep the px*/
 }
 .contact-form .input-box .input-field input{
   font-family: 'Space Grotesk';
@@ -860,7 +860,7 @@ button{
 
 /*Get In Touch Popup*/
 .getInTouchDiv.active{
-  filter: blur(8px);
+  filter: blur(1vw);
   pointer-events: none;
 }
 
@@ -972,7 +972,7 @@ button{
 .team-mates .team-mates-bg{
   width: 90%;
   height: 70%;
-  margin: 7% auto;
+  margin: 7.3% auto;
   background-color: #292929;
   background-repeat: repeat;
   background-image : url('./Components/Images/bgEffect.png');
@@ -1215,7 +1215,7 @@ button{
 .loginDetailsDivIII .otp_for_verification{
   background-color: transparent;
   color: #FFFFFF;
-  border: 1.2px solid rgba(255, 255, 255, 0.2);
+  border: 0.1vw solid rgba(255, 255, 255, 0.2);
   border-radius: 0.7vw;
   font-weight: 500;
   font-size: 1vw;
@@ -1276,7 +1276,6 @@ button{
 .testimonials{
   height: 20vw;
   width: 22vw;
-  /* padding-top: 0px; */
   margin: 0 auto 1.3vw auto;
   box-shadow: 0vw 0.3vw 1.2vw 0vw #6E82D02B;
   background: #FFFFFF01;
@@ -1344,7 +1343,6 @@ button{
   align-items: center;
   font-size: 1.6vw; 
   justify-content: center;
-  /* padding: 24px; */
 } 
 
 /*How It Works*/
@@ -1549,22 +1547,3 @@ button{
   display: flex;
   justify-content: space-between;
 }
-
-/* AboutUs
-.AboutUs{
-  text-align:center;
-  max-width: 942px;
-  max-height: 210px;
-  display:flex;
-  flex-direction:row;
-  justify-content: space-between;
-  margin: 70px auto;
-}
-.AboutUs .cardAboutUs{
-  width: 280px;
-  height: 209px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-} */
