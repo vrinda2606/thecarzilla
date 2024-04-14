@@ -4,7 +4,7 @@ import img2 from '../Components/Images/Brands/SUZUKI.png';
 import img3 from '../Components/Images/Brands/HYUNDAI.png';
 import img4 from '../Components/Images/Brands/TOYOTA.png';
 import img5 from '../Components/Images/Brands/MG.png';
-import img6 from '../Components/Images/Brands/HYUNDAI.png';
+import img6 from '../Components/Images/Brands/HONDA.png';
 import img7 from '../Components/Images/Brands/SKODA.png';
 import img8 from '../Components/Images/Brands/NISSAN.png';
 import img9 from '../Components/Images/Brands/VOLKSWAGON.png';
