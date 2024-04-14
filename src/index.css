@@ -1257,27 +1257,30 @@ button{
 }
 
 /*.testimonialCarousel*/
+
 .testimonial{
-  padding: 0 0 50px 0;
+  padding: 0vw 0vw 2vw 0vw;
   position: relative;
   margin: auto;
   width: 100%;
-  height: 450px;
+  height: 30vw;
   /* display: flex;
   justify-content: center; */
   font-family: "Work Sans";
 }
 .testimonial-box{
-  padding: 0px 20px;
+  margin: auto;
+  padding: 0vw 0.8vw;
+  width: 97%;
 }
 .testimonials{
-  height: 318px;
-  width: 345px;
+  height: 20vw;
+  width: 22vw;
   /* padding-top: 0px; */
-  margin: 0 auto 15px auto;
-  box-shadow: 0px 2px 18px 0px #6E82D02B;
+  margin: 0 auto 1.3vw auto;
+  box-shadow: 0vw 0.3vw 1.2vw 0vw #6E82D02B;
   background: #FFFFFF01;
-  border-radius: 10px;
+  border-radius: 0.5vw;
   position: relative;
 }
 .testimonial_slider{
@@ -1286,61 +1289,60 @@ button{
   position: relative;
 }
 .testimonials .testimonialHeader{
-  margin: 40px auto 10px;
+  margin: 2vw auto 1vw;
   width: 88%;
-  padding-top: 30px;
-  height: 87px;
+  padding-top: 0.7vw;
+  height: auto;
   display: flex;
   align-items: center;
 }
 .testimonialHeader .customerImage {
-  height: 80px;
-  width: 80px;
-  margin-right: 12px;
+  height: 5.3vw;
+  width: 5.3vw;
+  margin-right: 0.6vw;
 }
 .customerImage img{
-  box-shadow: 0px 6px 20px 2px #D3DCE8;
-  border-radius: 80px;
-  border: 5px solid #FFFFFF;
-  width: 80px;
-  height: 80px; 
+  box-shadow: 0vw 0.4vw 0.7vw 0.4vw #D3DCE8;
+  border-radius: 50%;
+  border: 0.3vw solid #FFFFFF;
+  width: 5.2vw;
+  height: 5.2vw; 
 }
 .customerNameReview {
   flex-grow: 1;
 }
 .customerNameReview p {
   margin: 0;
-  font-size: 20px;
+  font-size: 1.3vw;
   font-weight: 800;
-  line-height: 33.6px;
+  line-height: 2.1vw;
   color: #071537;
-  height: 28px;
+  height: 1.8vw;
   width: auto;
   font-weight: 600;
 }
-
 .testimonials .testimonailReview{
   margin: auto;
   width: 94%;
   height: auto;
   font-weight: 500;
-  font-size: 15px;
-  padding: 10px;
+  font-size: 0.95vw;
+  padding: 0.8vw;
   text-align: left;
-  line-height: 26.6px;
+  line-height: 1.7vw;
 }
 .blackCircle {
   position: absolute;
-  top: -30px;
+  top: -2vw;
   right: -10%;
-  width: 72px;
-  height: 72px;
+  width: 4.7vw;
+  height: 4.7vw;
   background-color: black;
   color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
-  font-size: 24px; 
+  font-size: 1.6vw; 
   justify-content: center;
   /* padding: 24px; */
 } 
