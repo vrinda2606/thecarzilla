@@ -909,7 +909,7 @@ button{
 .TeamCoordinators{
   width: 80%;
   height: 49%;
-  margin: 120px auto 40px;
+  margin: 8vw auto 2.7vw;
   display: flex;
   justify-content: space-between;
 }
@@ -926,14 +926,14 @@ button{
   background-color: #292929;
   background-repeat: repeat;
   background-image : url('./Components/Images/bgEffect.png');
-  background-size: auto;
+  background-size: 40vw auto;
   background-blend-mode: overlay;
 }
 .team-mates-bg .team-mates-img{
   width: 150%;
   height: 110%;
   position: absolute;
-  top: -35%; /* Move image 25% up from its original position */
+  top: -35%; /*Move image 25% up from its original position */
   left: -25%;
 }
 
@@ -943,17 +943,38 @@ button{
   color: #000000;
   text-align: center;
   font-family: 'Poppins';
-  margin-top: -8px;
+  margin-top: -0.6vw;
 }
 .team-mates-names h4{
-  line-height: 40.5px;
+  line-height: 2.8vw;
   font-weight: 700;
-  font-size: 27px;
+  font-size: 1.7vw;
 }
 .team-mates-names p{
-  line-height: 27px;
+  line-height: 1.7vw;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 1.2vw;
+}
+.buttonContactTeam{
+  width: 9.5vw;
+  height: 3.3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.buttonContactTeam button{
+  font-size: 0.9vw;
+  border-radius: 0.6vw;
+  padding: 0vw 2vw;
+  background-color: #000000;
+  color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  font-family: 'Lexend Deca';
+  font-weight: 700;
+  text-align: center;
 }
 
 /*App Lite*/

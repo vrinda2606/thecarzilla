@@ -4,7 +4,7 @@ import {images} from '../utils/constants';
 
 const Team = () => {
   return (
-    <div className='BlackBg' style={{height : '840px'}}>
+    <div className='BlackBg' style={{height : '55vw'}}>
         <div className='HeadingBoxBlack'>
         <div className='HeadingBlackDiv'>
             <span className='BlackDivfirst'><hr/><p >OUR TEAM</p><hr/></span>
@@ -40,8 +40,8 @@ const Team = () => {
       </div>
       
       <NavLink exact to='/AboutUs' onClick={() => { window.scrollTo({top: 0,behavior: "instant"})}}>
-      <div className="buttonContact">
-          <button className="btnContact">About Us</button>
+      <div className="buttonContactTeam">
+          <button className="btnContactTeam">About Us</button>
       </div>
       </NavLink>
     </div>
