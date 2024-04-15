@@ -46,7 +46,7 @@ const SearchBar = () => {
           alignItems: 'center',
         }}
       >
-        <SearchIcon type="submit" style={{ maxWidth: '1.6vw', maxHeight: '1.6vw' }} />
+        <SearchIcon type="submit" style={{ height: '1.6vmax' , width : '1.6vmax' }} />
         <input
           className="search-bar"
           value={searchQuery}
@@ -65,7 +65,7 @@ const SearchBar = () => {
 
         <Tooltip title="Click to show options" style={{padding : "0.5vw"}}>
           <IconButton>
-            <SortIcon style={{maxHeight: '2vw' , maxWidth : '2vw'}}/>
+            <SortIcon style={{ height: '2vmax' , width : '2vmax'}}/>
           </IconButton>
         </Tooltip>
       </Paper>
