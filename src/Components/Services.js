@@ -1,5 +1,8 @@
 import React from 'react';
 import { images } from '../utils/servicesContent';
+import FAQ from './FAQ';
+import Testimonial from './Testimonial';
+import LiteApp from './LiteApp';
 
 const Services = () => {
   return (
@@ -85,6 +88,11 @@ const Services = () => {
 
         </div>
       </div>
+
+      <FAQ />
+
+      <Testimonial />
+      <LiteApp />
     </>
   )
 }
