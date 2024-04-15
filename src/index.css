@@ -95,6 +95,35 @@ button{
 .dropdown ul li:hover {
   background-color: #e0d7d7;
 }
+.MenuDropdown{
+  position: absolute;
+  top: calc(100%);
+  margin-left: 1vw;
+  box-shadow: 0.3vw 2.7vw 2vw 0.8vw rgba(0, 0, 0, 0.5);
+  border-radius: 0vw 0vw 2vw 2vw;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 98%;
+  height: auto;
+  left: 0;
+  font-weight: 600;
+  background-color: white;
+  font-size: 1.2vw;
+  padding-top: 1.2vw;
+  padding-bottom: 1.2vw;
+}
+.MenuDropdown .MenuDropdownOpt{
+  line-height: 4vw;
+  width: 100%;
+  text-align: center;
+}
+.MenuDropdown .MenuDropdownOpt:hover{
+  background-color: rgba(206, 191, 224, 0.5);
+}
+.MenuShow{
+  display: flex;
+}
 
 /*Home Find Car*/
 .Home{

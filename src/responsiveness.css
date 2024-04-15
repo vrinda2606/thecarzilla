@@ -4,6 +4,9 @@
       display: flex;
       position: relative;
     }
+    .MenuShow{
+      display: flex;
+    }
     .navbarIcons{
       display: none;
     }  

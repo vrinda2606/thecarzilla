@@ -8,13 +8,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell,faGear,faUser, faX } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
 
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "instant"
-  });
-};
-
 const iconContainerStyle = {
     width: "2.6vw",
     height: "2.6vw",
@@ -44,6 +37,14 @@ const Navbar = () => {
   };
 
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant"
+    });
+    toggleMenu();
+  };
+
   const navbarHeight = 90; // Adjust acc to height of Navbar
 
    const scrollToContactForm = () => {
@@ -52,6 +53,7 @@ const Navbar = () => {
        const topPosition = contactFormElement.offsetTop - navbarHeight;
        window.scrollTo({ top: topPosition, behavior: 'smooth' });
      }
+     toggleMenu();
    };
 
   return (
@@ -103,6 +105,13 @@ const Navbar = () => {
 
       <div className='MenuRespons'>
          <FontAwesomeIcon icon={menuBarIcon} className='menuIconNav' onClick={toggleMenu}/>
+      </div>
+
+      <div className={`MenuDropdown ${menuBarIcon === faX ? 'MenuShow' : '' }`}>
+        <NavLink className='MenuDropdownOpt' exact activeclassname ='active' to="/" onClick={scrollToTop}>Home</NavLink>
+        <NavLink className='MenuDropdownOpt' to="/" onClick={scrollToContactForm}>Buy New Car</NavLink>
+        <NavLink className='MenuDropdownOpt' activeclassname ='active' to="/">Blog</NavLink>
+        <NavLink className='MenuDropdownOpt' activeclassname ='active' onClick={scrollToTop} to="/Services">Services</NavLink>
       </div>
      </Stack>
      </>
