@@ -28,12 +28,6 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
-.search-bar{
-    border:none;
-    outline:none;
-    width:350px;
-  }
 a {
     text-decoration: none;
     color: black;
@@ -52,45 +46,55 @@ button{
 }
 
 /*Search bar */
+.search-bar{
+  border:none;
+  outline:none;
+  width: 16vw;
+  height: 1.4vw;
+  outline: none;
+  box-sizing: border-box;
+  padding: 0.5vw 0.7vw;
+  font-size: 0.9vw;
+  margin-top: 0.1vw;
+  line-height: 1.4vw;
+}
 .options{
   display: flex;
-  margin-top: 10px;
-  margin-right: 30px;
+  margin-top: 0.7vw;
+  margin-right: 1.3vw;
   justify-content: space-evenly;
 }
 .navLinks{
-  margin-top:10px;
+  margin-top:1vw;
   font-weight: 700;
-  width: 460px;
-  height: 25px;
+  font-size: 1.2vw;
+  width: 30vw;
+  height: 1.7vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .dropdown {
   position: absolute;
   top: calc(80%);
-  width: 240px;
+  margin-left: 1.7vw;
+  width: 15vw;
   background-color: #fff;
   /* border: 1px solid #ccc; */
-  border-radius: 4px;
+  border-radius: 0.4vw;
 }
-
 .dropdown ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
+  padding: 0vw;
+  font-size: 1vw;
+  margin: 0vw;
 }
-
 .dropdown ul li {
-  padding: 8px;
+  padding: 0.8vw;
 }
-
 .dropdown ul li:hover {
   background-color: #e0d7d7;
 }
-
 
 /*Home Find Car*/
 .Home{

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Paper, Menu, IconButton, Tooltip } from '@mui/material';
+import { Paper, IconButton, Tooltip } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import SortIcon from '@mui/icons-material/Sort';
 import { Link } from 'react-router-dom';
@@ -33,34 +33,25 @@ const SearchBar = () => {
       <Paper
         component="form"
         sx={{
-          borderRadius: 20,
-          border: '1px solid #C3D4E966',
-          pl: 2,
+          borderRadius: '1.5vw',
+          border: '0.01vw solid #C3D4E966',
+          pl: '0.8vw',
           boxShadow: 'none',
-          mt: '8px',
+          mt: '0.7vw',
           color: '#596780',
-          width: '332px',
-          height: '44px',
+          width: '22vw',
+          height: '2.9vw',
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
         }}
       >
-        <SearchIcon type="submit" style={{ width: '25px', height: '25px' }} />
+        <SearchIcon type="submit" style={{ maxWidth: '1.6vw', maxHeight: '1.6vw' }} />
         <input
           className="search-bar"
           value={searchQuery}
           onChange={handleSearch}
           placeholder="Search something here..."
-          style={{
-            width: '240px',
-            height: '20px',
-            outline: 'none',
-            boxSizing: 'border-box',
-            padding: '4px 8px',
-            fontSize: '14px',
-            lineHeight: '21px',
-          }}
         />
         <div className='dropdown'>
             {filteredOptions.length > 0 && (
@@ -72,16 +63,11 @@ const SearchBar = () => {
             )}
         </div>
 
-        <Tooltip title="Click to show options">
+        <Tooltip title="Click to show options" style={{padding : "0.5vw"}}>
           <IconButton>
-            <SortIcon />
+            <SortIcon style={{maxHeight: '2vw' , maxWidth : '2vw'}}/>
           </IconButton>
         </Tooltip>
-        <Menu
-          id="search-menu"
-          sx={{ maxHeight: 250 }} // Limit dropdown height
-        >
-        </Menu>
       </Paper>
     </>
   );

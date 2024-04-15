@@ -4,32 +4,32 @@ import {Link, NavLink} from "react-router-dom";
 import {images} from '../utils/constants';
 import SearchBar from  './SearchBar';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import SettingsIcon from '@mui/icons-material/Settings';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell,faUser, faX } from '@fortawesome/free-solid-svg-icons';
+import { faBell,faGear,faUser, faX } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
 
 const scrollToTop = () => {
   window.scrollTo({
     top: 0,
-    behavior: "instant" // Smooth scrolling animation
+    behavior: "instant"
   });
 };
 
 const iconContainerStyle = {
-    width: "40px",
-    height: "40px",
-    border: "1px solid #C3D4E966",
-    borderRadius: "90px",
-    marginTop: "0px",
+    width: "2.6vw",
+    height: "2.6vw",
+    border: "0.15vw solid #C3D4E966",
+    borderRadius: "50%",
+    marginTop: "0vw",
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "center"
   };
   
-  const iconStyle = {
+const iconStyle = {
+    padding : 'auto',
     color: "#596780",
-    fontSize: "20px" // Note: fontSize should be a string, not inside quotes
+    fontSize: "1.3vw"
   };
   
 
@@ -55,6 +55,7 @@ const Navbar = () => {
    };
 
   return (
+      <>
       <Stack direction="row" 
          alignItems="center" 
          p={2} 
@@ -66,8 +67,9 @@ const Navbar = () => {
               background: 'white', 
               justifyContent: 'space-between',
               backgroundColor: "white"}}>
-      <Link to="/" style={{display: 'flex' , alignItems: 'center'}} onClick={()=> window.scrollTo({top: 0,behavior: "smooth"})}>
-      <img src={images[0].url} alt="logo" style={{width: "12vw",height: "4vw" ,marginLeft: "12px"}} />
+
+      <Link to="/" style={{display: 'flex' , alignItems: 'center',marginLeft: "1vw"}} onClick={()=> window.scrollTo({top: 0,behavior: "smooth"})}>
+      <img src={images[0].url} alt="logo" style={{width: "12vw",height: "4vw"}} />
       </Link>
       
 
@@ -79,21 +81,22 @@ const Navbar = () => {
       </div>    
 
       <div className='navbarIcons'>
-        <SearchBar />
+          <SearchBar />
       </div>
+
       <div className='options navbarIcons'>
-         <div className='like' style={{...iconContainerStyle, marginRight : "14px"}}>
+         <div className='like' style={{...iconContainerStyle, marginRight : "1vw"}}>
             <FavoriteIcon style={iconStyle} />
          </div>
-         <div className='notification' style={{...iconContainerStyle, marginRight : "14px"}}>
+         <div className='notification' style={{...iconContainerStyle, marginRight : "1vw"}}>
             <FontAwesomeIcon icon={faBell} style={iconStyle} />
          </div>
-         <div className='setting' style={{...iconContainerStyle, marginRight : "14px"}}>
-            <SettingsIcon style={iconStyle} />
+         <div className='setting' style={{...iconContainerStyle, marginRight : "1vw"}}>
+            <FontAwesomeIcon icon={faGear} style={iconStyle} />
          </div>
          <NavLink exact to='/Login' onClick={() => { window.scrollTo({top: 0,behavior: "smooth"})}}>
-         <div className='profile' style={{marginTop: "0px",width: "35px",height: "35px",borderRadius: "90px",display: "flex",justifyContent: "center",alignItems: "center",}}>
-            <FontAwesomeIcon icon={faUser} style={{color: "black",fontSize: "25px"}} />
+         <div className='profile' style={{marginTop: "0vw",width: "2.6vw",height: "2.6vw",borderRadius: "50%",display: "flex",justifyContent: "center",alignItems: "center"}}>
+            <FontAwesomeIcon icon={faUser} style={{color: "black",fontSize: "1.5vw"}} />
          </div>
          </NavLink>
       </div>
@@ -102,6 +105,7 @@ const Navbar = () => {
          <FontAwesomeIcon icon={menuBarIcon} className='menuIconNav' onClick={toggleMenu}/>
       </div>
      </Stack>
+     </>
   )
 }
 
