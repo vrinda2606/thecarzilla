@@ -23,8 +23,8 @@ const Footer = () => {
               <div style={{display: 'flex' , alignItems: 'center',width:"13vw" ,height:"5vw"}}>
               <img src={images[16].url} alt='logo' style={{width:"100%",height:"100%",objectFit: "cover"}} />
               </div>
-              <div style={{width: '100%',height: "9vh",color:'#E5E6E8'}}>
-                <p style={{fontFamily:'Space Grotesk',fontWeight: "400",fontSize:"1vw",lineHeight:"4.5vh"}}>4th Floor, Pre-Incubation Lab, TBI-KIET, Ghaziabad - 201206</p>
+              <div style={{width: '100%',height: "4.2vw",color:'#E5E6E8'}}>
+                <p style={{fontFamily:'Space Grotesk',fontWeight: "400",fontSize:"1vw",lineHeight:"2.1vw"}}>4th Floor, Pre-Incubation Lab, TBI-KIET, Ghaziabad - 201206</p>
               </div>
               <div className='contactSocial'>
                 <div className='X social'><a href='/' target='blank'><FontAwesomeIcon icon={faXTwitter} /></a></div>
@@ -54,11 +54,11 @@ const Footer = () => {
 
           <div className='footerThree'>
             <div className='subscribe' >
-                <h6 style={{height : '1.9vw',width:'100%' ,fontFamily : 'Lexend Deca',fontWeight :'600',fontSize : '1.2vw',lineHeight : '28px',color : '#FFFFFF'}}>
+                <h6 style={{height : '1.9vw',width:'100%' ,fontFamily : 'Lexend Deca',fontWeight :'600',fontSize : '1.2vw',lineHeight : '1.9vw',color : '#FFFFFF'}}>
                 Subscribe To Newsletter
                 </h6>
-                <input type='text' placeholder='Enter your email...' style={{textIndent: '20px',color: '#000000',fontFamily : 'Space Grotesk',fontWeight : '400',fontSize: '0.8vw',lineHeight : '1.6vw',height:'3.2vw',width : '100%'}}></input>
-                <button style={{backgroundColor: '#FF3F00',fontWeight: '500',fontSize:'1vw',lineHeight :'1.2vw',color : '#FFFFFF',width :'8vw',height: '3.1vw',padding : '1vw 1.1vw',gap :'1vh',fontFamily : 'Lexend Deca'}}>Subscribe</button>
+                <input type='text' placeholder='Enter your email...' style={{textIndent: '1.7vw',color: '#000000',fontFamily : 'Space Grotesk',fontWeight : '400',fontSize: '0.8vw',lineHeight : '1.6vw',height:'3.2vw',width : '100%'}}></input>
+                <button style={{backgroundColor: '#FF3F00',fontWeight: '500',fontSize:'1vw',lineHeight :'1.2vw',color : '#FFFFFF',width :'8vw',height: '3.1vw',padding : '1vw 1.1vw',gap :'0.5vw',fontFamily : 'Lexend Deca'}}>Subscribe</button>
             </div>
             <div className='startUpLogo'>
                 <div>
@@ -74,8 +74,8 @@ const Footer = () => {
         </div>
 
         <div className='bottom'>
-            <hr width="100%" style={{border: "1px solid #E5E6E8",margin:"auto"}}></hr>
-            <div style={{display:"flex",justifyContent: "space-between",width: "100%" ,height:"3.5vh",color :"#E5E6E8",margin:"3.5vh 0vh 0vh",fontFamily:"Space Grotesk",fontWeight: "400",fontSize :"1.7vh"}}>
+            <hr width="100%" style={{border: "0.1vw solid #E5E6E8",margin:"auto"}}></hr>
+            <div style={{display:"flex",justifyContent: "space-between",width: "100%" ,height:"1.7vw",color :"#E5E6E8",margin:"1.7vw 0vw 0vw",fontFamily:"Space Grotesk",fontWeight: "400",fontSize :"0.8vw"}}>
                <p >Copyright ©2024 IgniteX Solutions Pvt. Ltd.</p>
                <p >Designed by IgniteX Solutions </p>
             </div>

@@ -7,27 +7,11 @@
     .navbarIcons{
       display: none;
     }  
-    .footerOne{
-      width: 30vw;
-    }
-    .footerOne .contactSocial .social{
-      width: 25px;
-      height: 25px;
-    }
-    .footerMain{
-      height: 50vh;
-    }
-    .footer{
-      padding-top: 5vh;
-    }
     .footer,
     .bottom{
       width: 94%;
     }
-    .footerThree {
-      width: 27vw;
-      height: 20vw;
-    }.login{
+    .login{ 
       flex-wrap: wrap;
       justify-content: center;
     }

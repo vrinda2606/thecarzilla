@@ -490,7 +490,7 @@ button{
 .footerMain{
   background-color: #03040A;
   width: 100%;
-  height: 67vh;
+  height: 31vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -498,10 +498,9 @@ button{
 .footer{
   display: flex;
   justify-content: space-between;
-  padding-top: 9vh;
-  width: 75vw;
+  padding-top: 4vw;
+  width: 75%;
 }
-
 .footerOne{
   width: 25vw;
   height: 14vw;
@@ -510,31 +509,31 @@ button{
   justify-content: space-between;
 }
 .footerOne .contactSocial {
-  width:14vw;
-  height: 5vh;
+  width:55%;
+  height: 2.7vw;
   display: flex;
   justify-content: space-between;
 }
-
 .footerOne .contactSocial .social{
   background-color: #D43500;
-  height: 38px;
-  width: 38px;
+  height: 2.5vw;
+  width: 2.5vw;
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center; 
 }
 .footer .contactSocial .social:hover{
-  transform: translateY(-2px);
-  box-shadow: 0px 5px 15px rgba(76, 75, 75, 0.4);
+  transform: translateY(-0.2vw);
+  box-shadow: 0vw 0.3vw 0.8vw rgba(76, 75, 75, 0.4);
 }
 .footerOne .contactSocial .social a{
     color: white;
+    font-size: 1.5vw;
 }
 .footerTwo{
   width: 18vw;
-  height: 32vh;
+  height: 14vw;
   gap : 2.5vw;
   display: flex;
   justify-content: space-between;
@@ -545,25 +544,24 @@ button{
 }
 .footerTwo-1 h6{
   width: 100%;
-  height: 5vh;
+  height: 2.5vw;
   color: #FFFFFF;
   font-family : 'Lexend Deca';
   font-weight : 600;
   font-size : 1.3vw;
-  line-height : 5vh;
+  line-height : 2.5vw;
 }
 .footerTwo-1 .links{
   width: 100%;
   font-family : 'Space Grotesk';
   font-weight: 400;
   font-size: 1vw;
-  line-height : 3.5vh;
+  line-height : 1.7vw;
   color : #E5E6E8;
   display: block;
   justify-content: space-around;
-  margin-top: 10px;
+  margin-top: 0.6vw;
 }
-
 .footerThree{
   display: flex;
   flex-direction: column;
@@ -571,13 +569,12 @@ button{
   height: auto;
   max-width: 20vw;
 }
-
 .footerThree .subscribe{
   display: flex;
   flex-direction: column;
   width: 20vw;
   height: auto;
-  gap : 3vh;
+  gap : 1.4vw;
 }
 .footerThree .startUpLogo{
   display: flex;
@@ -596,15 +593,14 @@ button{
   width: 9vw;
   height: 100%;
 }
-
 .bottom{
   margin-top: 3.3vw;
-  width: 75vw;
+  width: 75%;
 }
 .bottom p{
   width: auto;
   height: 100%;
-  line-height: 2vh;
+  line-height: 1vw;
 }
 
 /* Black bg headings*/
@@ -1058,7 +1054,6 @@ button{
   align-items: center;
   margin: -1.3vw auto 2.5vw;
 }
-
 .buttonContactApp button{
   background-color: #000000;
   color: #FFFFFF;
@@ -1072,7 +1067,6 @@ button{
   padding: 0vw 2vw;
   border-radius : 0;
 }
-
 .appLite .para{
   font-weight: 400;
   font-family: 'Space Grotesk';
@@ -1088,7 +1082,6 @@ button{
   line-height: 1vw;
   margin-top: 1vw;
 }
-
 .appLite .playStore{
   height: 3.2vw;
   width: 20vw;
@@ -1113,7 +1106,6 @@ button{
 }
 
 /*Login*/
-
 .login{
   width: 100%;
   height: auto;
@@ -1133,7 +1125,6 @@ button{
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 .loginForm .loginHeading h1{
   font-family: 'Lexend Deca';
@@ -1154,7 +1145,6 @@ button{
   justify-content: space-evenly;
   align-items: center;
 }
-
 .loginDetails .loginDetailsDivI,
 .loginDetails .loginDetailsDivII,
 .loginDetails .loginDetailsDivIII,
@@ -1239,7 +1229,6 @@ button{
   -webkit-appearance: none;
   margin: 0;
 }
-
 .loginDetailsDivIII .otp_for_verification{
   width: 100%;
   height: 100%;
@@ -1257,7 +1246,6 @@ button{
 }
 
 /*.testimonialCarousel*/
-
 .testimonial{
   padding: 0vw 0vw 2vw 0vw;
   position: relative;
@@ -1571,7 +1559,6 @@ button{
 }
 .FAQQues{
   display: flex;
-  /* line-height: 2.4vw; */
 }
 .FAQQues div{
   width: 2.1vw;
@@ -1585,7 +1572,6 @@ button{
   font-size: 2.2vw;
 }
 .FAQQues div p{
- 
   line-height: 2.4vw;
   cursor: pointer;
   color: #000000;
@@ -1607,7 +1593,6 @@ button{
 .FAQAns li{
   margin-left: 1.3vw;
 }
-
 .FAQHr{
   border: 0.15vmax solid white;
   margin: 1.4vw 3.5vw;
@@ -1619,7 +1604,6 @@ button{
   justify-content: center;
   margin: 0 auto 2vw;
 }
-
 .buttonFAQ button{
   font-size: 0.9vw;
   border-radius: 0.6vw;
