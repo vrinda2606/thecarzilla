@@ -16,7 +16,7 @@ const HomeIII = () => {
 
 
 
-      <div className='HomeIII'>
+      <div className='HomeIII' style={{marginTop : '7vw' , marginBottom : '8vw'}}>
          <div className='card'>
            <div className='cardIcon'>
            <FontAwesomeIcon className='cardIconLogo' icon={faLayerGroup}/>
