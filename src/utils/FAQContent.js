@@ -34,7 +34,7 @@ export const FAQContent = [
         ques : "How Can I Cancel A TheCarzilla.in Service?",
         ans : (
             <>
-                To cancel a CarDekho service, follow these steps:
+                To cancel a TheCarzilla.in service, follow these steps:
                 <ol>
                   <li>Go to the "My Orders" section on our platform.</li>
                   <li>Locate the specific order that you wish to cancel.</li>

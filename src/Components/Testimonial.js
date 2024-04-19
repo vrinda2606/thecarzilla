@@ -1,32 +1,33 @@
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
 import { testimonialContent } from '../utils/testimonialsContent';
 import Aos from 'aos';
 
-const responsive = {
-      superLargeDesktop: {
-        // the naming can be any, depends on you.
-        breakpoint: { max: 4000, min: 3000 },
-        items: 4
-      },
-      desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 3
-      },
-      tablet: {
-        breakpoint: { max: 1024, min: 464 },
-        items: 2
-      },
-      mobile: {
-        breakpoint: { max: 464, min: 0 },
-        items: 2
-      }
-    };
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style,borderRadius:'50%', background: "black"}}
+      onClick={onClick}
+    />
+  );
+}
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style,borderRadius:'50%', background: "black"}}
+      onClick={onClick}
+    />
+  );
+}
 
 const Testimonial = () => {
 
@@ -36,8 +37,39 @@ const Testimonial = () => {
   },[] )
   // data-aos='fade-up'
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    cssEase: "linear",
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024, // Width up to 1024px
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 768, // Width up to 768px
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  };
+
       return (
-    <div className='WhiteBg' style={{height: "48vw"}}>
+    <div className='WhiteBg' style={{height: "52vw"}}>
     <div className='WhiteBgContent'>
         <div className='headingBoxWhite' data-aos='fade-up'>
         <div className='HeadingWhiteDiv'>
@@ -47,38 +79,9 @@ const Testimonial = () => {
         </div>
         </div>
         
-      <div className='testimonial' data-aos='fade-up'>
-            <Container>
-                  <Row>
-                        <Col>
-                              <div className='testimonial-box'>
-                                <Carousel 
-                                    responsive={responsive} 
-                                    infinite={true} 
-                                    className='testimonial_slider' 
-                                    autoPlay 
-                                    autoPlaySpeed={3000} 
-                                    additionalTransfrom={0} 
-                                    arrows centerMode={false} 
-                                    containerClass="container" 
-                                    dotListClass="" 
-                                    // focusOnSelect={true} 
-                                    itemClass="" 
-                                    keyBoardControl={true}
-                                    minimumTouchDrag={50} 
-                                    pauseOnHover ={false}
-                                    renderArrowsWhenDisabled={false}
-                                    renderButtonGroupOutside={true}
-                                    renderDotsOutside = {true}
-                                    rewind={false}
-                                    rewindWithAnimation={false}
-                                    rtl={false}
-                                    shouldResetAutoplay
-                                    showDots
-                                    sliderClass=""
-                                    slidesToSlide={1}
-                                    swipeable>
-            {testimonialContent.map( (item,index) => (
+      <div className='testimonial'>
+      <Slider {...settings} >
+      {testimonialContent.map( (item,index) => (
               <div key={index} className='testimonials'>
                 <div className="blackCircle"><FontAwesomeIcon icon={faQuoteRight} /></div>
                 <div className='testimonialHeader'>
@@ -91,11 +94,7 @@ const Testimonial = () => {
               </div>
             )
             )}
-                                    </Carousel>
-                              </div>
-                        </Col>
-                  </Row>
-            </Container>
+      </Slider>
       </div>
      </div>
     </div>

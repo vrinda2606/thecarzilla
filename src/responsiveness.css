@@ -33,4 +33,8 @@
     .loginDetailsDivIII .Phone_number_for_otp{
       width: 79%;
     }
+    .slick-slide>div{
+      margin: 2vw 10vw;
+      width: 22vw;
+    }
   }
