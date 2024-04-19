@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark} from '@fortawesome/free-solid-svg-icons';
-
+import Aos from 'aos';
 
 const ContactForm = () => {
 
+  // import Aos from 'aos';
+  useEffect( () => {
+    Aos.init({duration : 2000});
+  },[] )
+  // data-aos='fade-up'
 
   const [popupVis , setPopupVis] = useState(false);
   
@@ -31,7 +36,7 @@ const ContactForm = () => {
   return (
     <div id="contact-form-container" className='BlackBg' style={{height : '38vw'}}>
     <div className={`contactFormDiv ${popupVis ? 'active' : ''}`}>
-      <div className='HeadingBoxBlack'>
+      <div className='HeadingBoxBlack' data-aos='fade-up'>
       <div className='HeadingBlackDiv'>
          <span className='BlackDivfirst'><hr /><p>BOOK YOUR DREAM CAR</p><hr/></span>
          <span className='BlackDivMiddle'><h1>Get Personalized Quote</h1></span>
@@ -39,7 +44,7 @@ const ContactForm = () => {
       </div>
       </div>
 
-      <div className='contactForm'>
+      <div className='contactForm' data-aos='fade-up'>
       <form id="contact-form" className="contact-form">
                 <div className="input-box">
                    <div className="input-field">

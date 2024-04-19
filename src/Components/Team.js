@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { NavLink } from 'react-router-dom';
 import {images} from '../utils/constants';
+import Aos from 'aos';
 
 const Team = () => {
+
+   // import Aos from 'aos';
+  useEffect( () => {
+   Aos.init({duration : 2000});
+ },[] )
+ // data-aos='fade-up'
+
   return (
     <div className='BlackBg' style={{height : '55vw'}}>
-        <div className='HeadingBoxBlack'>
+        <div className='HeadingBoxBlack' data-aos='fade-up'>
         <div className='HeadingBlackDiv'>
             <span className='BlackDivfirst'><hr/><p >OUR TEAM</p><hr/></span>
             <span className='BlackDivMiddle'><h1>Meet Our Leadership Team</h1></span>
@@ -14,14 +22,14 @@ const Team = () => {
       </div>
 
       <div className='TeamCoordinators'>
-         <div className='team-mates'>
+         <div className='team-mates' data-aos='fade-up'>
             <div className='team-mates-bg'></div>
             <div className='team-mates-names'>
                <h4>Permeet Singh</h4>
                <p>Co-Founder, Head of Sales</p>
             </div>
          </div>
-         <div className='team-mates'>
+         <div className='team-mates' data-aos='fade-up'>
             <div className='team-mates-bg'>
                <img className='team-mates-img' src={images[13].url} alt='mgImage' />
             </div>
@@ -30,7 +38,7 @@ const Team = () => {
                <p>Founder, CEO</p>
             </div>
          </div>
-         <div className='team-mates'>
+         <div className='team-mates' data-aos='fade-up'>
             <div className='team-mates-bg'></div>
             <div className='team-mates-names'>
                <h4>Shubham Gupta</h4>

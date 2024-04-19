@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { images } from '../utils/constants';
+import Aos from 'aos';
 
 const TermsCond = () => {
+
+  // import Aos from 'aos';
+  useEffect( () => {
+   Aos.init({duration : 2000});
+ },[] )
+ // data-aos='fade-up'
+
   return (
     <>
        <div style={{backgroundImage: `url(${images[21].url})`,backgroundSize: "cover",backgroundRepeat : "no-repeat", width: "100%",height: "40vw"}}>
@@ -10,7 +18,7 @@ const TermsCond = () => {
 
         <div className='BlackBg' style={{height : '42vw'}}>
             
-        <div className='HeadingBoxBlack'>
+        <div className='HeadingBoxBlack' data-aos='fade-up'>
         <div className='HeadingBlackDiv'>
            <span className='BlackDivfirst'><hr/><p>WE ARE DIFFERENT</p><hr/></span>
            <span className='BlackDivMiddle'><h1>Terms & Conditions</h1></span>
@@ -18,8 +26,8 @@ const TermsCond = () => {
         </div>
         </div>
         
-        <div className='DivContent' style={{height : '17vw'}}>
-           IgniteX Solutions Private Limited operates a market place platform under the brand name, TheCarzilla.in (Platform) for the purpose of facilitating the sale and purchase of new vehicles between third party vendors and the customers of the Platform. Although you may be able to conduct payment and other transactions through the Platform using third-party vendors, the Company is not in any way involved in such transactions. As a result, you hereby agree, understand and acknowledge that TheCarzilla.in is only a facilitator and cannot be a party to control in any manner any transactions on the Website. Accordingly, the contract of purchase of products on the website shall strictly be a bipartite contract between you and the sellers on the Website.
+        <div className='DivContent' style={{height : '17vw'}} data-aos='fade-up'>
+           IgniteX Solutions Private Limited operates a market place platform under the brand name, TheCarzilla.in (Platform) for the purpose of facilitating the sale and purchase of new vehicles between third party vendors and the customers of the Platform. Although you may be able to conduct payment and other transactions through the Platform using third-party vendors, the Company is not in any way involved in such transactions. As a result, you hereby agree, understand and acknowledge that TheCarzilla.in is only a facilitator and cannot be a party to control in any manner any transactions on the Website.<br /> Accordingly, the contract of purchase of products on the website shall strictly be a bipartite contract between you and the sellers on the Website.
         </div>
          <NavLink exact to='/TermsAndConditions/:TermsAndConditionsII' onClick={() => { window.scrollTo({top: 0,behavior: "instant"})}}>
             <div className='btnForMoreDiv' >

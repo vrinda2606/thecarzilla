@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HomeI from "./HomeI";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeadphones, faLayerGroup, faLock } from '@fortawesome/free-solid-svg-icons';
+import Aos from 'aos';
 
 const AboutUs = () => {
+
+  // import Aos from 'aos';
+  useEffect( () => {
+    Aos.init({duration : 2000});
+  },[] )
+  // data-aos='fade-up'
+
   return (
     <>
       <HomeI />
       <div className='BlackBg' style={{height : '42vw'}}>
             
-        <div className='HeadingBoxBlack'>
+        <div className='HeadingBoxBlack' data-aos='fade-up'>
         <div className='HeadingBlackDiv'>
            <span className='BlackDivfirst'><hr/><p>WHY CHOOSE US</p><hr/></span>
            <span className='BlackDivMiddle'><h1>About Us</h1></span>
@@ -17,10 +25,10 @@ const AboutUs = () => {
         </div>
         </div>
         
-        <div className='DivContent' style={{height : '7vw'}}>
+        <div className='DivContent' style={{height : '7vw'}} data-aos='fade-up'>
         TheCarzilla.in is the beginning of a new era. One that is built on the foundation of transparent and meaningful automotive content in India. At TheCarzilla.in we will bring you the latest news, reviews, tech content and more to help you get closer to your buying decision.
         </div>
-        <div className='DivContent' style={{height : '7vw'}}>
+        <div className='DivContent' style={{height : '7vw'}} data-aos='fade-up'>
         TheCarzilla.in also promises to give the best prices and fastest delivery of your dream new car.TheCarzilla.in, thus provides you with what you want - Credible reviews, exclusive content and cars at the best prices!
         </div>
             
@@ -35,7 +43,7 @@ const AboutUs = () => {
 
     <div className='WhiteBg' style={{height:"55vw"}}>
     <div className='WhiteBgContent'>
-        <div className='headingBoxWhite'>
+        <div className='headingBoxWhite' data-aos='fade-up'>
           <div className='HeadingWhiteDiv'>
             <span className='WhiteDivfirst'><hr/>OUR PLUS POINTS<hr/></span>
             <span className='WhiteDivMiddle'><h1>Features</h1></span>
@@ -44,7 +52,7 @@ const AboutUs = () => {
         </div>
 
       <div className='AboutUs'>
-         <div className='cardAboutUs'>
+         <div className='cardAboutUs' data-aos='fade-up'>
            <div className='cardIconAboutUs'>
            <FontAwesomeIcon icon={faLayerGroup} className='cardIconLogoAboutUs'/>
            </div>
@@ -54,7 +62,7 @@ const AboutUs = () => {
            </div>
          </div>
 
-         <div className='cardAboutUs'>
+         <div className='cardAboutUs' data-aos='fade-up'>
            <div className='cardIconAboutUs'>
            <FontAwesomeIcon icon={faLock} className='cardIconLogoAboutUs'/>
            </div>
@@ -63,7 +71,7 @@ const AboutUs = () => {
               <p>A Determination to make your car purchase journey,a smooth ride.</p>
            </div>
          </div>
-         <div className='cardAboutUs'>
+         <div className='cardAboutUs' data-aos='fade-up'>
            <div className='cardIconAboutUs'>
            <FontAwesomeIcon icon={faHeadphones} className='cardIconLogoAboutUs'/>
            </div>
@@ -75,7 +83,7 @@ const AboutUs = () => {
       </div>
 
       <div className='AboutUs'>
-         <div className='cardAboutUs'>
+         <div className='cardAboutUs' data-aos='fade-up'>
            <div className='cardIconAboutUs'>
            <FontAwesomeIcon className='cardIconLogoAboutUs' icon={faLayerGroup}/>
            </div>
@@ -85,7 +93,7 @@ const AboutUs = () => {
            </div>
          </div>
 
-         <div className='cardAboutUs'>
+         <div className='cardAboutUs' data-aos='fade-up'>
            <div className='cardIconAboutUs'>
            <FontAwesomeIcon className='cardIconLogoAboutUs' icon={faLock}/>
            </div>
@@ -94,7 +102,7 @@ const AboutUs = () => {
               <p>We are a group of ex co-founders, engineers and top of all- car lovers.</p>
            </div>
          </div>
-         <div className='cardAboutUs'>
+         <div className='cardAboutUs' data-aos='fade-up'>
            <div className='cardIconAboutUs'>
            <FontAwesomeIcon className='cardIconLogoAboutUs' icon={faHeadphones}/>
            </div>

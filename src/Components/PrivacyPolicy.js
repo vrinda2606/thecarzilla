@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { images } from '../utils/constants';
+import Aos from 'aos';
 
 const PrivacyPolicy = () => {
+
+  // import Aos from 'aos';
+  useEffect( () => {
+    Aos.init({duration : 2000});
+  },[] )
+  // data-aos='fade-up'
+
   return (
     <>
         <div style={{backgroundImage: `url(${images[22].url})`,backgroundSize: "cover",backgroundRepeat : "no-repeat", width: "100%",height: "47vw"}}>
@@ -10,7 +18,7 @@ const PrivacyPolicy = () => {
 
         <div className='BlackBg' style={{height : '37vw'}}>
             
-        <div className='HeadingBoxBlack'>
+        <div className='HeadingBoxBlack' data-aos='fade-up'>
         <div className='HeadingBlackDiv'>
            <span className='BlackDivfirst'><hr/><p>WE ARE DIFFERENT</p><hr/></span>
            <span className='BlackDivMiddle'><h1>Privacy Policy</h1></span>
@@ -18,7 +26,7 @@ const PrivacyPolicy = () => {
         </div>
         </div>
         
-        <div className='DivContent' style={{height : 'auto'}}>
+        <div className='DivContent' style={{height : 'auto'}} data-aos='fade-up'>
         We at IgniteX Solutions Private Limited are committed to serving you better and value you as our customer/user of our website. We respect your right to privacy. This privacy policy directs the way in which TheCarzilla.in collects, uses, maintains and discloses information collected from you in the course of using the website <a href='https://thecarzilla.in/' style={{color : 'yellow'}}> thecarzilla.in</a>. This privacy policy applies to the website of TheCarzilla.in and all the services offered by TheCarzilla.in.
         </div>
             

@@ -5,10 +5,15 @@ import React,{useState,useEffect} from 'react';
 // import { images } from '../utils/constants';
 // import {brands} from '../utils/brands';
 import {background} from '../utils/background';
+import Aos from "aos";
 
 const HomeI = () => {
    const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false); // State for transition animation
+
+  useEffect( () => {
+   Aos.init({duration : 2000})
+  })
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -32,7 +37,7 @@ const HomeI = () => {
         }} />
 
        <div className="homeI">
-            <div className='homeFindCar'>
+            <div className='homeFindCar' data-aos='fade-right'>
                
                <div className="FindCarHeading">
                   <h1>Find your right car</h1>

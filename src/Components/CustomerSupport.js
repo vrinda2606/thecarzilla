@@ -1,9 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneVolume , faEnvelopeOpenText,faCircleXmark} from '@fortawesome/free-solid-svg-icons';
-import React,{useState} from 'react';
+import React,{useEffect, useState} from 'react';
 import {images} from '../utils/constants';
+import Aos from 'aos';
 
 const CustomerSupport = () => {
+
+  useEffect(() => {
+    Aos.init({duration : 2000})
+  })
 
   const [popupVis , setPopupVis] = useState(false);
   
@@ -32,7 +37,7 @@ const CustomerSupport = () => {
 
         <div className='BlackBg' style={{height : '40vw'}}>
             
-        <div className='HeadingBoxBlack'>
+        <div className='HeadingBoxBlack' data-aos='fade-up'>
         <div className='HeadingBlackDiv'>
            <span className='BlackDivfirst'><hr/><p>UNMATCHED SUPPORT</p><hr/></span>
            <span className='BlackDivMiddle'><h1>Customer Support</h1></span>
@@ -40,7 +45,7 @@ const CustomerSupport = () => {
         </div>
         </div>
         
-        <div className='DivContent' style={{height : '13.5vw'}}>
+        <div className='DivContent' style={{height : '13.5vw'}} data-aos='fade-up'>
         TheCarzilla.in is the beginning of a new era. One that is built on the foundation of transparent and meaningful automotive content in India. At TheCarzilla.in we will bring you the latest news, reviews, tech content and more to help you get closer to your buying decision.
         <br />
         TheCarzilla.in also promises to give the best prices and fastest delivery of your dream new car. 
@@ -59,12 +64,12 @@ const CustomerSupport = () => {
         
           <div className={`getInTouchDiv ${popupVis ? 'active' : ''}`}>
             <div className='getInTouchForm'>
-               <div className='TouchFormHeading'>
+               <div className='TouchFormHeading' data-aos='fade-up'>
                   <img src={images[20].url} alt= 'Get In Touch' width='60%'/>
                   <p className='TouchFormHeadingHead'>Unlocking endless support for your car buying needs</p>
                </div>
 
-               <form id='getInTouchFormDetailsID' className='getInTouchFormDetails'>
+               <form id='getInTouchFormDetailsID' className='getInTouchFormDetails' data-aos='fade-up'>
                   <input id='getInTouchName' type='text' placeholder='Name *' required />
                   <input id='getInTouchEmail' type='email' placeholder='Email' required />
                   <input id='getInTouchNumber' type='number' placeholder='Phone number *' required />
@@ -90,7 +95,7 @@ const CustomerSupport = () => {
                </div>
             </div>
 
-            <div className='getInTouchPic'></div>
+            <div className='getInTouchPic' data-aos='fade-left'></div>
           </div>
 
           <div className={`BlackBg popup2 ${popupVis ? 'active' : ''}`}>

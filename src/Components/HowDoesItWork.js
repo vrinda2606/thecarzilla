@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HomeI from './HomeI';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeadphones, faLayerGroup, faLock } from '@fortawesome/free-solid-svg-icons';
+import Aos from 'aos';
 
 const HowDoesItWork = () => {
+
+  // import Aos from 'aos';
+  useEffect( () => {
+    Aos.init({duration : 2000});
+  },[] )
+  // data-aos='fade-up'
+
   return (
     <>
         <HomeI />
         <div className='BlackBg' style={{height : '32.4vw'}}>
             
-        <div className='HeadingBoxBlack'>
+        <div className='HeadingBoxBlack' data-aos='fade-up'>
         <div className='HeadingBlackDiv'>
            <span className='BlackDivfirst'><hr/><p>WE ARE DIFFERENT</p><hr/></span>
            <span className='BlackDivMiddle'><h1>How It Works</h1></span>
@@ -17,7 +25,7 @@ const HowDoesItWork = () => {
         </div>
         </div>
         
-        <div className='DivContent' style={{height : '8vw'}}>
+        <div className='DivContent' style={{height : '8vw'}} data-aos='fade-up'>
         We understand that a car is not just a high-ticket purchase for you, it's a dream! And we want to assure you that we will be alongside you throughout this journey from car selection to car purchase to car maintenance and beyond.
         </div>
             
@@ -30,9 +38,9 @@ const HowDoesItWork = () => {
         </div>
 
 
-    <div className='WhiteBg' style={{height:"46vw"}}>
+    <div className='WhiteBg' style={{height:"50vw"}}>
     <div className='WhiteBgContent'>
-        <div className='headingBoxWhite'>
+        <div className='headingBoxWhite' data-aos='fade-up'>
           <div className='HeadingWhiteDiv'>
             <span className='WhiteDivfirst'><hr/>TO BUY A NEW CAR <hr/></span>
             <span className='WhiteDivMiddle'><h1>Just Follow Three Easy Steps</h1></span>
@@ -43,7 +51,7 @@ const HowDoesItWork = () => {
 
 
       <div className='howItWorks'>
-         <div className='card'>
+         <div className='card' data-aos='fade-up'>
            <div className='cardIcon'>
            <FontAwesomeIcon className='cardIconLogo' icon={faLayerGroup} />
            </div>
@@ -53,7 +61,7 @@ const HowDoesItWork = () => {
            </div>
          </div>
 
-         <div className='card'>
+         <div className='card' data-aos='fade-up'>
            <div className='cardIcon'>
            <FontAwesomeIcon className='cardIconLogo' icon={faLock} />
            </div>
@@ -62,7 +70,7 @@ const HowDoesItWork = () => {
               <p>Book your dream car</p>
            </div>
          </div>
-         <div className='card'>
+         <div className='card' data-aos='fade-up'>
            <div className='cardIcon'>
            <FontAwesomeIcon className='cardIconLogo' icon={faHeadphones} />
            </div>
@@ -73,7 +81,7 @@ const HowDoesItWork = () => {
          </div>
       </div>
       
-      <div className='howItWorksContent'>
+      <div className='howItWorksContent' data-aos='fade-up'>
       Along with you, investors like AY Ventures , Shakunt Finance and TBI-KIET  have also put their trust in us. And we promise to uphold the trust you all have put in us. By the way, we love all cars, new or old and if in case you want to give your old darling a farewell, we will get you the best price for that beauty as well :)
       </div>
 

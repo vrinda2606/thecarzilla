@@ -1425,8 +1425,7 @@ button{
   line-height : 2.7vw;
   width : 93%;
   text-align: center;
-  margin: -4vw auto;
-  padding-bottom: 20vw;
+  margin-bottom: 4vw;
 }
 .howItWorks .cardIcon .cardIconLogo{
   color: white;

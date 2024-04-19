@@ -77,9 +77,13 @@ const Navbar = () => {
 
       <div className='navLinks navbarIcons'>
         <NavLink exact activeclassname ='active' to="/" onClick={()=> window.scrollTo({top: 0,behavior: "instant"})}>Home</NavLink>
-        <NavLink to="/" onClick={scrollToContactForm}>Buy New Car</NavLink>
+        <NavLink to="/" onClick={() => {
+          const contactFormElement = document.getElementById('contact-form-container');
+            if (contactFormElement) {
+              const topPosition = contactFormElement.offsetTop - navbarHeight;
+              window.scrollTo({ top: topPosition, behavior: 'smooth' });}}}>Buy New Car</NavLink>
         <NavLink activeclassname ='active' to="/">Blog</NavLink>
-        <NavLink activeclassname ='active' onClick={scrollToTop} to="/Services">Services</NavLink>
+        <NavLink activeclassname ='active' onClick={() => window.scrollTo({top: 0, behavior: "instant"})} to="/Services">Services</NavLink>
       </div>    
 
       <div className='navbarIcons'>

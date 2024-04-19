@@ -5,6 +5,7 @@ import "./responsiveness.css";
 import Navbar from "./Components/Navbar";
 import {BrowserRouter} from "react-router-dom";
 import App from "./App";
+import 'aos/dist/aos.css';
 
 ReactDOM.render(
 <BrowserRouter>
