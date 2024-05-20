@@ -1009,11 +1009,10 @@ button{
   background-blend-mode: overlay;
 }
 .team-mates-bg .team-mates-img{
-  width: 150%;
-  height: 110%;
+  width: 90%;
+  height: 100%;
   position: absolute;
-  top: -35%; /*Move image 25% up from its original position */
-  left: -25%;
+  top: -25%; /*Move image 25% up from its original position */
 }
 
 .team-mates .team-mates-names{

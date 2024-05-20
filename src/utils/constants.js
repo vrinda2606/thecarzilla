@@ -11,8 +11,9 @@ import img9 from '../Components/Images/Brands/VOLKSWAGON.png';
 import img10 from '../Components/Images/Brands/JEEP.png';
 import img11 from '../Components/Images/Brands/CITROEN.png';
 import img12 from '../Components/Images/Brands/KIA.png';
-import img13 from '../Components/Images/Team/MGimage.png';
-
+import img13 from '../Components/Images/Team/PSimage.png';
+import img14 from '../Components/Images/Team/MGimage - Copy.png';
+import img15 from '../Components/Images/Team/SGimage.png';
 import img16 from '../Components/Images/logo2.png';
 import img17 from '../Components/Images/StartUpLogo1.png';
 import img18 from '../Components/Images/StartUpLogo2.png';
@@ -81,10 +82,12 @@ export const images = [
         url:img13
     },
     {
-        id:14
+        id:14,
+        url : img14
     },
     {
-        id:15
+        id:15,
+        url: img15
     },
     {
         id:16,

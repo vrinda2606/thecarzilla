@@ -29,7 +29,7 @@ const HomeIII = () => {
            </div>
            <div className='cardHeading'><h6>Dream</h6></div>
            <div className='cardDesc'>
-              <p>Fermentum luctus convallis non lectus. Aliquam at ut viverra non arcu massa laoreet commodo ac.</p>
+              <p>Don't just dream it, deal it! Score big savings on your dream car today and drive off with confidence.</p>
            </div>
          </div>
 
@@ -39,7 +39,7 @@ const HomeIII = () => {
            </div>
            <div className='cardHeading'><h6>Deal</h6></div>
            <div className='cardDesc'>
-              <p>Fermentum luctus convallis non lectus. Aliquam at ut viverra non arcu massa laoreet commodo ac.</p>
+              <p>Don't just dream it, deal it! Score big savings on your dream car today and drive off with confidence.</p>
            </div>
          </div>
          <div className='card' data-aos='fade-up'>
@@ -48,7 +48,7 @@ const HomeIII = () => {
            </div>
            <div className='cardHeading'><h6>Drive</h6></div>
            <div className='cardDesc'>
-              <p>Fermentum luctus convallis non lectus. Aliquam at ut viverra non arcu massa laoreet commodo ac.</p>
+              <p>Fuel your passion for driving and ride away with your dream car making every mile memorable.</p>
            </div>
          </div>
       </div>

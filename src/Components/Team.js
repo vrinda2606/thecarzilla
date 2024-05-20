@@ -23,7 +23,9 @@ const Team = () => {
 
       <div className='TeamCoordinators'>
          <div className='team-mates' data-aos='fade-up'>
-            <div className='team-mates-bg'></div>
+            <div className='team-mates-bg'>
+              <img className='team-mates-img' src={images[13].url} alt='psImage' />
+            </div>
             <div className='team-mates-names'>
                <h4>Permeet Singh</h4>
                <p>Co-Founder, Head of Sales</p>
@@ -31,7 +33,7 @@ const Team = () => {
          </div>
          <div className='team-mates' data-aos='fade-up'>
             <div className='team-mates-bg'>
-               <img className='team-mates-img' src={images[13].url} alt='mgImage' />
+               <img className='team-mates-img' src={images[14].url} alt='mgImage' />
             </div>
             <div className='team-mates-names'>
                <h4>Madhav Garg</h4>
@@ -39,7 +41,9 @@ const Team = () => {
             </div>
          </div>
          <div className='team-mates' data-aos='fade-up'>
-            <div className='team-mates-bg'></div>
+            <div className='team-mates-bg'>
+               <img className='team-mates-img' src={images[15].url} alt='sgImage' />
+            </div>
             <div className='team-mates-names'>
                <h4>Shubham Gupta</h4>
                <p>Chief Marketing Officer</p>
