@@ -1,5 +1,5 @@
 import img1 from '../Components/Images/Hero Section/HERO SECTION IMAGE 1.png';
-import img2 from '../Components/Images/Hero Section/HERO SECTION IMAGE 2.png';
+import img2 from '../Components/Images/Hero Section/HERO SECTION IMAGE 2_.png';
 import img3 from '../Components/Images/Hero Section/hero section image 3.png';
 
 

@@ -29,7 +29,7 @@ const HomeIII = () => {
            </div>
            <div className='cardHeading'><h6>Dream</h6></div>
            <div className='cardDesc'>
-              <p>Don't just dream it, deal it! Score big savings on your dream car today and drive off with confidence.</p>
+              <p>Dream big, drive bigger. Find your dream car effortlessly and start living the dream.</p>
            </div>
          </div>
 
