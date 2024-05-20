@@ -12,7 +12,7 @@ import img10 from '../Components/Images/Brands/JEEP.png';
 import img11 from '../Components/Images/Brands/CITROEN.png';
 import img12 from '../Components/Images/Brands/KIA.png';
 import img13 from '../Components/Images/Team/PSimage.png';
-import img14 from '../Components/Images/Team/MGimage - Copy.png';
+import img14 from '../Components/Images/Team/MGimage.png';
 import img15 from '../Components/Images/Team/SGimage.png';
 import img16 from '../Components/Images/logo2.png';
 import img17 from '../Components/Images/StartUpLogo1.png';
