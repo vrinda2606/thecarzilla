@@ -29,7 +29,7 @@ const Footer = () => {
               <div className='contactSocial'>
                 <div className='X social'><a href='/' target='blank'><FontAwesomeIcon icon={faXTwitter} /></a></div>
                 <div className='instagram social'><a href='https://www.instagram.com/thecarzilla.in?igsh=MW12ZWF0YzIyeXkzYg%3D%3D&utm_source=qr' target='blank'><FontAwesomeIcon icon={faInstagram} /></a></div>
-                <div className='youtube social'><a href='https://www.youtube.com/@thecarzilla' target='blank'><FontAwesomeIcon icon={faYoutube} /></a></div>
+                <div className='youtube social'><a href='https://www.youtube.com/channel/UCocaAOPdtmLrWWC9W2pUrXQ' target='blank'><FontAwesomeIcon icon={faYoutube} /></a></div>
                 <div className='linkedIn social'><a href='https://www.linkedin.com/company/thecarzilla-in/' target='blank'><FontAwesomeIcon icon={faLinkedin} style={{ color: 'white' }}/></a></div>
               </div>
           </div>
