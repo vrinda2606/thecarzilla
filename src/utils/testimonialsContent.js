@@ -29,20 +29,20 @@ export const testimonialContent = [
         img : img1,
         name : "Ashish Bansal",
         rating : '⭐⭐⭐⭐⭐',
-        review : "Choosing TheCarzilla.in for my XL6 purchase, from start to finish, was an incredible experience. The staff were professional, knowledgeable, and genuinely cared about finding the perfect car for me at the perfect price. I highly recommend TheCarzilla.in to anyone looking to purchase a car.",
+        review : "Selecting TheCarzilla.in for my XL6 purchase was exceptional. The staff were professional, knowledgeable, and genuinely cared about finding the perfect car for me at the right price. I highly recommend TheCarzilla.in to anyone looking to buy a car.",
     },
     {
         id : 5,
         img : img5,
         name : "Ajab Singh",
         rating : '⭐⭐⭐⭐⭐',
-        review : "I recently purchased my Kia Seltos through TheCarzilla.in and it was the best decision I ever made. Their team found me an unbeatable deal, a convenient store, making the entire process smooth and hassle-free. Thanks to TheCarzilla.in, I was able to drive away in my dream car while saving money.",
+        review : "I recently bought my Kia Seltos from TheCarzilla.in, a decision I don't regret. Their team secured an unbeatable deal at a convenient store, making the process smooth. Thanks to them, I'm cruising in my dream car, saving money too.",
     },
     {
         id : 6,
         img : img6,
         name : "Dr. Puneet Garg",
         rating : '⭐⭐⭐⭐⭐',
-        review : "My experience purchasing my dream car, the Tago EV, through TheCarzilla.in was amazing. Their commitment to offer great prices, not only made me happy but also left my family thrilled. They solved all the problems I had faced while buying a car in the past. I can confidently say that TheCarzilla.in is a name you can trust when it comes to purchasing a car.",
+        review : "Purchasing my dream car, the Tago EV, from TheCarzilla.in was an amazing experience. Their commitment to great prices made me and my family thrilled. They solved all past buying problems. TheCarzilla.in is a name you can trust for car purchases.",
     }
 ];
