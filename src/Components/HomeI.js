@@ -1,6 +1,6 @@
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Form from 'react-bootstrap/Form';
+// import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import Form from 'react-bootstrap/Form';
 import React,{useState,useEffect} from 'react';
 // import { images } from '../utils/constants';
 // import {brands} from '../utils/brands';
@@ -36,7 +36,7 @@ const HomeI = () => {
             opacity: isTransitioning ? 0.7 : 1, 
         }} />
 
-       <div className="homeI">
+       {/* <div className="homeI">
             <div className='homeFindCar' data-aos='fade-right'>
                
                <div className="FindCarHeading">
@@ -87,7 +87,7 @@ const HomeI = () => {
 
             </div>
 
-        </div>
+        </div> */}
      </div>
   )
 }

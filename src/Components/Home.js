@@ -10,9 +10,9 @@ import HomeII from './HomeII';
 const Home = () => {
       return(<>
       <HomeI />
-      <HomeII />
-      <HomeIII />
       <ContactForm />
+      <HomeIII />
+      <HomeII />
       <Testimonial />
       <Team />
       <LiteApp />
