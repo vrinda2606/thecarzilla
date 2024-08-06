@@ -1,10 +1,73 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState,useEffect, useRef } from 'react';
 // import { images } from '../utils/constants';
 // import {brands} from '../utils/brands';
 import {background} from '../utils/background';
 import Aos from "aos";
+import emailjs from "@emailjs/browser";
+import axios from "axios";
 
 const HomeI = () => {
+
+   const url = "https://sheetdb.io/api/v1/kitjormnr8ebr";
+
+  // Function to send form data to the API
+  const sendData = async (formData) => {
+    try {
+      const response = await axios.post(url, { data: formData });
+      console.log("Data sent successfully:", response.data); // Log the response from the API
+    } catch (error) {
+      console.error("Error sending data:", error); // Log any errors
+    }
+  };
+  const form = useRef();
+
+   const openPopup = (e) => {
+      const formData = {
+        name: document.getElementById("fname_initial").value.trim(),
+        number: document.getElementById("number_initial").value.trim(),
+        brand: document.getElementById("brandChosen_initial").value.trim(),
+        model: document.getElementById("modelChosen_initial").value.trim(),
+        city: document.getElementById("cityChosen_initial").value.trim(),
+      };
+      const nameInput = document.getElementById("fname_initial").value.trim();
+      const numberInput = document.getElementById("number_initial").value.trim();
+      const brandInput = document.getElementById("brandChosen_initial").value.trim();
+      const modelInput = document.getElementById("modelChosen_initial").value.trim();
+      const cityInput = document.getElementById("cityChosen_initial").value.trim();
+  
+      if (
+        nameInput &&
+        numberInput &&
+        brandInput &&
+        modelInput &&
+        cityInput
+      ) {
+        e.preventDefault();
+        emailjs
+          .sendForm("service_hrraeq5", "template_ulf7l9f", form.current, {
+            publicKey: "WAwu7R3mje_b0w9WY",
+          })
+          .then(
+            () => {
+              window.alert("Your details have been sent successfully.");
+               console.log("SUCCESS!");
+              e.target.reset();
+              setTimeout(() => {}, 2000);
+            },
+            (error) => {
+              alert("FAILED...", error.text);
+            }
+          );
+        sendData(formData);
+      } else {
+      }
+    };
+
+
+
+
+
+
    const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false); // State for transition animation
 
@@ -47,7 +110,8 @@ const HomeI = () => {
 
                <div className='contactFormInitial'>
                   <form 
-                     // onSubmit={window.alert("Your details have been sent successfully.")}
+                     ref={form}
+                     onSubmit={openPopup}
                      id="contact-form-inital"
                      className="contact-form-inital">
 
