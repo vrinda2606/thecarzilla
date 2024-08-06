@@ -1,6 +1,3 @@
-// import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import Form from 'react-bootstrap/Form';
 import React,{useState,useEffect} from 'react';
 // import { images } from '../utils/constants';
 // import {brands} from '../utils/brands';
@@ -36,7 +33,7 @@ const HomeI = () => {
             opacity: isTransitioning ? 0.7 : 1, 
         }} />
 
-       {/* <div className="homeI">
+       <div className="homeI">
             <div className='homeFindCar' data-aos='fade-right'>
                
                <div className="FindCarHeading">
@@ -47,47 +44,56 @@ const HomeI = () => {
                   <div className="CarTypeNew">New Car</div>
                   <div className="CarTypeUsed">Used Car</div>
                </div>
-               
-               <div className="FindCarBudgetBrand">
-               <Form>
-                  <div key={`inline-radio`} className="radio-group">
-                     <Form.Check
-                         inline
-                         label="By Budget"
-                         name="group1"
-                         type='radio'
-                         id={`inline-radio-1`}
-                         defaultChecked
-                     />
-                     <Form.Check
-                         inline
-                         label="By Brand"
-                         name="group1"
-                         type='radio'
-                         id={`inline-radio-2`}
-                     />
+
+               <div className='contactFormInitial'>
+                  <form 
+                     // onSubmit={window.alert("Your details have been sent successfully.")}
+                     id="contact-form-inital"
+                     className="contact-form-inital">
+
+                  <div className="input-field-initial">
+                     <input className="fname_initial" id="fname_initial" type="text" name="fname_initial" placeholder="Enter your name" required /><br/>
                   </div>
-               </Form>
-               </div>
-
-               <div className="FindCarSelection">
-                    <select className="FindCarBudget">
-                        <option value="Select Budget" defaultValue>Select Budget</option>
+                  <div className="input-field-initial">
+                     <input className="number_initial" id="number_initial" type="tel" name="number_initial" placeholder="Phone Number" required /><br/>
+                  </div>
+                  <div className="input-field-initial">
+                     <select id="brandChosen_initial" class="brandChosen_initial" name="platform" required>
+                        <option value="" selected>Brand</option>
+                        <option value="TATA">TATA</option>
+                        <option value="SUZUKI">SUZUKI</option>
+                        <option value="HYUNDAI">HYUNDAI</option>
+                        <option value="TOYOTA">TOYOTA</option>
+                        <option value="MG">MG</option>
+                        <option value="HERO">HERO</option>
+                        <option value="SKODA">SKODA</option>
+                        <option value="NISSAN">NISSAN</option>
+                        <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+                        <option value="JEEP">JEEP</option>
+                        <option value="CITROEN">CITROEN</option>
+                        <option value="KIA">KIA</option>
                      </select>
-                     <select className="FindCarVehicleType">
-                        <option value="All Vehicle Type" defaultValue>All Vehicle Type</option>
-                     </select>
-               </div>
+                     <br/>
+                  </div>
+                  <div className="input-field-initial">
+                     <input className="modelChosen_initial" id="modelChosen_initial" type="text" name="modelChosen_initial" placeholder="Model" required /><br/>
+                  </div>
+                  <div className="input-field-initial">
+                     <input className="cityChosen_initial" id="cityChosen_initial" type="text" name="cityChosen_initial" placeholder="City" required /><br/>
+                  </div>
 
-               <div className="FindCarSelectBtn">
-                  <button>Search</button>
-               </div>
+                  <div className="buttonContactInitial">
+                     <button type="submit" className="btnContactInitial">
+                     Enquire Now
+                     </button>
+                  </div>
 
-               <div className="FindCarAdvancedSearch"><p>Advance Search <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></p></div>
+                  </form>
+               </div>
 
             </div>
 
-        </div> */}
+        </div>
      </div>
   )
 }
