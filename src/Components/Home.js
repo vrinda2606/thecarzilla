@@ -14,7 +14,7 @@ const Home = () => {
       <HomeIII />
       <HomeII />
       <Testimonial />
-      <Team />
+      {/* <Team /> */}
       <LiteApp />
       </>
       )
