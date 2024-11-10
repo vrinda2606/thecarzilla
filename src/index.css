@@ -1627,32 +1627,29 @@ button{
 
 
 
-
 .services-container {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px 40px; 
+  padding: 20px 40px;
   background: #F7F7F7;
 }
 
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* Always maintain 2 columns */
   gap: 20px 24px;
   max-width: 600px;
+  margin: 0 auto;
   margin-bottom: 40px;
-}
-.cards-grid:hover{
-  cursor: pointer;
 }
 
 .card-mobile {
   position: relative;
   border-radius: 16px;
-  height: 140px; 
+  height: 140px;
   width: 100%;
-  aspect-ratio: 4/3; 
+  aspect-ratio: 4/3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1691,31 +1688,57 @@ button{
   object-fit: contain;
 }
 
-/* Media Queries */
+/* Media Queries - modified to maintain 2-column layout */
 @media screen and (max-width: 768px) {
   .services-container {
-      padding: 16px;
+      padding: 16px 24px;
   }
 
   .cards-grid {
-      gap: 16px;
-  }
-
-  .card-mobile {
-      height: 130px;
-  }
-
-  .card-mobile h3 {
-      font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .cards-grid {
-      grid-template-columns: 1fr;
+      gap: 16px 20px;
   }
 
   .card-mobile {
       height: 120px;
+  }
+
+  .card-mobile h3 {
+      font-size: 16px;
+  }
+
+  .card-mobile p {
+      font-size: 11px;
+  }
+
+  .car-image {
+      width: 90px;
+      height: 31px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services-container {
+      padding: 16px 16px;
+  }
+
+  .cards-grid {
+      gap: 12px 16px;
+  }
+
+  .card-mobile {
+      height: 100px;
+  }
+
+  .card-mobile h3 {
+      font-size: 14px;
+  }
+
+  .card-mobile p {
+      font-size: 10px;
+  }
+
+  .car-image {
+      width: 80px;
+      height: 28px;
   }
 }
