@@ -1626,7 +1626,7 @@ button{
 
 
 
-
+/*new css by intern*/
 .services-container {
   width: 100%;
   max-width: 900px;
@@ -1637,7 +1637,7 @@ button{
 
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Always maintain 2 columns */
+  grid-template-columns: repeat(2, 1fr); 
   gap: 20px 24px;
   max-width: 600px;
   margin: 0 auto;
@@ -1654,6 +1654,7 @@ button{
   align-items: center;
   justify-content: center;
   padding: 16px;
+  transition: transform 0.4s ease-in-out;
 }
 
 .card-content {
@@ -1688,7 +1689,7 @@ button{
   object-fit: contain;
 }
 
-/* Media Queries - modified to maintain 2-column layout */
+
 @media screen and (max-width: 768px) {
   .services-container {
       padding: 16px 24px;
@@ -1741,4 +1742,8 @@ button{
       width: 80px;
       height: 28px;
   }
+}
+.card-mobile:hover {
+  cursor: pointer; 
+  transform: scale(1.05); 
 }
