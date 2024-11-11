@@ -95,7 +95,7 @@ return (
             className='mobile-brand-row'
             initial={{ x: "-100%" }}
             animate={{ x: "100%" }}
-            transition={{ ease: "linear", repeat: Infinity, duration: 12 }}
+            transition={{ ease: "linear", repeat: Infinity, duration: 15 }}
           >
             {images.slice(1, 6).map((image, index) => (
               <div key={index} className='brand-logo'>
@@ -110,7 +110,7 @@ return (
             className='mobile-brand-row'
             initial={{ x: "100%" }}
             animate={{ x: "-100%" }}
-            transition={{ ease: "linear", repeat: Infinity, duration: 12}}
+            transition={{ ease: "linear", repeat: Infinity, duration: 15}}
           >
             {images.slice(6, 11).map((image, index) => (
               <div key={index} className='brand-logo'>
