@@ -45,6 +45,7 @@ const ContactForm = () => {
     Aos.init({ duration: 2000 });
   }, []);
 
+  // resize fucnction
   const [size, setSize] = useState(window.innerWidth);
   const checkSize = () => setSize(window.innerWidth);
 

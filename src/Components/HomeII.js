@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useState } from 'react';
 import {images} from '../utils/constants';
 import Aos from 'aos';
+import { motion } from 'framer-motion'
+
 
 const HomeII = () => {
 
@@ -8,7 +10,20 @@ const HomeII = () => {
     Aos.init({duration : 2000});
   },[] )
 
+  //resize function
+
+  const [size, setSize] = useState(window.innerWidth);
+  const checkSize = () => setSize(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", checkSize);
+    return () => window.removeEventListener("resize", checkSize);
+  }, []);
+
+
 return (
+  <div className='Mobile-brand-wrapper'>
+    {size>=700 ?(
      <div className='HomeII'>
         <div className='BlackBg homeII'>
             <div className='WhiteHr'/>
@@ -68,6 +83,44 @@ return (
         </div>
 
      </div>
+     ):(
+
+      
+      // mobile display component
+      <div>
+          <h3 className='mobile-version-headingII'>Brands We Deal In</h3>  
+          
+          
+          <motion.div
+            className='mobile-brand-row'
+            initial={{ x: "-100%" }}
+            animate={{ x: "100%" }}
+            transition={{ ease: "linear", repeat: Infinity, duration: 5 }}
+          >
+            {images.slice(1, 6).map((image, index) => (
+              <div key={index} className='brand-logo'>
+                <img src={image.url} alt={`Brand ${index}`} key={index} />
+              </div>
+            ))}
+          </motion.div>
+          
+
+          {/* Second row with right-to-left animation */}
+          <motion.div
+            className='mobile-brand-row'
+            initial={{ x: "100%" }}
+            animate={{ x: "-100%" }}
+            transition={{ ease: "linear", repeat: Infinity, duration: 5 }}
+          >
+            {images.slice(6, 11).map((image, index) => (
+              <div key={index} className='brand-logo'>
+                <img src={image.url} alt={`Brand ${index + 5}`} />
+              </div>
+            ))}
+          </motion.div>
+        </div>
+    )}
+  </div>
   )
 }
 
