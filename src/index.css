@@ -1751,7 +1751,7 @@ button{
 
 /*mobile version brand css*/
 /* CSS for the marquee rows and images */
-@media (max-width: 700px) {
+ 
   .mobile-version-headingII {
     font-family: Lexend Deca;
 font-size: 15px;
@@ -1794,4 +1794,3 @@ padding: 10px;
     height: auto;
     max-width: 90px;
   }
-}
