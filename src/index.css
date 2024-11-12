@@ -1754,10 +1754,12 @@ button{
  
   .mobile-version-headingII {
     font-family: Lexend Deca;
-font-size: 15px;
+font-size: 25px;
 font-weight: 600;
 line-height: 21px;
 text-align: center;
+padding: 10px 10px;
+
 
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
@@ -1894,6 +1896,6 @@ padding: 10px;
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
 }
