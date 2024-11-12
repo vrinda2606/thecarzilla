@@ -25,6 +25,15 @@ const ContactForm = () => {
       background: "#40C057",
     }
   ];
+   // resize fucnction
+   const [size, setSize] = useState(window.innerWidth);
+   const checkSize = () => setSize(window.innerWidth);
+ 
+   useEffect(() => {
+     window.addEventListener("resize", checkSize);
+     return () => window.removeEventListener("resize", checkSize);
+   }, []);
+ 
 
 
 
@@ -45,15 +54,7 @@ const ContactForm = () => {
     Aos.init({ duration: 2000 });
   }, []);
 
-  // resize fucnction
-  const [size, setSize] = useState(window.innerWidth);
-  const checkSize = () => setSize(window.innerWidth);
-
-  useEffect(() => {
-    window.addEventListener("resize", checkSize);
-    return () => window.removeEventListener("resize", checkSize);
-  }, []);
-
+ 
   const [popupVis, setPopupVis] = useState(false);
   const form = useRef();
 

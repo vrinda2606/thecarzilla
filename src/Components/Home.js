@@ -1,8 +1,8 @@
 import React from 'react';
 import HomeI from './HomeI';
 import HomeIII from './HomeIII';
-import ContactForm from './ContactForm';
-
+import PopUp from './PopUp';
+import ContactForm from "./ContactForm"
 import Testimonial from './Testimonial';
 import LiteApp from './LiteApp';
 import HomeII from './HomeII';
@@ -23,6 +23,7 @@ const Home = () => {
       <HomeIII />
       <HomeII />
       {size <700?( <FindCar/>):(<></>)}
+      <PopUp/>
      
       
       <Testimonial />
