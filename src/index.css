@@ -1779,8 +1779,7 @@ padding: 10px;
     display: flex;
     gap: 20px;
     width: 100%;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
     margin-bottom: 20px;
   }
 
@@ -1799,3 +1798,102 @@ padding: 10px;
     height: auto;
     max-width: 90px;
   }
+
+
+/* find my car css */
+.mobile-find-car-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  width: auto;
+  margin: 20px 20px auto;
+}
+
+.mobile-find-car-content {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.mobile-find-car-title {
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 16px;
+}
+
+.mobile-find-car-description {
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+.mobile-find-car-button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.mobile-card-container {
+  position: relative;
+  width: 260px;
+  height: 400px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-card {
+  position: absolute;
+  width: 95%;
+  height: 40%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.mobile-card-image {
+  width:80%;
+}
+
+.mobile-card-green {
+  background-color: #51DC99;
+  transform: rotate(22deg);
+  z-index: 1;
+  border-radius: 30px;
+  bottom: 60px;
+  height: 120px;
+}
+
+.mobile-card-orange {
+  background-color: #F65D34;
+  transform: rotate(-20deg);
+  z-index: 1;
+  border-radius: 30px;
+  top: 60px;
+  height: 120px;
+}
+
+.mobile-card-white {
+  background-color: white;
+  z-index: 2;
+  height: 120px;
+  border-radius: 30px;
+}
+
+.mobile-card-check-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+}
