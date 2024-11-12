@@ -22,7 +22,8 @@ const Home = () => {
       <ContactForm />
       <HomeIII />
       <HomeII />
-      <FindCar/>
+      {size >=700?( <FindCar/>):(<></>)}
+     
       
       <Testimonial />
       
