@@ -88,37 +88,54 @@ return (
       
       // mobile display component
       <div>
-          <h3 className='mobile-version-headingII'>Brands We Deal In</h3>  
-          
-            {/* first marquee left to right */}
-          <motion.div
-            className='mobile-brand-row'
-            initial={{ x: "-100%" }}
-            animate={{ x: "100%" }}
-            transition={{ ease: "linear", repeat: Infinity, duration: 15 }}
-          >
-            {images.slice(1, 6).map((image, index) => (
-              <div key={index} className='brand-logo'>
-                <img src={image.url} alt={`Brand ${index}`} key={index} />
-              </div>
-            ))}
-          </motion.div>
-          
+      <h3 className="mobile-version-headingII">Brands We Deal In</h3>
+    
+      {/* First marquee left to right */}
+      <motion.div
+        className="mobile-brand-row"
+        initial={{ x: "-100%" }}
+        animate={{ x: "100%" }}
+        transition={{ ease: "linear", repeat: Infinity, duration: 15 }}
+      >
+        {images.slice(1, 6).map((image, index) => (
+          <div key={index} className="brand-logo">
+            <img
+              src={image.url}
+              alt={`Brand ${index}`}
+              style={{
+                height: "100%",
+                width: "100%",
+                objectFit: image.id === 2 ? "cover" : "contain", // Adjust for id 2
+              }}
+            />
+          </div>
+        ))}
+      </motion.div>
+    
+      {/* Second row with right-to-left animation */}
+      <motion.div
+        className="mobile-brand-row"
+        initial={{ x: "100%" }}
+        animate={{ x: "-100%" }}
+        transition={{ ease: "linear", repeat: Infinity, duration: 15 }}
+      >
+        {images.slice(6, 11).map((image, index) => (
+          <div key={index} className="brand-logo">
+            <img
+              src={image.url}
+              alt={`Brand ${index + 5}`}
+              style={{
+                height: "100%",
+                width: "100%",
+                objectFit: image.id === 7 ? "cover" : "contain", // Adjust for id 7
+              }}
+            />
+          </div>
+        ))}
+      </motion.div>
+    </div>
+    
 
-          {/* Second row with right-to-left animation */}
-          <motion.div
-            className='mobile-brand-row'
-            initial={{ x: "100%" }}
-            animate={{ x: "-100%" }}
-            transition={{ ease: "linear", repeat: Infinity, duration: 15}}
-          >
-            {images.slice(6, 11).map((image, index) => (
-              <div key={index} className='brand-logo'>
-                <img src={image.url} alt={`Brand ${index + 5}`} />
-              </div>
-            ))}
-          </motion.div>
-        </div>
     )}
   </div>
   )
