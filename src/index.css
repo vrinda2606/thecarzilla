@@ -1692,7 +1692,7 @@ button{
 
 @media screen and (max-width: 768px) {
   .services-container {
-      padding: 16px 24px;
+      padding: 20px 100px;
   }
 
   .cards-grid {
