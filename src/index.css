@@ -2108,16 +2108,18 @@ padding: 10px;
 }
 
 .mobile-card-orange-1 {
-  background-color: #F65D34;
-  transform: rotate(342deg);
+  background-color: #D3DCE8;
+  height: 53px;
+  transform: rotate(-0deg);
   z-index: 1;
-  top: 20px;
+  top: 21px;
   border-radius: 10px;
+  width: 87px;
 }
 
 .mobile-card-white-1 {
   background-color: #fff;
-  width: 91px;
+  width: 102px;
   height: 53px;
   z-index: 2;
   margin: -10px 0;
@@ -2125,11 +2127,16 @@ padding: 10px;
 }
 
 .mobile-card-green-1 {
-  background-color: #51DC99;
-  transform: rotate(20deg);
+  background-color: #5CA7FA;
   z-index: 0;
   border-radius: 10px;
-  bottom: 12px;
+  bottom: 16px;
+  width: 87px;
+  height: 53px;
+}
+
+.mobile-card-green-1 img {
+  margin-top: 20px;
 }
 
 .mobile-card-image-1 {

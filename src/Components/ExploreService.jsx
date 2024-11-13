@@ -17,7 +17,7 @@ const FindCar = () => {
         </div>
         <div className="mobile-card-1 mobile-card-white-1">
           <img src={newCardPhoto} alt="Car" className="mobile-card-image-1" />
-          <img src={checkIcon} alt="Check" className="mobile-card-check-icon-1" />
+          
         </div>
         <div className="mobile-card-1 mobile-card-green-1">
           <img src={newCardPhoto} alt="Car" className="mobile-card-image-1" />
