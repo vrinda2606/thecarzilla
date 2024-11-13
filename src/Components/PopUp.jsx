@@ -61,11 +61,13 @@ const PopUp = ({ isOpen, onClose }) => {
         <button className="mobile-close-btn" onClick={onClose}>X</button>
         
         {isSubmitted ? (
-          <div>
+          <div className='mobile-popup-content1'>
+            
             <h2 className="mobile-popup-title">VROOM VROOM!!</h2>
             <p className="mobile-popup-subtitle">
               Your data has been submitted. Our team will contact you shortly.
             </p>
+            <button className='mobile-enquire-btn' style={{width:"100%"}} onClick={onClose}>Close</button>
           </div>
         ) : (
           <div>

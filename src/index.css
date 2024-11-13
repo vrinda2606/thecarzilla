@@ -1945,18 +1945,17 @@ padding: 10px;
 
 .mobile-popup-title {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
   color: black;
 }
 
 .mobile-popup-subtitle {
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
   color: black;
 }
-
 .mobile-popup-form {
   display: flex;
   flex-direction: column;
@@ -2019,4 +2018,19 @@ padding: 10px;
   color: red;
   font-size: 12px;
   margin-top: 5px;
+}
+.mobile-popup-content1 {
+  background-color: #fff;
+  padding: 60px 10px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  width: 95%;
+  height: 60%;
+  position: relative;
+  z-index: 1001;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
