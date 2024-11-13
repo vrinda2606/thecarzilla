@@ -8,6 +8,7 @@ import LiteApp from './LiteApp';
 import HomeII from './HomeII';
 import { useState,useEffect } from 'react';
 import FindCar from './FindCar';
+import ExploreServices from "./ExploreService"
 
 const Home = () => {
       const [size, setSize] = useState(window.innerWidth);
@@ -23,6 +24,7 @@ const Home = () => {
       <HomeIII />
       <HomeII />
       {size <700?( <FindCar/>):(<></>)}
+      {size <700?( <ExploreServices/>):(<></>)}
       <PopUp/>
      
       

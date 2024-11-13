@@ -1,17 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from "@emailjs/browser";
+import axios from "axios";
 
 const PopUp = ({ isOpen, onClose }) => {
-  // State to manage form data
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    brand: '',
-    model: '',
-    city: ''
-  });
-
-  // State to track form submission
+  const form = useRef();
+  const url = "https://sheetdb.io/api/v1/kitjormnr8ebr";
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   // Prevent background scroll when popup is open
@@ -23,34 +16,39 @@ const PopUp = ({ isOpen, onClose }) => {
     }
   }, [isOpen]);
 
-  // Handle input change
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value
-    }));
+  const sendData = async (formData) => {
+    try {
+      const response = await axios.post(url, { data: formData });
+      console.log("Data sent successfully:", response.data);
+    } catch (error) {
+      console.error("Error sending data:", error);
+    }
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
-    e.preventDefault();
+    const formData = {
+      name: document.getElementById("popup_name").value.trim(),
+      email: document.getElementById("popup_email").value.trim(),
+      number: document.getElementById("popup_phone").value.trim(),
+      brand: document.getElementById("popup_brand").value.trim(),
+      model: document.getElementById("popup_model").value.trim(),
+      city: document.getElementById("popup_city").value.trim(),
+    };
 
-    // Reset the form fields after submission
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      brand: '',
-      model: '',
-      city: ''
-    });
+    if (Object.values(formData).every(field => field)) {
+      e.preventDefault();
+      emailjs.sendForm("service_hrraeq5", "template_ulf7l9f", form.current, {
+        publicKey: "WAwu7R3mje_b0w9WY",
+      })
+        .then(() => {
+          console.log("SUCCESS!");
+          e.target.reset();
+        })
+        .catch(error => alert("FAILED...", error.text));
 
-    // Update state to show confirmation message
-    setIsSubmitted(true);
-
-    // Optionally close the popup here if needed
-    // onClose();
+      setIsSubmitted(true);
+      sendData(formData);
+    }
   };
 
   if (!isOpen) return null;
@@ -62,7 +60,6 @@ const PopUp = ({ isOpen, onClose }) => {
         
         {isSubmitted ? (
           <div className='mobile-popup-content1'>
-            
             <h2 className="mobile-popup-title">VROOM VROOM!!</h2>
             <p className="mobile-popup-subtitle">
               Your data has been submitted. Our team will contact you shortly.
@@ -75,90 +72,69 @@ const PopUp = ({ isOpen, onClose }) => {
             <p className="mobile-popup-subtitle">
               Our experts will assist you personally
             </p>
-            <form className="mobile-popup-form" onSubmit={handleSubmit}>
+            <form ref={form} className="mobile-popup-form" onSubmit={handleSubmit}>
               <div className="mobile-form-group">
-                <label>Your Name
-                  <span style={{color:"red"}}>*</span>
-                </label>
+                <label>Your Name<span style={{color:"red"}}>*</span></label>
                 <input
                   type="text"
                   name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
+                  id="popup_name"
                   placeholder="Enter your name"
                   required
                 />
               </div>
               <div className="mobile-form-group">
-                <label>Your Email
-                  <span style={{color:"red"}}>*</span>
-                </label>
+                <label>Your Email<span style={{color:"red"}}>*</span></label>
                 <input
                   type="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
+                  id="popup_email"
                   placeholder="Enter your email"
                   required
                 />
               </div>
               <div className="mobile-form-group">
-                <label>Phone Number
-                  <span style={{color:"red"}}>*</span>
-                </label>
+                <label>Phone Number<span style={{color:"red"}}>*</span></label>
                 <input
                   type="tel"
                   name="phone"
-                  value={formData.phone}
-                  onChange={handleInputChange}
+                  id="popup_phone"
                   placeholder="Enter your phone number"
                   required
                 />
               </div>
               <div className="mobile-form-group">
-                <label>Brand
-                  <span style={{color:"red"}}>*</span>
-                </label>
+                <label>Brand<span style={{color:"red"}}>*</span></label>
                 <input
                   type="text"
                   name="brand"
-                  value={formData.brand}
-                  onChange={handleInputChange}
+                  id="popup_brand"
                   placeholder="For Eg: Maruti Suzuki"
                   required
                 />
               </div>
               <div className="mobile-form-group">
-                <label>Model
-                  <span style={{color:"red"}}>*</span>
-                </label>
+                <label>Model<span style={{color:"red"}}>*</span></label>
                 <input
                   type="text"
                   name="model"
-                  value={formData.model}
-                  onChange={handleInputChange}
+                  id="popup_model"
                   placeholder="For Eg: Swift ZXI+"
                   required
                 />
               </div>
               <div className="mobile-form-group">
-                <label>City
-                  <span style={{color:"red"}}>*</span>
-                </label>
+                <label>City<span style={{color:"red"}}>*</span></label>
                 <input
                   type="text"
                   name="city"
-                  value={formData.city}
-                  onChange={handleInputChange}
+                  id="popup_city"
                   placeholder="For Eg: Jaipur"
                   required
                 />
               </div>
               <div className="mobile-form-actions">
-                <button
-                  type="submit"
-                  className="mobile-enquire-btn"
-                >
+                <button type="submit" className="mobile-enquire-btn">
                   Enquire Now
                 </button>
               </div>
