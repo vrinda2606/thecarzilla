@@ -1642,7 +1642,7 @@ button{
   margin: auto 2.5vw 3.7vw;
 }
 .careersJobs .JobsBox{
-  width: 94%;
+  width: 95%;
   height: 15.6vw;
   display: flex;
   justify-content: space-between;
@@ -1650,17 +1650,14 @@ button{
 }
 .JobsBox .JobsBoxSub{
   height: auto;
-  width: 30%;
+  width: 31.2%;
   border: 0.1vw solid #000000;
   border-radius: 0.7vw;
   font-family: 'Lexend Deca';
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: space-evenly;
   padding: 1.5vw;
-  /*padding-right: 1.2vw;
-  text-align: justify; */
 }
 .JobsBoxSub h4{
   font-size: 1.4vw;
@@ -1695,4 +1692,95 @@ button{
   background-color: #FFFFFF;
   color: #FF3F00;
   border-color: #FF3F00;
+}
+
+/*prereq_popup*/
+.prereq_popup{
+  background-color: white;
+  border-radius: 0.9vw;
+  height: auto;
+  width: 32vw;
+  padding: 1.3vw;
+  box-shadow: 0vw 0.7vw 1.2vw rgba(0, 0, 0, 0.2);
+}
+
+.prereq_popup h4 {
+  font-size: 1.35vw;
+  margin-bottom: 1.1vw;
+  font-family: 'Lexend Deca';
+}
+
+.prereq_popup hr {
+  border: none;
+  border-top: 0.12vw solid #000;
+  margin: 0 0 1.1vw;
+}
+
+.prereq_popup p {
+  font-size: 1.1vw;
+  margin-bottom: 0.7vw;
+}
+
+.prerequisites-list {
+  list-style-type: disc;
+  padding-left: 1.5vw;
+  margin-bottom: 1.2vw;
+}
+
+.prerequisites-list li {
+  font-size: 1.04vw;
+  line-height: 1.5vw;
+  margin-bottom: 0.7vw;
+}
+
+.details-box {
+  border: 0.1vw solid #000000;
+  border-radius: 0.6vw;
+  padding: 1vw;
+  margin-top: 0.7vw;
+  font-family: 'Space Grotesk';
+}
+
+.details-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95vw;
+  margin-bottom: 0.7vw;
+  font-family: 'Space Grotesk';
+}
+
+.details-row div {
+  width: 50%;
+}
+
+/* Add this in your CSS file */
+.blurred {
+  filter: blur(5px);
+  pointer-events: none; /* Disable interactions with blurred section */
+}
+
+.PRpopup {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.prereq_popup {
+  background-color: white;
+  padding: 1.4vw;
+  border-radius: 1.2vw;
+  width: 50vw;
+  max-width: 33vw;
+  position: relative;
+}
+
+.Jobapply_popup .Jobapply_popup_form input::placeholder{
+  font-size: 1vw;
+  line-height: 1vw;
 }
