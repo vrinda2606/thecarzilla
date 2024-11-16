@@ -2217,7 +2217,7 @@ padding: 10px;
   font-weight: 400;
 }
 
-.mobile-enquire-btn {
+.mobile-enquire-btn1 {
   position: absolute;
   top: 70px;
   left: 25px;
@@ -2231,6 +2231,7 @@ padding: 10px;
   font-weight: 700;
   text-align: center;
   white-space: nowrap;
+  color: white;
   
   /* width: 48px; */
 }
