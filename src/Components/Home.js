@@ -10,6 +10,7 @@ import { useState,useEffect } from 'react';
 import FindCar from './FindCar';
 import ExploreServices from "./ExploreService"
 import Master from './Master';
+import MasterSlider from './MasterSlider';
 
 const Home = () => {
       const [size, setSize] = useState(window.innerWidth);
@@ -21,6 +22,7 @@ const Home = () => {
   }, []);
       return(<>
       {size <700?( <Master/>):(<HomeI/>)}
+      {size<700 ?(<MasterSlider/>):(<></>)}
       <ContactForm />
       <HomeIII />
       <HomeII />
