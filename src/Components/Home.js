@@ -12,6 +12,8 @@ import ExploreServices from "./ExploreService"
 import Master from './Master';
 import MasterSlider from './MasterSlider';
 
+import MobileSearchBar from './MobileSearchBar';
+
 const Home = () => {
       const [size, setSize] = useState(window.innerWidth);
   const checkSize = () => setSize(window.innerWidth);
@@ -21,6 +23,8 @@ const Home = () => {
     return () => window.removeEventListener("resize", checkSize);
   }, []);
       return(<>
+
+      {size <700?( <MobileSearchBar/>):(<></>)}
       {size <700?( <Master/>):(<HomeI/>)}
       {size<700 ?(<MasterSlider/>):(<></>)}
       <ContactForm />
