@@ -9,6 +9,7 @@ import HomeII from './HomeII';
 import { useState,useEffect } from 'react';
 import FindCar from './FindCar';
 import ExploreServices from "./ExploreService"
+import Master from './Master';
 
 const Home = () => {
       const [size, setSize] = useState(window.innerWidth);
@@ -19,7 +20,7 @@ const Home = () => {
     return () => window.removeEventListener("resize", checkSize);
   }, []);
       return(<>
-      <HomeI />
+      {size <700?( <Master/>):(<HomeI/>)}
       <ContactForm />
       <HomeIII />
       <HomeII />

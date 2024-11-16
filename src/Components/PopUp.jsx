@@ -6,6 +6,7 @@ const PopUp = ({ isOpen, onClose }) => {
   const form = useRef();
   const url = "https://sheetdb.io/api/v1/kitjormnr8ebr";
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isError, setIsError] = useState(false);
 
   // Prevent background scroll when popup is open
   React.useEffect(() => {
@@ -26,6 +27,8 @@ const PopUp = ({ isOpen, onClose }) => {
   };
 
   const handleSubmit = (e) => {
+    e.preventDefault();
+  
     const formData = {
       name: document.getElementById("popup_name").value.trim(),
       email: document.getElementById("popup_email").value.trim(),
@@ -34,21 +37,25 @@ const PopUp = ({ isOpen, onClose }) => {
       model: document.getElementById("popup_model").value.trim(),
       city: document.getElementById("popup_city").value.trim(),
     };
-
+  
     if (Object.values(formData).every(field => field)) {
-      e.preventDefault();
-      emailjs.sendForm("service_hrraeq5", "template_ulf7l9f", form.current, {
-        publicKey: "WAwu7R3mje_b0w9WY",
-      })
+      emailjs
+        .sendForm("service_hrraeq5", "template_ulf7l9f", form.current, {
+          publicKey: "WAwu7R3mje_b0w9WY",
+        })
         .then(() => {
           console.log("SUCCESS!");
-          e.target.reset();
+          sendData(formData); 
+          setIsSubmitted(true);
+          setIsError(false);
+          e.target.reset(); 
         })
-        .catch(error => alert("FAILED...", error.text));
-
-      setIsSubmitted(true);
-      sendData(formData);
-    }
+        .catch((error) => {
+          console.error("Error sending data:", error.text);
+          setIsError(true);
+          setIsSubmitted(false);
+        });
+    } 
   };
 
   if (!isOpen) return null;
@@ -58,7 +65,24 @@ const PopUp = ({ isOpen, onClose }) => {
       <div className="mobile-popup-content" onClick={(e) => e.stopPropagation()}>
         <button className="mobile-close-btn" onClick={onClose}>X</button>
         
-        {isSubmitted ? (
+        {isError ? (
+          <div className='mobile-popup-content1'>
+            <h2 className="mobile-popup-title" style={{color: "#FF4423"}}>Oops!</h2>
+            <p className="mobile-popup-subtitle">
+              Something went wrong. Please try again.
+            </p>
+            <button 
+              className='mobile-enquire-btn' 
+              style={{width:"100%"}} 
+              onClick={() => {
+                setIsError(false);
+                setIsSubmitted(false);
+              }}
+            >
+              Try Again
+            </button>
+          </div>
+        ) : isSubmitted ? (
           <div className='mobile-popup-content1'>
             <h2 className="mobile-popup-title">VROOM VROOM!!</h2>
             <p className="mobile-popup-subtitle">
