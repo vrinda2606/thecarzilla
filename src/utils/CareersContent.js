@@ -6,7 +6,7 @@ export const CareersContent = [
     },
     {
         id : 2,
-        designation : 'Video Editing Intern Pre-requisites',
+        designation : 'Video Editing Interns',
         post : 'Join us and bring automotive stories to life! Enhance your editing skills while creating engaging content for car enthusiasts everywhere.'
     },
     {
