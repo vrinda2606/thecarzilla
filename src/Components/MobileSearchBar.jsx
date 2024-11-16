@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import SearchIcon from "./Images/mobile version/search-normal.png"; // Import search icon
-import FilterImage from "./Images/mobile version/filter.png"; // Import filter icon
+import SearchIcon from "./Images/mobile version/search-normal.png"; 
+import FilterImage from "./Images/mobile version/filter.png"; 
 
 const MobileSearchBar = () => {
     const [searchQuery, setSearchQuery] = useState('');
@@ -41,10 +41,10 @@ const MobileSearchBar = () => {
         <div
             style={{
                 display: 'flex',
-                justifyContent: 'center', // Centers horizontally
-                alignItems: 'center', // Centers vertically
+                justifyContent: 'center', 
+                alignItems: 'center', 
                 width: '100%',
-                position: 'relative', // Allows absolute positioning for dropdown
+                position: 'relative', 
             }}
         >
             {/* Search Bar */}
