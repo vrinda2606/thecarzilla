@@ -13,6 +13,7 @@ import LoginII from "./Components/LoginII";
 import Footer from "./Components/Footer";
 import Services from "./Components/Services";
 import CancellationAndRefund from "./Components/CancellationAndRefund";
+import Careers from "./Components/Careers";
 
 const App = () => {
   const location = useLocation();
@@ -35,6 +36,7 @@ const App = () => {
         <Route exact path="/Login/:OtpVerify" element={<LoginII />} />
         <Route exact path="/Services" element={<Services />} />
         <Route exact path="/CancellationAndRefundPolicy" element={<CancellationAndRefund />} />
+        <Route exact path="/Careers" element={<Careers/>} />
         <Route path="*" element={<Function />} /> 
       </Routes>
 

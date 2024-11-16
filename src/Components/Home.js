@@ -2,7 +2,7 @@ import React from 'react';
 import HomeI from './HomeI';
 import HomeIII from './HomeIII';
 import ContactForm from './ContactForm';
-import Team from './Team';
+// import Team from './Team';
 import Testimonial from './Testimonial';
 import LiteApp from './LiteApp';
 import HomeII from './HomeII';

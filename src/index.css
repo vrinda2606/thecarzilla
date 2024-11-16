@@ -1621,3 +1621,78 @@ button{
   font-weight: 700;
   text-align: center;
 }
+
+/*Careers*/
+.careers{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.careers .careersJobs{
+  width: 93%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 2.5vw 3.7vw;
+}
+.careersJobs .JobsBox{
+  width: 94%;
+  height: 15.6vw;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4vw;
+}
+.JobsBox .JobsBoxSub{
+  height: auto;
+  width: 30%;
+  border: 0.1vw solid #000000;
+  border-radius: 0.7vw;
+  font-family: 'Lexend Deca';
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  padding: 1.5vw;
+  /*padding-right: 1.2vw;
+  text-align: justify; */
+}
+.JobsBoxSub h4{
+  font-size: 1.4vw;
+  margin-bottom: 1vw;
+}
+.JobsBoxSub .p_jobsBoxSub{
+  font-family: 'Space Grotesk';
+  font-weight: 400;
+  font-size: 0.9vw;
+  line-height: 1.5vw;
+  margin-bottom: 1.5vw;
+}
+.JobsBoxSub .JobsBoxBtns{
+  display: flex;
+  justify-content: space-between;
+  gap: 1vw;
+}
+.JobsBoxSub .JobsBoxBtns button{
+  font-size: 1.17vw;
+  line-height: 1.17vw;
+  font-weight: 500;
+  border: 0.1vw solid #FF3F00;
+  width: 9vw;
+  height: 2.2vw;
+  /* align-items: center; */
+}
+.JobsBoxBtns button:nth-child(1){
+  background-color: #FF3F00;
+  color: #FFFFFF;
+}
+.JobsBoxBtns button:nth-child(2){
+  background-color: #FFFFFF;
+  color: #FF3F00;
+  border-color: #FF3F00;
+}

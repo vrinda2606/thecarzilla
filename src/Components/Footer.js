@@ -23,8 +23,8 @@ const Footer = () => {
               <div style={{display: 'flex' , alignItems: 'center',width:"13vw" ,height:"5vw"}}>
               <img src={images[16].url} alt='logo' style={{width:"100%",height:"100%",objectFit: "cover"}} />
               </div>
-              <div style={{width: '100%',height: "4.2vw",color:'#E5E6E8'}}>
-                <p style={{fontFamily:'Space Grotesk',fontWeight: "400",fontSize:"1vw",lineHeight:"2.1vw"}}>4th Floor, Pre-Incubation Lab, TBI-KIET, Ghaziabad - 201206</p>
+              <div style={{width: '100%',height: "5.0vw",color:'#E5E6E8'}}>
+                <p style={{fontFamily:'Space Grotesk',fontWeight: "400",fontSize:"1vw",lineHeight:"1.8vw"}}>The Iconic Corenthum, opp. Electronic City Metro Station Road, Block A, Industrial Area, Sector 62, Noida, Uttar Pradesh 201301</p>
               </div>
               <div className='contactSocial'>
                 <div className='X social'><a href='/' target='blank'><FontAwesomeIcon icon={faXTwitter} /></a></div>
@@ -41,6 +41,7 @@ const Footer = () => {
                 <NavLink className='links' onClick={scrollToTop} to="/AboutUs">About us</NavLink>
                 <NavLink className='links' onClick={scrollToTop} to="/Services">Services</NavLink>               
                 <NavLink className='links' onClick={scrollToTop} to="/">Blogs</NavLink>
+                <NavLink className='links' onClick={scrollToTop} to="/Careers">Careers</NavLink>
             </ul>
             <ul className='footerTwo-1'>
                 <h6>Help</h6>
