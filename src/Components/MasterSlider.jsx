@@ -10,8 +10,8 @@ import 'swiper/css/pagination';
 
 function MasterSlider() {
   return (
-    <>
-      <div style={{ padding: '12px 22px' }}>
+    <div className='swiper-parent'>
+      <div className='swiper-container'>
         <Swiper
           modules={[Pagination, Autoplay]}
           spaceBetween={16}
@@ -81,7 +81,7 @@ function MasterSlider() {
           </SwiperSlide>
         </Swiper>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -2258,10 +2258,17 @@ padding: 10px;
 
 
 /* Swiper CSS */
+.swiper-parent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  padding-bottom: 40px;
+}
 
 .swiper-container {
-  width: 100%;
-  padding: 20px 0;
+  width: 350px;
+  height: 95px;
 }
 
 .swiper-slide {
@@ -2302,5 +2309,5 @@ padding: 10px;
 
 /* Style active bullet */
 .swiper-pagination-bullet-active {
-  background: #007aff !important;
+  background: black !important;
 }
