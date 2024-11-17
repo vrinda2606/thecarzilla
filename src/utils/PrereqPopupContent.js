@@ -1,4 +1,4 @@
-export const testimonialContent = [
+export const PrereqPopupContent = [
     {
         id : 1,
         designation : 'Social Media Influencer Intern Pre-Requisite',
