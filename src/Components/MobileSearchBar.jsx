@@ -127,7 +127,7 @@ const MobileSearchBar = () => {
           <div
             style={{
               position: "absolute",
-              top: "45px", // Position relative to new container
+              top: "45px", 
               left: 0,
               right: 0,
               backgroundColor: "white",
@@ -137,7 +137,7 @@ const MobileSearchBar = () => {
               maxHeight: "200px",
               overflowY: "auto",
               zIndex:1000,
-              // CHANGE 5: Removed unnecessary z-index
+              
             }}
           >
             <ul
@@ -155,7 +155,7 @@ const MobileSearchBar = () => {
                     padding: "5px",
                     cursor: "pointer",
                     fontSize: "12px",
-                    // CHANGE 6: Added hover effect
+                    
                     ':hover': {
                       backgroundColor: '#f5f5f5',
                     }
@@ -166,7 +166,7 @@ const MobileSearchBar = () => {
                     style={{
                       textDecoration: "none",
                       color: "#333",
-                      // CHANGE 7: Added block display for better click area
+                      
                       display: "block",
                       width: "100%",
                     }}
