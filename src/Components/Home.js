@@ -11,6 +11,7 @@ import FindCar from './FindCar';
 import ExploreServices from "./ExploreService"
 import Master from './Master';
 import MasterSlider from './MasterSlider';
+import Difference from './Difference';
 
 import MobileSearchBar from './MobileSearchBar';
 
@@ -28,7 +29,8 @@ const Home = () => {
       {size <=500?( <Master/>):(<HomeI/>)}
       {size<=500 ?(<MasterSlider/>):(<></>)}
       <ContactForm />
-      <HomeIII />
+      {size <=500 ?(<Difference/>):(<HomeIII />)}
+      
       <HomeII />
       {size <=500?( <FindCar/>):(<></>)}
       {size <=500?( <ExploreServices/>):(<></>)}
