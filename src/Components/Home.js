@@ -24,14 +24,14 @@ const Home = () => {
   }, []);
       return(<>
 
-      {size <700?( <MobileSearchBar/>):(<></>)}
-      {size <700?( <Master/>):(<HomeI/>)}
-      {size<700 ?(<MasterSlider/>):(<></>)}
+      {size <=500?( <MobileSearchBar/>):(<></>)}
+      {size <=500?( <Master/>):(<HomeI/>)}
+      {size<=500 ?(<MasterSlider/>):(<></>)}
       <ContactForm />
       <HomeIII />
       <HomeII />
-      {size <700?( <FindCar/>):(<></>)}
-      {size <700?( <ExploreServices/>):(<></>)}
+      {size <=500?( <FindCar/>):(<></>)}
+      {size <=500?( <ExploreServices/>):(<></>)}
       <PopUp/>
      
       

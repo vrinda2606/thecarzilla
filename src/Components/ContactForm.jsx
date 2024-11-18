@@ -87,7 +87,7 @@ const ContactForm = () => {
 
   return (
     <div className="form-wrapper">
-      {size >= 700 ? (
+      {size >= 500 ? (
         <div id="contact-form-container" className="BlackBg" style={{ height: "38vw" }}>
           <div className={`contactFormDiv ${popupVis ? "active" : ""}`}>
             <div className="HeadingBoxBlack" data-aos="fade-up">

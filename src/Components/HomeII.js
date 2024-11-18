@@ -23,7 +23,7 @@ const HomeII = () => {
 
 return (
   <div className='Mobile-brand-wrapper'>
-    {size>=700 ?(
+    {size>=500 ?(
      <div className='HomeII'>
         <div className='BlackBg homeII'>
             <div className='WhiteHr'/>
