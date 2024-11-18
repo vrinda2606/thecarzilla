@@ -58,6 +58,7 @@ const MobileSearchBar = () => {
                     position: 'relative',
                     backgroundColor: 'white',
                     margin: '5px',
+                    marginBottom:"10px",
                 }}
             >
                 <div
