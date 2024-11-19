@@ -1,9 +1,30 @@
 import React, {useState} from 'react';
+import axios from "axios";
 
 const JobsPopup = ({ onClose }) => {
 
+  // import Aos from 'aos';
+  const url = "https://sheetdb.io/api/v1/5lh7akf4ka707";
 
-    const [formData, setFormData] = useState({
+  // Function to send form data to the API
+  const sendData = async (formDataDetails) => {
+    const formData = new FormData();
+    for (const key in formDataDetails) {
+        formData.append(key, formDataDetails[key]);
+    }
+    try {
+        const response = await axios.post(url, formData, {
+            headers: {
+                "Content-Type": "multipart/form-data",
+            },
+        });
+        console.log("Data sent successfully:", response.data);
+    } catch (error) {
+        console.error("Error sending data:", error);
+    }
+};
+
+    const [formDataDetails, setFormData] = useState({
         name: "",
         email: "",
         phone: "",
@@ -12,7 +33,7 @@ const JobsPopup = ({ onClose }) => {
         jobPosition: "",
         currentCTC: "",
         expectedCTC: "",
-        resume: null,
+        resume: "",
       });
     
       const handleChange = (e) => {
@@ -23,19 +44,38 @@ const JobsPopup = ({ onClose }) => {
         }));
       };
     
-      const handleFileChange = (e) => {
-        setFormData((prevData) => ({
-          ...prevData,
-          resume: e.target.files[0],
-        }));
-      };
+    //   const handleFileChange = (e) => {
+    //     const file = e.target.files[0];
+    //     setFormData((prevData) => ({
+    //         ...prevData,
+    //         resume: file,
+    //     }));
+    // };
     
-      const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("Form Data Submitted: ", formData);
-        window.alert("Form submitted successfully");
-        // Add your submission logic here
-      };
+    
+    const handleSubmit = (e) => {
+  
+      const isFormValid = Object.values(formDataDetails).every((value) => value);
+  
+      if (isFormValid) {
+          console.log("Form Data Submitted: ", formDataDetails);
+          sendData(formDataDetails);
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            dob: "",
+            experience: "",
+            jobPosition: "",
+            currentCTC: "",
+            expectedCTC: "",
+            resume: "",
+        });
+          window.alert("Form submitted successfully");
+      } else {
+          window.alert("Please fill all fields");
+      }
+  };
 
   return (
     <div
@@ -73,10 +113,11 @@ const JobsPopup = ({ onClose }) => {
         <div style={{display: 'flex',justifyContent:'space-between'}}>
         <div style={{ marginBottom: "1.2vw"}}>
           <input
+            id='jobName'
             type="text"
             name="name"
             placeholder= 'Name'
-            value={formData.name}
+            value={formDataDetails.name}
             onChange={handleChange}
             required
             style={{ width: "100%", padding: "0.5vw", marginTop: "0.34vw" }}
@@ -86,8 +127,9 @@ const JobsPopup = ({ onClose }) => {
         <div style={{ marginBottom: "1.2vw"}}>
           <input
             type="email"
+            id='jobEmail'
             name="email"
-            value={formData.email}
+            value={formDataDetails.email}
             placeholder= 'Email'
             onChange={handleChange}
             required
@@ -100,9 +142,10 @@ const JobsPopup = ({ onClose }) => {
         <div style={{ marginBottom: "1.2vw" }}>
           <input
             type="tel"
+            id='jobPhone'
             name="phone"
             placeholder='Phone'
-            value={formData.phone}
+            value={formDataDetails.phone}
             onChange={handleChange}
             required
             style={{ width: "100%", padding: "0.5vw", marginTop: "0.34vw" }}
@@ -115,8 +158,9 @@ const JobsPopup = ({ onClose }) => {
           <label>Date of Birth</label>
           <input
             type="date"
+            id='jobDob'
             name="dob"
-            value={formData.dob}
+            value={formDataDetails.dob}
             onChange={handleChange}
             required
             style={{ width: "100%", padding: "0.5vw", marginTop: "0.34vw" }}
@@ -126,9 +170,10 @@ const JobsPopup = ({ onClose }) => {
         <div style={{ marginBottom: "1.2vw",width:'40%'}}>
           <input
             type="text"
+            id='jobExp'
             name="experience"
             placeholder='Total Experience In Years/Months'
-            value={formData.experience}
+            value={formDataDetails.experience}
             onChange={handleChange}
             required
             style={{ width: "100%", padding: "0.5vw", marginTop: "0.34vw",lineHeight: '1.1vw' }}
@@ -140,9 +185,10 @@ const JobsPopup = ({ onClose }) => {
         <div style={{ marginBottom: "1.2vw" }}>
           <input
             type="text"
+            id='jobPos'
             name="jobPosition"
             placeholder='Job Positions'
-            value={formData.jobPosition}
+            value={formDataDetails.jobPosition}
             onChange={handleChange}
             required
             style={{ width: "100%", padding: "0.5vw", marginTop: "0.34vw" }}
@@ -154,9 +200,10 @@ const JobsPopup = ({ onClose }) => {
         <div style={{ marginBottom: "1.2vw" }}>
           <input
             type="text"
+            id='jobCtc'
             name="currentCTC"
             placeholder='Current CTC'
-            value={formData.currentCTC}
+            value={formDataDetails.currentCTC}
             onChange={handleChange}
             required
             style={{ width: "100%", padding: "0.5vw", marginTop: "0.34vw" }}
@@ -166,9 +213,10 @@ const JobsPopup = ({ onClose }) => {
         <div style={{ marginBottom: "1.2vw" }}>
           <input
             type="text"
+            id='jobExpCtc'
             name="expectedCTC"
             placeholder='Expected CTC'
-            value={formData.expectedCTC}
+            value={formDataDetails.expectedCTC}
             onChange={handleChange}
             required
             style={{ width: "100%", padding: "0.5vw", marginTop: "0.34vw" }}
@@ -177,13 +225,18 @@ const JobsPopup = ({ onClose }) => {
         </div>
         </div>
 
-        <div style={{ marginBottom: "2.2vw", marginTop: "1vw",border: '0.1vw solid black'}}>
-          <input
-            type="file"
-            onChange={handleFileChange}
+        <div style={{ marginBottom: "2.2vw", marginTop: "1vw"}}>
+        <input
+            type="text"
+            id='jobResume'
+            name='resume'
+            placeholder='Resume Drive Link'
+            value={formDataDetails.resume}
+            onChange={handleChange}
             required
-            style={{ display: "block" }}
+            style={{ width: "100%", padding: "0.5vw", marginTop: "0.34vw" }}
           />
+          <hr style={{width : '100%',height: '0.09vw',backgroundColor : '#596780'}}/>
         </div>
         <button
           type="submit"
