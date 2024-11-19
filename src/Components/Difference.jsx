@@ -1,10 +1,40 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-
-import 'swiper/css';
+import React, { useRef, useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Autoplay } from "swiper/modules";
 
 function Difference() {
+  const swiperRef = useRef(null);
+  const [direction, setDirection] = useState("right"); // Track motion direction
+
+  useEffect(() => {
+    const swiper = swiperRef.current.swiper;
+
+    const changeDirection = () => {
+      if (direction === "right" && swiper.isEnd) {
+        setDirection("left");
+        swiper.autoplay.stop();
+        swiper.slideTo(swiper.slides.length - 1, 1000); // Ensure it's fully on the last slide
+        setTimeout(() => {
+          swiper.autoplay.start();
+        }, 100);
+      } else if (direction === "left" && swiper.isBeginning) {
+        setDirection("right");
+        swiper.autoplay.stop();
+        swiper.slideTo(0, 1000); // Ensure it's fully on the first slide
+        setTimeout(() => {
+          swiper.autoplay.start();
+        }, 100);
+      }
+    };
+
+    swiper.on("slideChange", changeDirection);
+
+    return () => {
+      swiper.off("slideChange", changeDirection);
+    };
+  }, [direction]);
+
   return (
     <div className="mobile11-swiper-parent">
       {/* Heading and Subheading */}
@@ -14,26 +44,26 @@ function Difference() {
       </div>
 
       {/* Swiper Section */}
-      <div className='super-container'>
+      <div className="super-container">
         <div className="mobile11-swiper-container">
           <Swiper
+            ref={swiperRef}
             modules={[Autoplay]}
-            spaceBetween={16} // Consistent spacing
+            spaceBetween={16}
             slidesPerView={1.8}
-            centeredSlides={false}
-            loop={true}
+            loop={false} // Disable loop since we want custom alternating direction
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
+              reverseDirection: direction === "left",
             }}
             pagination={{
               clickable: true,
-              modifierClass: 'swiper-pagination',
             }}
             breakpoints={{
               320: {
                 slidesPerView: 2.3,
-                spaceBetween: 10, 
+                spaceBetween: 10,
               },
               480: {
                 slidesPerView: 1.8,
