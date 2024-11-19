@@ -2390,3 +2390,133 @@ padding: 10px;
   justify-content: center;
   padding: 10px;
 }
+
+/* Explore Car css */
+
+.mobile-explore-main-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.mobile-explore-container {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 340px;
+  /* height: 320px; */
+  background-color: #f7f7f7;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+}
+
+
+.mobile-explore-heading-container {
+  text-align: center;
+  padding: 30px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  padding-top: 10px;
+  
+}
+
+
+.mobile-explore-main-slider-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px; 
+}
+
+
+.mobile-explore-car-image-container {
+  position: absolute;
+  top: -60px; 
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-explore-car-image-container img {
+  width: auto;
+  max-width: 200px; 
+  height: auto;
+}
+
+
+.mobile-explore-car-details-container {
+  background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 55px;
+    width: 315px;
+    display: flex
+;
+    justify-content: space-between;
+    text-align: left;
+    height: 105px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+
+.car-details-left h3 {
+  margin: 0;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 14px;
+  margin-top: 10px;
+}
+
+.car-details-left p {
+  margin: 5px 0;
+  
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16.8px;
+  margin-top: 3px;
+}
+
+
+.car-details-right p {
+  margin: 5px 0;
+    
+    font-size: 8px;
+    line-height: 11.2px;
+    margin-top: 13px;
+    font-weight: 300;
+}
+
+.car-details-right .emi {
+  color: #f44336;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+/* Explore button styling */
+.mobile-explore-button {
+  display: block;
+  width: 100%;
+  height: 44px;
+  background-color: #fe582b;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  line-height: 21px;
+  
+}
+.super-h2{
+  
+  padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+

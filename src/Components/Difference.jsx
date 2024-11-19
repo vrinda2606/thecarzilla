@@ -26,10 +26,14 @@ function Difference() {
               delay: 3000,
               disableOnInteraction: false,
             }}
+            pagination={{
+              clickable: true,
+              modifierClass: 'swiper-pagination',
+            }}
             breakpoints={{
-              360: {
+              320: {
                 slidesPerView: 2.3,
-                spaceBetween: 10, // Consistent spacing for all breakpoints
+                spaceBetween: 10, 
               },
               480: {
                 slidesPerView: 1.8,

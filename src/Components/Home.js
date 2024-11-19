@@ -14,6 +14,7 @@ import MasterSlider from './MasterSlider';
 import Difference from './Difference';
 
 import MobileSearchBar from './MobileSearchBar';
+import ExploreCar from './ExploreCar';
 
 const Home = () => {
       const [size, setSize] = useState(window.innerWidth);
@@ -33,6 +34,7 @@ const Home = () => {
       
       <HomeII />
       {size <=500?( <FindCar/>):(<></>)}
+      {size <=500?(<ExploreCar/>):(<></>)}
       {size <=500?( <ExploreServices/>):(<></>)}
       <PopUp/>
      
