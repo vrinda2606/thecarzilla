@@ -1680,7 +1680,7 @@ button{
 }
 
 .car-image-wrapper {
-  margin-top: 16px;
+  margin-top: 10px;
 }
 
 .car-image {
@@ -1696,7 +1696,7 @@ button{
   }
 
   .cards-grid {
-      gap: 45px 20px;
+      gap: 30px 20px;
   }
 
   .card-mobile {
@@ -1719,16 +1719,18 @@ button{
 
 @media screen and (max-width: 480px) {
   .services-container {
-      padding: 45px;
+      padding: 40px;
       padding-bottom: 5px;
+      padding-right: 30px;
   }
 
   .cards-grid {
-      gap: 45px 20px;
+      gap: 30px 20px;
   }
 
   .card-mobile {
-      height: 100px;
+      height: 113px;
+      width: 150px;
   }
 
   .card-mobile h3 {
@@ -1740,8 +1742,8 @@ button{
   }
 
   .car-image {
-      width: 80px;
-      height: 28px;
+      width: 107px;
+      height: 35px;
   }
 }
 .card-mobile:hover {
@@ -1815,6 +1817,7 @@ padding: 10px;
   width: 90%;
   max-width: 390px;
   margin: 20px auto;
+  padding-bottom: 5px;
 }
 
 .mobile-find-car-content {
@@ -2051,6 +2054,7 @@ padding: 10px;
   width: 90%;
   max-width: 390px;
   margin: 20px auto;
+  padding-bottom: 5px;
 }
 
 .mobile-find-car-content-1 {
@@ -2060,9 +2064,9 @@ padding: 10px;
 }
 
 .mobile-find-car-title-1 {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 21px;
    margin-bottom: 10px; 
 }
 
