@@ -15,6 +15,7 @@ import Difference from './Difference';
 
 import MobileSearchBar from './MobileSearchBar';
 import ExploreCar from './ExploreCar';
+import MobileTestimonial from './MobileTestimonial';
 
 const Home = () => {
       const [size, setSize] = useState(window.innerWidth);
@@ -38,8 +39,8 @@ const Home = () => {
       {size <=500?( <ExploreServices/>):(<></>)}
       <PopUp/>
      
+      {size <=500 ?(<MobileTestimonial/>):(<Testimonial />)}
       
-      <Testimonial />
       
       
       <LiteApp />
