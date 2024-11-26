@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import { Autoplay } from 'swiper/modules';
-import CarImage from '../Components/Images/mobile version/image 9.png'; 
+import { carRecommendations } from '../utils/ExploreCarData'; // Update import path
 
 const ExploreCar = () => {
     return (
@@ -24,43 +24,25 @@ const ExploreCar = () => {
                     }}
                     loop={true}
                 >
-                    <SwiperSlide>
-                        <div className="mobile-explore-main-slider-container">
-                            {/* Car Image */}
-                            <div className="mobile-explore-car-image-container">
-                                <img src={CarImage} alt="Tata Tiago 2024" />
-                            </div>
-                            {/* Grey Details Container */}
-                            <div className="mobile-explore-car-details-container">
-                                <div className="car-details-left">
-                                    <h3>2024 Tata Tiago</h3>
-                                    <p>₹ 8.50 Lakhs</p>
+                    {carRecommendations.map((car, index) => (
+                        <SwiperSlide key={index}>
+                            <div className="mobile-explore-main-slider-container">
+                                <div className="mobile-explore-car-image-container">
+                                    <img src={car.image} alt={`${car.model} ${car.year}`} />
                                 </div>
-                                <div className="car-details-right">
-                                    <p>Limited (O) 1.4 Petrol AT</p>
-                                    <p className="emi">EMI Starts at ₹25000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    {/* Duplicate slide for testing */}
-                    <SwiperSlide>
-                        <div className="mobile-explore-main-slider-container">
-                            <div className="mobile-explore-car-image-container">
-                                <img src={CarImage} alt="Tata Tiago 2024" />
-                            </div>
-                            <div className="mobile-explore-car-details-container">
-                                <div className="car-details-left">
-                                    <h3>2024 Tata Tiago</h3>
-                                    <p>₹ 8.50 Lakhs</p>
-                                </div>
-                                <div className="car-details-right">
-                                    <p>Limited (O) 1.4 Petrol AT</p>
-                                    <p className="emi">EMI Starts at ₹25000</p>
+                                <div className="mobile-explore-car-details-container">
+                                    <div className="car-details-left">
+                                        <h3>{car.year} {car.model}</h3>
+                                        <p>{car.price}</p>
+                                    </div>
+                                    <div className="car-details-right">
+                                        <p>{car.variant}</p>
+                                        <p className="emi">EMI Starts at {car.emiStart}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </SwiperSlide>
+                        </SwiperSlide>
+                    ))}
                 </Swiper>
                 <button className="mobile-explore-button">Explore Now</button>
             </div>
