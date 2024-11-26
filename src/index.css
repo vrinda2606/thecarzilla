@@ -2665,3 +2665,15 @@ padding: 10px;
   
   
 }
+.swiper-pagination {
+  width: 100% !important;
+  display: flex !important
+;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 4px !important;
+  bottom: 0 !important;
+  position: absolute !important;
+  margin-top: 6px !important;
+  margin-bottom: 3px !important;
+}

@@ -32,7 +32,7 @@ const MobileTestimonial = () => {
         <div className="mobile-testimonial-card">
           {/* Swiper wraps only the content inside the card */}
           <Swiper
-            modules={[Pagination,Autoplay]}
+            modules={[Pagination,]}
             spaceBetween={16}
             slidesPerView={1}
             loop={true}
