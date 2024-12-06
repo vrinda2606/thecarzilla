@@ -4,7 +4,7 @@ import axios from "axios";
 const JobsPopup = ({ onClose }) => {
 
   // import Aos from 'aos';
-  const url = "https://sheetdb.io/api/v1/5lh7akf4ka707";
+  const url = "https://sheetdb.io/api/v1/a3gakp9f8p9dg";
 
   // Function to send form data to the API
   const sendData = async (formDataDetails) => {

@@ -7,7 +7,7 @@ import axios from "axios";
 
 const ContactForm = () => {
   // import Aos from 'aos';
-  const url = "https://sheetdb.io/api/v1/kitjormnr8ebr";
+  const url = "https://sheetdb.io/api/v1/td2o97q6i4v81";
 
   // Function to send form data to the API
   const sendData = async (formData) => {
