@@ -2730,18 +2730,25 @@ padding: 10px;
     font-weight: 300;
     line-height: 10px;
     font-family: 'Space Grotesk', sans-serif;
-    color: #aaa;
+    color: #E5E6E8;
 }
 
+/* Rotating the dropdown icon */
 .mobile-footer-dropdown-icon {
   width: 16px;
   margin-left: 10px;
+  transition: transform 0.3s ease;
 }
+
+.mobile-footer-dropdown-icon.rotated {
+  transform: rotate(180deg);
+}
+
 
 .mobile-footer-dropdown-content {
   margin-left: 20px;
   font-size: 10px;
-  color: #aaa;
+  color: #E5E6E8;
   padding: 10px 0;
   font-family: 'Space Grotesk', sans-serif;
 }
