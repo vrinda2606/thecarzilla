@@ -1,4 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom";
+import { useState,useEffect } from "react";
 import Function from "./Function";
 import Home from "./Components/Home";
 import PrivacyPolicy from './Components/PrivacyPolicy';
@@ -13,11 +14,19 @@ import LoginII from "./Components/LoginII";
 import Footer from "./Components/Footer";
 import Services from "./Components/Services";
 import CancellationAndRefund from "./Components/CancellationAndRefund";
+import MobileFooter from "./Components/MobileFooter";
 
 const App = () => {
   const location = useLocation();
 
   const isLoginPage = location.pathname.startsWith('/Login');
+  const [size, setSize] = useState(window.innerWidth);
+  const checkSize = () => setSize(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", checkSize);
+    return () => window.removeEventListener("resize", checkSize);
+  }, []);
 
   return(
     <>   
@@ -39,7 +48,10 @@ const App = () => {
       </Routes>
 
       {/* Hide footer if on the Login page */}
-      {!isLoginPage && <Footer />}
+      
+      {
+          size<=500 ?(<MobileFooter/>):(!isLoginPage && <Footer />)
+      }
     </>
   );
 };

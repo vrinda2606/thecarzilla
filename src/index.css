@@ -2680,3 +2680,113 @@ padding: 10px;
   margin-top: 6px !important;
   margin-bottom: 3px !important;
 }
+
+
+/* Mobile Footer */
+
+/* Container */
+.mobile-footer-container {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  padding-bottom: 5px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Logo Section */
+.mobile-footer-logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.mobile-footer-logo {
+  width: 80px;
+  height: 29px;
+}
+
+.mobile-footer-tagline {
+  margin-left: 15px;
+  font-size: 14px;
+  color: #999;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Links Section */
+.mobile-footer-links-container {
+  margin-bottom: 20px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.mobile-footer-link {
+  display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #fff;
+    margin: 10px 0;
+    cursor: pointer;
+    font-weight: 300;
+    line-height: 10px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #aaa;
+}
+
+.mobile-footer-dropdown-icon {
+  width: 16px;
+  margin-left: 10px;
+}
+
+.mobile-footer-dropdown-content {
+  margin-left: 20px;
+  font-size: 10px;
+  color: #aaa;
+  padding: 10px 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Social Media Icons */
+.mobile-footer-social-icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.mobile-footer-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* App Store Badges */
+.mobile-footer-store-container {
+  margin-bottom: 15px;
+}
+
+.mobile-footer-store-heading {
+  font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 10px
+}
+
+.mobile-footer-store-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.mobile-footer-store-badge {
+  width: 80px;
+}
+
+/* Copyright */
+.mobile-footer-copyright {
+  font-size: 8px;
+    color: #777;
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+    /* padding-top: 4px; */
+    line-height: 22px;
+    font-weight: 300;
+}
