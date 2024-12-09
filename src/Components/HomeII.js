@@ -49,7 +49,7 @@ const HomeII = () => {
                   className="brandsImage"
                   style={{
                     objectFit: "cover",
-                    transform: "scale(1.2)", // Enlarged for id === 2
+                    transform: "scale(1)", // Enlarged for id === 2
                     transition: "transform 0.3s ease-in-out",
                   }}
                 />
@@ -63,10 +63,10 @@ const HomeII = () => {
                   alt="HYUNDAI"
                   className="brandsImage"
                   style={{
-                    objectFit: "cover",
-                    transform: "scale(1.2)", // Enlarged for id === 3
-                    transition: "transform 0.3s ease-in-out",
+                    padding: "1vw 0.6vw",
+                    objectFit: "contain",
                   }}
+                  
                 />
               </div>
               <div className="TOYOTA brandsName" data-aos="fade-up">

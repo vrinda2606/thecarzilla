@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 import Logo from "../Components/Images/logo2.png";
 import Twitter from "../Components/Images/mobile version/twitter.png";
@@ -9,9 +10,22 @@ import AppleStore from "../Components/Images/mobile version/Mobile App Store Bad
 import Drop from "../Components/Images/mobile version/down 1.png";
 
 const MobileFooter = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [openSection, setOpenSection] = useState(null);
 
-  // Toggle Dropdown
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  
+  const handleNavigation = (path) => {
+    navigate(path);
+    setOpenSection(null); 
+  };
+
+  
   const toggleDropdown = (section) => {
     setOpenSection(openSection === section ? null : section);
   };
@@ -51,6 +65,8 @@ const MobileFooter = () => {
         >
           support@thecarzilla.in
         </a>
+
+        {/* About TheCarzilla.in */}
         <p className="mobile-footer-link" onClick={() => toggleDropdown("about")}>
           About TheCarzilla.in
           <img
@@ -59,8 +75,18 @@ const MobileFooter = () => {
             className={`mobile-footer-dropdown-icon ${openSection === "about" ? "rotated" : ""}`}
           />
         </p>
-        {openSection === "about" && <div className="mobile-footer-dropdown-content">Lorem ipsum dolor sit amet.</div>}
+        {openSection === "about" && (
+          <div className="mobile-footer-dropdown-content">
+            <p onClick={() => handleNavigation('/AboutUs')}>About Us</p>
+            <p onClick={() => handleNavigation('/HowItWorks')}>How It Works</p>
+            <p onClick={() => handleNavigation('/TermsAndConditions/:TermsAndConditionsII')}>
+              Terms and Conditions
+            </p>
+            <p onClick={() => handleNavigation('/PrivacyPolicy/:PrivacyPolicyII')}>Privacy Policy</p>
+          </div>
+        )}
 
+        {/* Services */}
         <p className="mobile-footer-link" onClick={() => toggleDropdown("services")}>
           Services
           <img
@@ -69,8 +95,13 @@ const MobileFooter = () => {
             className={`mobile-footer-dropdown-icon ${openSection === "services" ? "rotated" : ""}`}
           />
         </p>
-        {openSection === "services" && <div className="mobile-footer-dropdown-content">Lorem ipsum dolor sit amet.</div>}
+        {openSection === "services" && (
+          <div className="mobile-footer-dropdown-content">
+            <p>Coming SOON!!!!</p>
+          </div>
+        )}
 
+        {/* Blogs */}
         <p className="mobile-footer-link" onClick={() => toggleDropdown("blogs")}>
           Blogs
           <img
@@ -79,8 +110,13 @@ const MobileFooter = () => {
             className={`mobile-footer-dropdown-icon ${openSection === "blogs" ? "rotated" : ""}`}
           />
         </p>
-        {openSection === "blogs" && <div className="mobile-footer-dropdown-content">Lorem ipsum dolor sit amet.</div>}
+        {openSection === "blogs" && (
+          <div className="mobile-footer-dropdown-content">
+            <p>Coming SOON!!!!</p>
+          </div>
+        )}
 
+        {/* Help */}
         <p className="mobile-footer-link" onClick={() => toggleDropdown("help")}>
           Help
           <img
@@ -89,8 +125,13 @@ const MobileFooter = () => {
             className={`mobile-footer-dropdown-icon ${openSection === "help" ? "rotated" : ""}`}
           />
         </p>
-        {openSection === "help" && <div className="mobile-footer-dropdown-content">Lorem ipsum dolor sit amet.</div>}
+        {openSection === "help" && (
+          <div className="mobile-footer-dropdown-content">
+            <p onClick={() => handleNavigation('/Support')}>Customer Support</p>
+          </div>
+        )}
 
+        {/* Connect With Us */}
         <p className="mobile-footer-link" onClick={() => toggleDropdown("connect")}>
           Connect With Us
           <img
@@ -99,7 +140,14 @@ const MobileFooter = () => {
             className={`mobile-footer-dropdown-icon ${openSection === "connect" ? "rotated" : ""}`}
           />
         </p>
-        {openSection === "connect" && <div className="mobile-footer-dropdown-content">Lorem ipsum dolor sit amet.</div>}
+        {openSection === "connect" && (
+          <div className="mobile-footer-dropdown-content">
+            <p onClick={() => window.open('https://www.linkedin.com/company/thecarzilla-in/', '_blank')}>LinkedIn</p>
+            <p onClick={() => window.open('https://www.instagram.com/thecarzilla.in/', '_blank')}>Instagram</p>
+            <p onClick={() => window.open('https://www.twitter.com', '_blank')}>Twitter</p>
+            <p onClick={() => window.open('https://www.facebook.com', '_blank')}>Facebook</p>
+          </div>
+        )}
       </div>
 
       {/* App Store Badges */}
@@ -110,8 +158,10 @@ const MobileFooter = () => {
           <img src={AppleStore} alt="Apple App Store" className="mobile-footer-store-badge" />
         </div>
       </div>
+
       {/* Horizontal Rule */}
       <hr style={{ borderTop: "0.5px solid #E5E6E8" }} />
+
       {/* Copyright Section */}
       <div className="mobile-footer-copyright">
         <p>Copyright ©2024 IgniteX Solutions Pvt. Ltd.</p>

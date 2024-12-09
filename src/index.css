@@ -2797,3 +2797,18 @@ padding: 10px;
     line-height: 22px;
     font-weight: 300;
 }
+/* Adjusted Dropdown Content */
+
+.mobile-footer-dropdown-content {
+  margin-left: 0; 
+  padding-left: 20px; 
+  font-size: 10px; 
+  line-height: 18px; 
+  font-weight: 300; 
+  color: #E5E6E8; 
+  padding: 10px 0;
+  padding-top: 0; 
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+
