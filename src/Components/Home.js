@@ -1,7 +1,7 @@
 import React from 'react';
 import HomeI from './HomeI';
 import HomeIII from './HomeIII';
-import PopUp from './PopUp';
+// import PopUp from './PopUp';
 import ContactForm from "./ContactForm"
 import Testimonial from './Testimonial';
 import LiteApp from './LiteApp';
@@ -16,6 +16,7 @@ import Difference from './Difference';
 import MobileSearchBar from './MobileSearchBar';
 import ExploreCar from './ExploreCar';
 import MobileTestimonial from './MobileTestimonial';
+import MobileBlogs from './MobileBlogs';
 
 const Home = () => {
       const [size, setSize] = useState(window.innerWidth);
@@ -37,8 +38,8 @@ const Home = () => {
       {size <=500?( <FindCar/>):(<></>)}
       {size <=500?(<ExploreCar/>):(<></>)}
       {size <=500?( <ExploreServices/>):(<></>)}
-      <PopUp/>
-     
+      
+      {size <=500?(<MobileBlogs/>):(<></>)}
       {size <=500 ?(<MobileTestimonial/>):(<Testimonial />)}
       
       
