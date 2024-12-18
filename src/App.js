@@ -15,6 +15,7 @@ import Footer from "./Components/Footer";
 import Services from "./Components/Services";
 import CancellationAndRefund from "./Components/CancellationAndRefund";
 import MobileFooter from "./Components/MobileFooter";
+import LoadBlog from "./Components/LoadBlog";
 
 const App = () => {
   const location = useLocation();
@@ -45,6 +46,7 @@ const App = () => {
         <Route exact path="/Services" element={<Services />} />
         <Route exact path="/CancellationAndRefundPolicy" element={<CancellationAndRefund />} />
         <Route path="*" element={<Function />} /> 
+        <Route path="/mobileblogs" element={<LoadBlog/>}/>
       </Routes>
 
       {/* Hide footer if on the Login page */}

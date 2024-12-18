@@ -19,7 +19,7 @@ const MobileBlogs = () => {
 
   const handleExploreMore = () => {
     setAutoplay(true)
-    navigate('/AboutUs');
+    navigate('/mobileblogs');
   };
 
   const BlogCard = () => (
