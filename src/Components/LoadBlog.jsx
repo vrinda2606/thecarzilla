@@ -8,9 +8,12 @@ import FindCar from './FindCar';
 import ExploreService from './ExploreService';
 import MobileTestimonial from './MobileTestimonial';
 import LiteApp from './LiteApp';
+import { useNavigate } from 'react-router-dom';
 
 const LoadBlog = () => {
   const [cards, setCards] = useState([1, 2, 3, 4]); // Initial 4 cards
+
+  const navigate=useNavigate();
 
   const handleLoadMore = () => {
     setCards((prevCards) => [
@@ -42,7 +45,7 @@ const LoadBlog = () => {
         <p className="load-mobile-card-description">
           Our blog is dedicated to providing fresh insights, practical tips, and inspiring stories to fuel your passion and curiosity.
         </p>
-        <a href="#" className="load-mobile-card-link">View Post</a>
+        <a onClick={()=>navigate("/detailblog")} className="load-mobile-card-link">View Post</a>
       </div>
     </div>
   );
