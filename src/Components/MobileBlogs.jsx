@@ -42,7 +42,7 @@ const MobileBlogs = () => {
         <p className="mobile-blog-card-description">
           Our blog is dedicated to providing fresh insights, practical tips, and inspiring stories to fuel your passion and curiosity.
         </p>
-        <a onClick={()=>navigate("/detailblog")} className="mobile-blog-card-link">View Post</a>
+        <a onClick={()=>navigate("/mobiledetailblog")} className="mobile-blog-card-link">View Post</a>
       </div>
     </div>
   );

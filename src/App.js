@@ -48,7 +48,7 @@ const App = () => {
         <Route exact path="/CancellationAndRefundPolicy" element={<CancellationAndRefund />} />
         <Route path="*" element={<Function />} /> 
         <Route path="/mobileblogs" element={<LoadBlog/>}/>
-        <Route path="/detailblog" element={<DetailedBlog/>}/>
+        <Route path="/mobiledetailblog" element={<DetailedBlog/>}/>
       </Routes>
 
       {/* Hide footer if on the Login page */}

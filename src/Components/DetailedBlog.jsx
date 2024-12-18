@@ -5,8 +5,10 @@ import BlogShare from "../Components/Images/mobile version/mobile-blog-share.png
 import ExploreService from "./ExploreService";
 import MobileTestimonial from "./MobileTestimonial";
 import LiteApp from "./LiteApp";
+import { useNavigate } from "react-router-dom";
 
 const DetailedBlog = () => {
+  const navigate=useNavigate();
   return (
     <div className="mobile-detail-blog-container">
       {/* Comment Section */}
@@ -66,7 +68,7 @@ const DetailedBlog = () => {
                   tips, and inspiring stories to fuel your passion and
                   curiosity.
                 </p>
-                <a href="#" className="mobile-detail-blog-link">
+                <a onClick={()=>navigate("/mobiledetailblog")} className="mobile-detail-blog-link">
                   View Post
                 </a>
               </div>

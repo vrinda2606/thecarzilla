@@ -45,7 +45,7 @@ const LoadBlog = () => {
         <p className="load-mobile-card-description">
           Our blog is dedicated to providing fresh insights, practical tips, and inspiring stories to fuel your passion and curiosity.
         </p>
-        <a onClick={()=>navigate("/detailblog")} className="load-mobile-card-link">View Post</a>
+        <a onClick={()=>navigate("/mobiledetailblog")} className="load-mobile-card-link">View Post</a>
       </div>
     </div>
   );
