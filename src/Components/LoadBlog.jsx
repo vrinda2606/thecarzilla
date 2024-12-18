@@ -50,10 +50,11 @@ const LoadBlog = () => {
   return (
     <div>
       <MobileSearchBar />
+      <Master />
       
       {/* Blog Section */}
       <div className="load-mobile-container">
-        <h1 className="load-mobile-title">Blogs</h1>
+        
         <div className="load-mobile-grid">
           {cards.map((_, index) => (
             <div key={index} className="load-mobile-card-wrapper">
@@ -66,7 +67,7 @@ const LoadBlog = () => {
         </button>
       </div>
 
-      <Master />
+      
       <FindCar />
       <ExploreService />
       <MobileTestimonial />
