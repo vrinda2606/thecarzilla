@@ -3088,6 +3088,7 @@ padding: 10px;
   padding: 0; 
   background: #fff;
   box-shadow: 0px 2px 2px 0px #00000040; 
+  
 }
 
 /* Each Section Container */
@@ -3218,4 +3219,182 @@ padding: 10px;
   text-decoration: underline;
   color: white;
   cursor: pointer;
+}
+/* new css */
+/* Blog Showcase Section */
+.mobile-blog-details-showcase {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  
+}
+
+/* Blog Image */
+.mobile-blog-detail-image {
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  margin-right: -20px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 10px;
+  
+}
+
+/* Blog Title */
+.mobile-blog-detail-title {
+  font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+    line-height: 21px;
+}
+
+
+/* Author Details Section */
+.mobile-blog-detail-author-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* Author Image */
+.mobile-blog-detail-author-image {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Author Info */
+.mobile-blog-detail-author-info {
+  flex-grow: 1;
+  
+}
+
+.mobile-blog-detail-author-name {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 9.8px;
+}
+
+.mobile-blog-detail-publish-details {
+  font-size: 8px;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* Blog Stats */
+.mobile-blog-detail-stats {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mobile-blog-detail-icon {
+  width: 14px;
+  height: 14px;
+}
+
+/* Blog Description */
+.mobile-blog-detail-description {
+  font-size: 9px;
+  color: black;
+  line-height: 11.2px;
+  font-weight: 500;
+}
+
+
+/* New Design Section */
+.mobile-blog-details-design {
+  margin-top: 20px;
+  
+  border-radius: 10px;
+  
+  
+}
+
+.mobile-blog-details-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.mobile-blog-details-tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.mobile-blog-details-tab {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mobile-blog-details-info {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+/* Price Section */
+.mobile-blog-details-price-section {
+  margin-top: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  
+  
+  text-align: center;
+}
+
+.mobile-blog-details-price-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.mobile-blog-details-price-button {
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.mobile-blog-details-price-info {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+.mobile-blog-detail-follow-button{
+  background-color: #00ACED;
+    color: white;
+    font-weight: 400;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 6.2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+}
+.mobile-blog-detail-stat{
+  display: flex;
+  gap:4px
+}
+.mobile-blog-detail-stat-author{
+  font-size: 10px;
 }
