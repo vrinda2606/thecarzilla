@@ -81,7 +81,7 @@ const DetailedBlog = () => {
         {/* New Design Section */}
         <div className="mobile-blog-details-design">
           <img
-            src={DetailsBlogImg1}
+            src={DetailsBlogImg2}
             alt="Car"
             className="mobile-blog-details-image"
           />
@@ -91,20 +91,16 @@ const DetailedBlog = () => {
           </div>
           <div className="mobile-blog-details-info">
             <p className="mobile-blog-detail-description">
-              The Kia Carnival, launched in October, has found over 400 homes
-              since the deliveries commenced 2 months ago. Since its launch, the
-              premium MPV has had over 3300 bookings, and its waiting period has{' >'}
-              reached 6 months. Here is a quick overview of this premium Kia
-              MPV
-              <br />
-              <br/>
-            
-                
-                In terms of features, the Carnival comes with two 12.3-inch
-                displays (touchscreen infotainment and digital driver's display)
-                and an 11-inch heads-up display. Carnival also comes with 3-zone
-                auto AC, a 12-way electrically adjustable driver seat and an 8-way
-                electrically adjustable front passenger seat.
+            The Kia Carnival, launched in October, has found over 400 homes since the deliveries commenced 2 months ago. Since its launch, the premium MPV has had over 3300 bookings, and its waiting period has now reached 6 months. Here is a quick overview of this premium Kia MPV.
+            <br/>
+            <br/>
+            In terms of features, the Carnival comes with two 12.3-inch displays (touchscreen infotainment and digital driver’s display) and an 11-inch heads-up display. Carnival also comes with 3-zone auto AC, a 12-way electrically adjustable driver seat and an 8-way electrically adjustable front passenger seat.
+            <br/>
+            <br/>
+            The Kia Carnival, launched in October, has found over 400 homes since the deliveries commenced 2 months ago. Since its launch, the premium MPV has had over 3300 bookings, and its waiting period has now reached 6 months. Here is a quick overview of this premium Kia MPV.
+            <br/>
+            <br/>
+             In terms of features, the Carnival comes with two 12.3-inch displays (touchscreen infotainment and digital driver’s display) and an 11-inch heads-up display. Carnival also comes with 3-zone auto AC, a 12-way electrically adjustable driver seat and an 8-way electrically adjustable front passenger seat. 
               </p>
 
           </div>
@@ -113,27 +109,29 @@ const DetailedBlog = () => {
         {/* Section from Screenshot */}
         <div className="mobile-blog-details-price-section">
           <img
-            src={DetailsBlogImg2}
+            src={DetailsBlogImg1}
             alt="Car Overview"
             className="mobile-blog-details-price-image"
           />
+          <div className="mobile-blog-details-tabs1">
           <button className="mobile-blog-details-price-button">
             View Best Price
           </button>
+          </div>
           <div className="mobile-blog-details-price-info">
             <p className="mobile-blog-detail-description">
-              The Kia Carnival, launched in October, has found over 400 homes
-              since the deliveries commenced 2 months ago. Since its launch, the
-              premium MPV has had over 3300 bookings, and its waiting period has
-              now reached 6 months. Here is a quick overview of this premium Kia
-              MPV.
-              <br/>
-              <br/>
-              In terms of features, the Carnival comes with two 12.3-inch
-              displays (touchscreen infotainment and digital driver's display)
-              and an 11-inch heads-up display. Carnival also comes with 3-zone
-              auto AC, a 12-way electrically adjustable driver seat and an 8-way
-              electrically adjustable front passenger seat.
+            The Kia Carnival, launched in October, has found over 400 homes since the deliveries commenced 2 months ago. Since its launch, the premium MPV has had over 3300 bookings, and its waiting period has now reached 6 months. Here is a quick overview of this premium Kia MPV.
+            <br/>
+            <br/>
+            In terms of features, the Carnival comes with two 12.3-inch displays (touchscreen infotainment and digital driver’s display) and an 11-inch heads-up display. Carnival also comes with 3-zone auto AC, a 12-way electrically adjustable driver seat and an 8-way electrically adjustable front passenger seat.
+            <br/>
+            <br/>
+            The Kia Carnival, launched in October, has found over 400 homes since the deliveries commenced 2 months ago. Since its launch, the premium MPV has had over 3300 bookings, and its waiting period has now reached 6 months. Here is a quick overview of this premium Kia MPV.
+            <br/>
+            <br/>
+             In terms of features, the Carnival comes with two 12.3-inch displays (touchscreen infotainment and digital driver’s display) and an 11-inch heads-up display. Carnival also comes with 3-zone auto AC, a 12-way electrically adjustable driver seat and an 8-way electrically adjustable front passenger seat. 
+              
+
             </p>
           </div>
         </div>
