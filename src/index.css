@@ -1643,6 +1643,7 @@ button{
   max-width: 600px;
   margin: 0 auto;
   margin-bottom: 40px;
+  
 }
 
 .card-mobile {
@@ -1656,6 +1657,7 @@ button{
   justify-content: center;
   padding: 16px;
   transition: transform 0.4s ease-in-out;
+  border: 2px solid black; 
 }
 
 .card-content {

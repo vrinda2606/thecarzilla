@@ -5,35 +5,47 @@ import Aos from "aos";
 import emailjs from "@emailjs/browser";
 import axios from "axios";
 import newCardCardPhoto from "./Images/mobile version/new-car-card-photo.png";
-
+import newCar from "./Images/mobile version/car 1.png"
+import repairCar from "./Images/mobile version/repairing-service (1) 1.png"
+import BlogCar from "./Images/mobile version/blog (2) 1.png"
+import AdviceCar from "./Images/mobile version/advice (1) 1.png"
 const ContactForm = () => {
   const cardData = [
     {
       title: "New Cars",
-      background: "#985DED",
+      background: "#FFFFFF",
+      color: "#000000",
+      image:  newCar ,
     },
     {
-      title: "Buy Used Car",
-      background: "#FF6B6B",
+      title: "Services",
+      background: "#000000",
+      color: "#FFFFFF",
+      image:  repairCar 
     },
     {
-      title: "Sell Car",
-      background: "#4DABF7",
+      title: "Blogs",
+      background: "#000000",
+      color: "#FFFFFF",
+      image:  BlogCar ,
     },
     {
       title: "Compare Car",
-      background: "#40C057",
+      background: "#FFFFFF",
+      color: "#000000",
+      image:  AdviceCar ,
+
     }
   ];
-   // resize fucnction
-   const [size, setSize] = useState(window.innerWidth);
-   const checkSize = () => setSize(window.innerWidth);
- 
-   useEffect(() => {
-     window.addEventListener("resize", checkSize);
-     return () => window.removeEventListener("resize", checkSize);
-   }, []);
- 
+  // resize fucnction
+  const [size, setSize] = useState(window.innerWidth);
+  const checkSize = () => setSize(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", checkSize);
+    return () => window.removeEventListener("resize", checkSize);
+  }, []);
+
 
 
 
@@ -54,7 +66,7 @@ const ContactForm = () => {
     Aos.init({ duration: 2000 });
   }, []);
 
- 
+
   const [popupVis, setPopupVis] = useState(false);
   const form = useRef();
 
@@ -238,15 +250,18 @@ const ContactForm = () => {
               <div
                 key={index}
                 className="card-mobile"
-                style={{ backgroundColor: card.background }}
+                style={{
+                  backgroundColor: card.background,
+                  color: card.color,
+                }}
               >
                 <div className="card-content">
-                  <h3>{card.title}</h3>
-                  <p>with Exciting Offers</p>
+                  <h3 style={{ color: card.color }}>{card.title}</h3>
+                  <p style={{ color: card.color }}>with Exciting Offers</p>
                   <div className="car-image-wrapper">
                     <img
-                      src={newCardCardPhoto}
-                      alt="car"
+                      src={card.image}
+                      alt={`${card.title} image`}
                       className="car-image"
                     />
                   </div>
@@ -254,6 +269,7 @@ const ContactForm = () => {
               </div>
             ))}
           </div>
+
         </div>
       )}
     </div>
