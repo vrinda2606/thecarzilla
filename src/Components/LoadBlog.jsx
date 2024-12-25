@@ -11,18 +11,14 @@ import LiteApp from './LiteApp';
 import { useNavigate } from 'react-router-dom';
 
 const LoadBlog = () => {
-  const [cards, setCards] = useState([1, 2, 3, 4]); // Initial 4 cards
+  const [initialCards] = useState([1, 2, 3, 4]); // Always shown cards
+  const [extraCards] = useState([5, 6, 7, 8]); // Additional cards to load
+  const [showMore, setShowMore] = useState(false); // Tracks visibility of extra cards
 
-  const navigate=useNavigate();
+  const navigate = useNavigate();
 
-  const handleLoadMore = () => {
-    setCards((prevCards) => [
-      ...prevCards,
-      prevCards.length + 1,
-      prevCards.length + 2,
-      prevCards.length + 3,
-      prevCards.length + 4,
-    ]);
+  const handleToggleMore = () => {
+    setShowMore((prevShowMore) => !prevShowMore);
   };
 
   const BlogCard = () => (
@@ -45,7 +41,9 @@ const LoadBlog = () => {
         <p className="load-mobile-card-description">
           Our blog is dedicated to providing fresh insights, practical tips, and inspiring stories to fuel your passion and curiosity.
         </p>
-        <a onClick={()=>navigate("/mobiledetailblog")} className="load-mobile-card-link">View Post</a>
+        <a onClick={() => navigate('/mobiledetailblog')} className="load-mobile-card-link">
+          View Post
+        </a>
       </div>
     </div>
   );
@@ -54,28 +52,31 @@ const LoadBlog = () => {
     <div>
       <MobileSearchBar />
       <Master />
-      
+
       {/* Blog Section */}
       <div className="load-mobile-container">
-        
         <div className="load-mobile-grid">
-          {cards.map((_, index) => (
+          {initialCards.map((_, index) => (
             <div key={index} className="load-mobile-card-wrapper">
               <BlogCard />
             </div>
           ))}
+          {showMore &&
+            extraCards.map((_, index) => (
+              <div key={`extra-${index}`} className="load-mobile-card-wrapper">
+                <BlogCard />
+              </div>
+            ))}
         </div>
-        <button onClick={handleLoadMore} className="load-mobile-load-more">
-          Load More
+        <button onClick={handleToggleMore} className="load-mobile-load-more">
+          {showMore ? 'Close More' : 'Load More'}
         </button>
       </div>
 
-      
       <FindCar />
       <ExploreService />
       <MobileTestimonial />
       <LiteApp />
-
     </div>
   );
 };
