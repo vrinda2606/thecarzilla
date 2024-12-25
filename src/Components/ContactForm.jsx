@@ -30,7 +30,7 @@ const ContactForm = () => {
       image:  BlogCar ,
     },
     {
-      title: "Compare Car",
+      title: "Expert Advice",
       background: "#FFFFFF",
       color: "#000000",
       image:  AdviceCar ,
