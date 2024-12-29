@@ -236,8 +236,8 @@ const MobileNewCar = () => {
 
 
 
-            <div className="mobile-new-car-brand-section">
-              <MobileBlogs />
+            <div className="mobile-new-car-brand-section-blog">
+              <MobileBlogs/>
             </div>
             <div className="mobile-new-car-brand-section">
               <MobileTestimonial />
