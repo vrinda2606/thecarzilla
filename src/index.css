@@ -3565,9 +3565,7 @@ justify-content: center;
     font-weight: 400;
 }
 
-.mobile-new-car-card-btn:hover {
-  background-color: #333;
-}
+
 
 .mobile-new-car-view-all {
   display: flex;
@@ -3593,9 +3591,7 @@ justify-content: center;
     gap: 2px;
 }
 
-.mobile-new-car-view-all button:hover {
-  color: #333;
-}
+
 .mobile-new-car-slide:first-child {
   margin-left: 20px; 
 }
