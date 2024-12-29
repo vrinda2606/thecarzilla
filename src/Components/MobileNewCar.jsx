@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay } from "swiper/modules";
-
+import ExpertSectionBackground from "./Images/mobile version/newcarexpert.png"
 import MobileSearchBar from "./MobileSearchBar";
 import MasterSlider from "./MasterSlider";
 import Background from "./Images/mobile version/futuristic-interior-sci-fi-room-background 2.png";
@@ -62,7 +62,7 @@ const MobileNewCar = () => {
         <>
           <MobileSearchBar />
           <div className="mobile-new-car-section-master">
-          <MasterSlider />
+            <MasterSlider />
           </div>
           <div className="mobile-new-car-container ">
             <div className="mobile-new-car-section">
@@ -123,8 +123,23 @@ const MobileNewCar = () => {
             <div className="mobile-new-car-brand-section">
               <HomeII />
             </div>
-            <div className="mobile-car-new-expert-advice-section">
+            <div className="mobile-new-car-brand-section">
 
+              <div className="expert-advice-section">
+                <div className="expert-advice-container">
+
+                  <div className="expert-advice-image-container">
+                    <img
+                      src={ExpertSectionBackground} 
+                      alt="Expert Advice"
+                      className="expert-advice-full-image"
+                    />
+                    <button className="expert-advice-button-bottom-left">
+                      Contact Expert
+                    </button>
+                  </div>
+                </div>
+              </div>
 
 
             </div>
@@ -194,7 +209,7 @@ const MobileNewCar = () => {
               <h2 className="mobile-new-car-title">
                 Latest Car
               </h2>
-              
+
 
               <Swiper
                 className="mobile-new-car-swiper"
@@ -239,7 +254,7 @@ const MobileNewCar = () => {
 
 
             <div className="mobile-new-car-brand-section-blog">
-              <MobileBlogs/>
+              <MobileBlogs />
             </div>
             <div className="mobile-new-car-brand-section">
               <MobileTestimonial />
