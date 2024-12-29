@@ -61,7 +61,9 @@ const MobileNewCar = () => {
       {size <= 500 ? (
         <>
           <MobileSearchBar />
+          <div className="mobile-new-car-section-master">
           <MasterSlider />
+          </div>
           <div className="mobile-new-car-container ">
             <div className="mobile-new-car-section">
               <h2 className="mobile-new-car-title">
