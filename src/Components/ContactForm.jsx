@@ -31,6 +31,7 @@ const ContactForm = () => {
       background: "#000000",
       color: "#FFFFFF",
       image:  BlogCar ,
+      onClick: () => navigate("/mobileblogs"),
     },
     {
       title: "Expert Advice",

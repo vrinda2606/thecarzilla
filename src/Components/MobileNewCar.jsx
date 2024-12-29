@@ -201,7 +201,7 @@ const MobileNewCar = () => {
               </div>
             </div>
 
-            <div className="mobile-new-car-brand-section">
+            <div>
               <FindCar />
             </div>
 
@@ -253,10 +253,10 @@ const MobileNewCar = () => {
 
 
 
-            <div className="mobile-new-car-brand-section-blog">
+            <div >
               <MobileBlogs />
             </div>
-            <div className="mobile-new-car-brand-section">
+            <div >
               <MobileTestimonial />
             </div>
             <div>
