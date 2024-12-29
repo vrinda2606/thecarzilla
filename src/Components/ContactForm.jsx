@@ -9,13 +9,16 @@ import newCar from "./Images/mobile version/car 1.png"
 import repairCar from "./Images/mobile version/repairing-service (1) 1.png"
 import BlogCar from "./Images/mobile version/blog (2) 1.png"
 import AdviceCar from "./Images/mobile version/advice (1) 1.png"
+import { useNavigate } from "react-router-dom"; 
 const ContactForm = () => {
+  const navigate = useNavigate();
   const cardData = [
     {
       title: "New Cars",
       background: "#FFFFFF",
       color: "#000000",
       image:  newCar ,
+      onClick: () => navigate("/mobilenewcar"),
     },
     {
       title: "Services",
@@ -254,6 +257,7 @@ const ContactForm = () => {
                   backgroundColor: card.background,
                   color: card.color,
                 }}
+                onClick={card.onClick}
               >
                 <div className="card-content">
                   <h3 style={{ color: card.color }}>{card.title}</h3>

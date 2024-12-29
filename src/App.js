@@ -17,6 +17,7 @@ import CancellationAndRefund from "./Components/CancellationAndRefund";
 import MobileFooter from "./Components/MobileFooter";
 import LoadBlog from "./Components/LoadBlog";
 import DetailedBlog from "./Components/DetailedBlog";
+import MobileNewCar from "./Components/MobileNewCar";
 
 const App = () => {
   const location = useLocation();
@@ -49,6 +50,7 @@ const App = () => {
         <Route path="*" element={<Function />} /> 
         <Route path="/mobileblogs" element={<LoadBlog/>}/>
         <Route path="/mobiledetailblog" element={<DetailedBlog/>}/>
+        <Route path="/mobilenewcar" element={<MobileNewCar/>}/>
       </Routes>
 
       {/* Hide footer if on the Login page */}
