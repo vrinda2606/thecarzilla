@@ -19,7 +19,7 @@ const AboutUs = () => {
             
         <div className='HeadingBoxBlack' data-aos='fade-up'>
         <div className='HeadingBlackDiv'>
-           <span className='BlackDivfirst'><hr/><p>WHY CHOOSE US</p><hr/></span>
+           <span className='BlackDivfirst'><hr/><p>WHY CHOOSE US </p><hr/></span>
            <span className='BlackDivMiddle'><h1>About Us</h1></span>
            <span className='BlackDivLast'>Our Company Overview</span>
         </div>
