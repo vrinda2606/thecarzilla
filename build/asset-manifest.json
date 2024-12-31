@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.aa865020.css",
-    "main.js": "/static/js/main.8865813a.js",
+    "main.js": "/static/js/main.faa1907b.js",
     "static/media/Manjeet Singh.jpg": "/static/media/Manjeet Singh.d454184b422f6aca5ce3.jpg",
     "static/media/careers.jpeg": "/static/media/careers.7a25d51910d90cf3ed11.jpeg",
     "static/media/CustomerSupport.png": "/static/media/CustomerSupport.3d78cf3b7115af9fdc21.png",
@@ -53,10 +53,10 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.aa865020.css.map": "/static/css/main.aa865020.css.map",
-    "main.8865813a.js.map": "/static/js/main.8865813a.js.map"
+    "main.faa1907b.js.map": "/static/js/main.faa1907b.js.map"
   },
   "entrypoints": [
     "static/css/main.aa865020.css",
-    "static/js/main.8865813a.js"
+    "static/js/main.faa1907b.js"
   ]
 }
