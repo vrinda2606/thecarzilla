@@ -14,10 +14,12 @@ import LoginII from "./Components/LoginII";
 import Footer from "./Components/Footer";
 import Services from "./Components/Services";
 import CancellationAndRefund from "./Components/CancellationAndRefund";
-import MobileFooter from "./Components/MobileFooter";
-import LoadBlog from "./Components/LoadBlog";
-import DetailedBlog from "./Components/DetailedBlog";
-import MobileNewCar from "./Components/MobileNewCar";
+import LoadBlog from "./Components/LoadBlog"
+import DetailedBlog from "./Components/DetailedBlog"
+import Careers from "./Components/Careers"
+import MobileNewCar from "./Components/MobileNewCar"
+import MobileFooter from  "./Components/MobileFooter"
+
 
 const App = () => {
   const location = useLocation();
@@ -47,6 +49,7 @@ const App = () => {
         <Route exact path="/Login/:OtpVerify" element={<LoginII />} />
         <Route exact path="/Services" element={<Services />} />
         <Route exact path="/CancellationAndRefundPolicy" element={<CancellationAndRefund />} />
+        <Route exact path="/Careers" element={<Careers/>} />
         <Route path="*" element={<Function />} /> 
         <Route path="/mobileblogs" element={<LoadBlog/>}/>
         <Route path="/mobiledetailblog" element={<DetailedBlog/>}/>
