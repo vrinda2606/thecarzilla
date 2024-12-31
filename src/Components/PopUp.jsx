@@ -4,7 +4,7 @@ import axios from "axios";
 
 const PopUp = ({ isOpen, onClose }) => {
   const form = useRef();
-  const url = "https://sheetdb.io/api/v1/kitjormnr8ebr";
+  const url = "https://sheetdb.io/api/v1/td2o97q6i4v81";
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isError, setIsError] = useState(false);
 
