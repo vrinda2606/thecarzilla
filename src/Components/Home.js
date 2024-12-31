@@ -30,7 +30,7 @@ const Home = () => {
 
       {size <=500?( <MobileSearchBar/>):(<></>)}
       {size <=500?( <Master/>):(<HomeI/>)}
-      {size<=500 ?(<MasterSlider/>):(<></>)}
+      {/* {size<=500 ?(<MasterSlider/>):(<></>)} */}
       <ContactForm />
       {size <=500 ?(<Difference/>):(<HomeIII />)}
       
