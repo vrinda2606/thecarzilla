@@ -69,7 +69,7 @@ const LoadBlog = () => {
             ))}
         </div>
         <button onClick={handleToggleMore} className="load-mobile-load-more">
-          {showMore ? 'Close More' : 'Load More'}
+          {showMore ? 'Close' : 'Load More'}
         </button>
       </div>
 

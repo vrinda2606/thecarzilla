@@ -7,14 +7,7 @@ import "swiper/css/pagination";
 
 const MobileTestimonial = () => {
   const testimonials = [
-    {
-      title: "Dream Car, Unbeatable Deal: How TheCarzilla Made It Happen for Ajab Singh!",
-      content:
-        "I recently bought my Kia Seltos from TheCarzilla.in, a decision I don’t regret. Their team secured an unbeatable deal at a convenient store, making the process smooth. Thanks to them, I’m cruising in my dream car, saving money too.",
-      name: "Ajab Singh",
-      location: "Noida, Uttar Pradesh",
-      image: DeliveryImage,
-    },
+    
     {
       title: "Outstanding Service and Support!",
       content:
@@ -32,10 +25,10 @@ const MobileTestimonial = () => {
         <div className="mobile-testimonial-card">
           {/* Swiper wraps only the content inside the card */}
           <Swiper
-            modules={[Pagination,Autoplay]}
+            modules={[Pagination]}
             spaceBetween={16}
             slidesPerView={1}
-            loop={true}
+            loop={false}
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
