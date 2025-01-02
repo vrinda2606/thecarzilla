@@ -14,7 +14,7 @@
     border: none;
     outline: none;
     scroll-behavior:smooth;
-    font-family: "Work Sans",'Pacifico', 'Plus Jakarta Sans','cursive','Poppins', sans-serif, 'Lexend Deca','Space Grotesk','Saira','Montserrat'; 
+    font-family: 'Lexend Deca',"Work Sans",'Pacifico', 'Plus Jakarta Sans','cursive','Poppins', sans-serif,'Space Grotesk','Saira','Montserrat'; 
 }
 
 .header{
@@ -103,15 +103,16 @@ button{
   border-radius: 0vw 0vw 2vw 2vw;
   display: none;
   flex-direction: column;
-  justify-content: space-evenly;
+  gap: 50px;
   width: 98%;
+  justify-content: center;
   height: auto;
   left: 0;
   font-weight: 600;
   background-color: white;
-  font-size: 1.2vw;
+  
   padding-top: 1.2vw;
-  padding-bottom: 1.2vw;
+  padding-bottom: 350px;
 }
 .MenuDropdown .MenuDropdownOpt{
   line-height: 4vw;
@@ -1622,6 +1623,2030 @@ button{
   text-align: center;
 }
 
+
+
+
+
+
+/*new css by intern*/
+.services-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 60px;
+  background: #F7F7F7;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px 24px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  
+}
+
+.card-mobile {
+  position: relative;
+  border-radius: 16px;
+  height: 140px;
+  width: 100%;
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: transform 0.4s ease-in-out;
+  border: 2px solid black; 
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-mobile h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.card-mobile p {
+  color: white;
+  font-size: 12px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.car-image-wrapper {
+  margin-top: 10px;
+}
+
+.car-image {
+  width: 108px;
+  height: 37px;
+  object-fit: contain;
+}
+
+
+@media screen and (max-width: 768px) {
+  .services-container {
+      padding: 20px 100px;
+  }
+
+  .cards-grid {
+      gap: 30px 20px;
+  }
+
+  .card-mobile {
+      height: 120px;
+  }
+
+  .card-mobile h3 {
+      font-size: 16px;
+  }
+
+  .card-mobile p {
+      font-size: 11px;
+  }
+
+  .car-image {
+      width: 90px;
+      height: 31px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services-container {
+      padding: 40px;
+      padding-bottom: 5px;
+      padding-right: 30px;
+  }
+
+  .cards-grid {
+      gap: 30px 20px;
+  }
+
+  .card-mobile {
+      height: 113px;
+      width: 150px;
+  }
+
+  .card-mobile h3 {
+      font-size: 14px;
+  }
+
+  .card-mobile p {
+      font-size: 10px;
+  }
+
+  .car-image {
+      width: 107px;
+      height: 35px;
+  }
+}
+.card-mobile:hover {
+  cursor: pointer; 
+  transform: scale(1.05); 
+}
+
+
+/*mobile version brand css*/
+/* CSS for the marquee rows and images */
+ 
+  .mobile-version-headingII {
+    font-family: Lexend Deca;
+font-size: 18px;
+font-weight: 500;
+line-height: 21px;
+text-align: center;
+
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+padding: 10px;
+
+  }
+  
+
+  .Mobile-brand-wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+  }
+
+  .mobile-brand-row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .brand-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 60px; 
+  }
+
+  .brand-logo img {
+    width: 100%;
+    height: auto;
+    max-width: 90px;
+  }
+
+
+/* find my car css */
+.mobile-find-car-container {
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 90%;
+  max-width: 390px;
+  margin: 20px auto;
+  padding-bottom: 5px;
+}
+
+.mobile-find-car-content {
+  text-align: left;
+  margin-bottom: 20px;
+  padding-right: 30px;
+}
+
+.mobile-find-car-title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 21px;
+  margin-bottom: 12px;
+}
+
+.mobile-find-car-description {
+  font-size: 10px;
+  margin-bottom: 20px;
+  font-weight: 200;
+  line-height: 14.2px;
+}
+
+.mobile-find-car-button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 11.2px;
+  
+}
+
+.mobile-card-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+.mobile-card {
+  position: relative;
+  width: 87px;
+  height: 53px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+  opacity: 1;
+}
+
+.mobile-card-orange {
+  background-color: #F65D34;
+  transform: rotate(342deg);
+  z-index: 1;
+  top: 20px;
+  border-radius: 10px;
+}
+
+.mobile-card-white {
+  background-color: #fff;
+  width: 91px;
+  height: 53px;
+  z-index: 2;
+  margin: -10px 0;
+  border-radius: 10px;
+}
+
+.mobile-card-green {
+  background-color: #51DC99;
+  transform: rotate(20deg);
+  z-index: 0;
+  border-radius: 10px;
+  bottom: 12px;
+}
+
+.mobile-card-image {
+  width: 78px;
+  height: 27px;
+}
+
+.mobile-card-check-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+}
+
+/* Popup css */
+.mobile-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.mobile-popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  z-index: 1001;
+}
+
+.mobile-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.mobile-popup-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: black;
+}
+
+.mobile-popup-subtitle {
+  font-size: 16px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: black;
+}
+.mobile-popup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-form-group {
+  margin-bottom: 15px;
+}
+
+.mobile-form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.mobile-form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.mobile-form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.mobile-enquire-btn {
+  flex: 1;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mobile-enquire-btn:hover {
+  background-color: #333;
+}
+
+.mobile-close-btn-alt {
+  flex: 1;
+  padding: 10px;
+  background-color: #ccc;
+  color: #000;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mobile-close-btn-alt:hover {
+  background-color: #bbb;
+}
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.mobile-popup-content1 {
+  background-color: #fff;
+  padding: 60px 10px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  width: 95%;
+  height: 60%;
+  position: relative;
+  z-index: 1001;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* explore service css */
+.mobile-find-car-container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 90%;
+  max-width: 390px;
+  margin: 20px auto;
+  padding-bottom: 5px;
+}
+
+.mobile-find-car-content-1 {
+  text-align: left;
+  margin-bottom: 20px;
+  padding-right: 30px;
+}
+
+.mobile-find-car-title-1 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 21px;
+   margin-bottom: 10px; 
+}
+
+.mobile-find-car-description-1 {
+  font-size: 10px;
+  margin-bottom: 20px;
+  font-weight: 200;
+  line-height: 13px;
+}
+
+.mobile-find-car-button-1 {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 11.2px;
+}
+
+.mobile-card-row-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+.mobile-card-1 {
+  position: relative;
+  width: 87px;
+  height: 53px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  opacity: 1;
+}
+
+.mobile-card-orange-1 {
+  background-color: #D3DCE8;
+  height: 53px;
+  transform: rotate(-0deg);
+  z-index: 1;
+  top: 21px;
+  border-radius: 10px;
+  width: 87px;
+}
+
+.mobile-card-white-1 {
+  background-color: #fff;
+  width: 102px;
+  height: 53px;
+  z-index: 2;
+  margin: -10px 0;
+  border-radius: 10px;
+}
+
+.mobile-card-green-1 {
+  background-color: #5CA7FA;
+  z-index: 0;
+  border-radius: 10px;
+  bottom: 16px;
+  width: 87px;
+  height: 53px;
+}
+
+.mobile-card-green-1 img {
+  margin-top: 20px;
+}
+
+.mobile-card-image-1 {
+  width: 78px;
+  height: 27px;
+}
+
+.mobile-card-check-icon-1 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+}
+
+/* Master css */
+.mobile-container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+}
+
+.mobile-ad-container {
+  position: relative;
+  width: 350px;
+  height: 98px;
+}
+
+.mobile-background-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 0;
+  overflow: hidden;
+}
+
+.mobile-background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mobile-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 12px;
+  color: white;
+}
+
+.mobile-text-container {
+  position: absolute;
+  width: 128px;
+  height: 28px;
+  top: 17px;  /* Adjusted from 106px to fit within container */
+  left: 24px;  /* Adjusted from 36px to account for content padding */
+}
+
+.mobile-heading {
+  font-weight: 700;
+  line-height: 14px;
+  font-size: 10px;
+}
+
+.mobile-description-container {
+  position: absolute;
+  width: 108px;
+  height: 17px;
+  top: 49px;  /* Adjusted from 138px to fit within container */
+  left: 25px;  /* Adjusted from 37px to account for content padding */
+}
+
+.mobile-description {
+  font-size: 5px;
+  line-height: 7px;
+  font-weight: 400;
+}
+
+.mobile-enquire-btn1 {
+  position: absolute;
+  top: 70px;
+  left: 25px;
+  background-color: black;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 6px;
+  line-height: 6px;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  color: white;
+  
+  /* width: 48px; */
+}
+
+.mobile-car-image {
+  position: absolute;
+  width: 91px;
+  height: 73px;
+  top: 24px;
+  left: 170px;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.mobile-salesman-image {
+  position: absolute;
+  width: 63px;
+  height: 81px;
+  top: 17px;
+  left: 273px;
+  object-fit: contain;
+  z-index: 2;
+}
+
+
+/* Swiper CSS */
+.swiper-parent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  padding-bottom: 40px;
+}
+
+.swiper-container {
+  width: 350px;
+  height: 95px;
+}
+
+.swiper-slide {
+  width: auto;
+  height: auto;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.swiper {
+  padding-bottom: 12px !important; 
+}
+
+.swiper-pagination {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 4px !important;
+  bottom: 0 !important;  
+  position: absolute !important;
+  margin-top: 6px !important; 
+}
+
+/* Style individual bullets */
+.swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  background: #d9d9d9 !important;
+  opacity: 1 !important;
+  margin: 0 4px !important;
+}
+
+/* Style active bullet */
+.swiper-pagination-bullet-active {
+  background: black !important;
+}
+
+/* Experience the Difference css */
+  
+/* Parent Container */
+.mobile11-swiper-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+/* Heading Container */
+.mobile11-heading-container {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.mobile11-title {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+  color: black;
+}
+
+.mobile11-subtitle {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 11.2px;
+  text-align: center;
+  color: #666;
+}
+
+/* Swiper Container */
+.mobile11-swiper-container {
+  width: 350px;
+  height: 95px;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+/* Card Styles */
+.mobile11-card {
+  background-color: #F7F7F7;
+  border-radius: 10px;
+  width: 150px;
+  padding: 0 5px;
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile11-card-title {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: black;
+  line-height: 21px;
+}
+
+.mobile11-card-text {
+  font-size: 8px;
+  color: #555;
+  font-weight: 400;
+  line-height: 11.2px;
+  text-align: center;
+}
+.super-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Explore Car css */
+
+.mobile-explore-main-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.mobile-explore-container {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 340px;
+  /* height: 320px; */
+  background-color: #f7f7f7;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+}
+
+
+.mobile-explore-heading-container {
+  text-align: center;
+  padding: 30px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  padding-top: 10px;
+  
+}
+
+
+.mobile-explore-main-slider-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px; 
+}
+
+
+.mobile-explore-car-image-container {
+  position: absolute;
+  top: -60px; 
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-explore-car-image-container img {
+  width: auto;
+  max-width: 200px; 
+  height: auto;
+}
+
+
+.mobile-explore-car-details-container {
+  background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 55px;
+    width: 315px;
+    display: flex
+;
+    justify-content: space-between;
+    text-align: left;
+    height: 105px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+
+.car-details-left h3 {
+  margin: 0;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 14px;
+  margin-top: 10px;
+}
+
+.car-details-left p {
+  margin: 5px 0;
+  
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16.8px;
+  margin-top: 3px;
+}
+
+
+.car-details-right p {
+  margin: 5px 0;
+    
+    font-size: 8px;
+    line-height: 11.2px;
+    margin-top: 13px;
+    font-weight: 300;
+}
+
+.car-details-right .emi {
+  color: #f44336;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+/* Explore button styling */
+.mobile-explore-button {
+  display: block;
+  width: 100%;
+  height: 44px;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  line-height: 21px;
+  
+}
+.super-h2{
+  
+  padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+/* New Navbar */
+.MenuDropdown {
+  position: fixed;
+  top: 0;
+  left: -100%; 
+  height: 100%;
+  width: 70%;
+  background-color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+  transition: left 0.5s ease-in-out; 
+  z-index: 1000;
+}
+
+.MenuDropdown.MenuShow {
+  left: 0; 
+}
+
+.menuIconNav {
+  cursor: pointer;
+  color: #596780;
+}
+
+
+
+/* testimonial css */
+
+.mobile-test-main-container {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 10px;
+ 
+}
+
+.mobile-test-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 21px;
+  color: black;
+}
+
+.mobile-test-card-container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  
+}
+
+.mobile-testimonial-card {
+  height: 190px;
+  min-width: 340px;
+  max-width: 390px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  padding-bottom: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Keeps card in place */
+}
+
+.mobile-testimonial-content {
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%; /* Ensures proper layout within the card */
+}
+
+.mobile-testimonial-title {
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 14px;
+}
+
+.mobile-testimonial-text {
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 11.2px;
+  margin-bottom: 1rem;
+}
+
+.mobile-testimonial-author {
+  font-size: 5px;
+  text-align: right;
+  font-weight: 400;
+  line-height: 7px;
+  margin-bottom: 10px;
+}
+
+.mobile-testimonial-author span {
+  font-size: 5px;
+  font-weight: 400;
+  line-height: 7px;
+}
+
+.mobile-testimonial-image-container {
+  width: 102px; 
+  height: 126px;
+  background-color: #fff; 
+  border-radius: 10px;
+  
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.mobile-testimonial-image {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  border-radius: inherit; 
+}
+
+
+/* Swiper Pagination Styling */
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.8;
+}
+
+.mobile-test-main-container .swiper-pagination-bullet-active {
+  background: #ff5722 !important;
+}
+
+.mobile-testimonial-content-container{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-top: 1rem;
+  
+  
+}
+.swiper-pagination {
+  width: 100% !important;
+  display: flex !important
+;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 4px !important;
+  bottom: 0 !important;
+  position: absolute !important;
+  margin-top: 6px !important;
+  margin-bottom: 3px !important;
+}
+
+
+/* Mobile Footer */
+
+/* Container */
+.mobile-footer-container {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  padding-bottom: 5px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Logo Section */
+.mobile-footer-logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.mobile-footer-logo {
+  width: 80px;
+  height: 29px;
+}
+
+.mobile-footer-tagline {
+  margin-left: 15px;
+  font-size: 14px;
+  color: #999;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Links Section */
+.mobile-footer-links-container {
+  margin-bottom: 20px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.mobile-footer-link {
+  display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #fff;
+    margin: 10px 0;
+    cursor: pointer;
+    font-weight: 300;
+    line-height: 10px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #E5E6E8;
+}
+
+/* Rotating the dropdown icon */
+.mobile-footer-dropdown-icon {
+  width: 16px;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.mobile-footer-dropdown-icon.rotated {
+  transform: rotate(180deg);
+}
+
+
+.mobile-footer-dropdown-content {
+  margin-left: 20px;
+  font-size: 10px;
+  color: #E5E6E8;
+  padding: 10px 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Social Media Icons */
+.mobile-footer-social-icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.mobile-footer-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* App Store Badges */
+.mobile-footer-store-container {
+  margin-bottom: 15px;
+}
+
+.mobile-footer-store-heading {
+  font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 10px
+}
+
+.mobile-footer-store-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.mobile-footer-store-badge {
+  width: 80px;
+}
+
+/* Copyright */
+.mobile-footer-copyright {
+  font-size: 8px;
+    color: #777;
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+    /* padding-top: 4px; */
+    line-height: 22px;
+    font-weight: 300;
+}
+/* Adjusted Dropdown Content */
+
+.mobile-footer-dropdown-content {
+  margin-left: 0; 
+  padding-left: 20px; 
+  font-size: 10px; 
+  line-height: 18px; 
+  font-weight: 300; 
+  color: #E5E6E8; 
+  padding: 10px 0;
+  padding-top: 0; 
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+
+/* mobile blog  */
+
+
+/* Container styling */
+.mobile-blog-container {
+  padding: 20px;
+  background: #fff;
+}
+
+.mobile-blog-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Card styling */
+.mobile-blog-card {
+  background: black;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.mobile-blog-card-image {
+  width: 100%;
+  height: 112px;
+  object-fit: cover;
+}
+
+.mobile-blog-card-content {
+  padding: 10px;
+  padding-top: 4px;
+}
+
+.mobile-blog-card-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.mobile-blog-author-section {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mobile-blog-author-image {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.mobile-blog-author-name {
+  font-size: 9px;
+    font-weight: 400;
+    line-height: 9.8px;
+}
+
+.mobile-blog-date-section {
+  display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+
+.mobile-blog-date {
+  font-size: 10px;
+  color: white;
+}
+
+.mobile-blog-shares {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  color: white;
+}
+
+.mobile-blog-share-icon {
+  width: 12px;
+  height: 12px;
+  color: white;
+}
+
+.mobile-blog-card-title {
+  font-size: 8px;
+    font-weight: 800;
+    margin-bottom: 3px;
+    line-height: 11.2px;
+    text-align: left;
+}
+
+.mobile-blog-card-description {
+  font-size: 8px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    line-height: 10px;
+    color: white
+}
+
+.mobile-blog-card-link {
+  color: white;
+  font-size: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Button styling */
+.mobile-blog-button {
+  display: block;
+    /* margin: 20px auto; */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 800;
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    line-height: 21px;
+}
+
+
+
+
+/* load blog page */
+
+.load-mobile-container {
+  padding: 20px;
+  margin-bottom: 15px;
+  background: #fff;
+  border-radius: 10px; 
+  box-shadow: 0px 2px 2px 0px #00000040; 
+}
+
+/* Blog Grid Layout */
+.load-mobile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
+  margin-bottom: 20px;
+}
+
+.load-mobile-card-wrapper {
+  width: 100%;
+}
+
+/* Blog Card Styling */
+.load-mobile-card {
+  background: black;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+}
+
+.load-mobile-card-image {
+  width: 100%;
+  height: 112px;
+  object-fit: cover;
+}
+
+.load-mobile-card-content {
+  padding: 10px;
+  padding-top: 4px;
+}
+
+.load-mobile-card-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.load-mobile-author-section {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.load-mobile-author-image {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.load-mobile-author-name {
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 9.8px;
+}
+
+.load-mobile-date-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.load-mobile-date {
+  font-size: 10px;
+  color: white;
+}
+
+.load-mobile-shares {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  color: white;
+}
+
+.load-mobile-share-icon {
+  width: 12px;
+  height: 12px;
+  color: white;
+}
+
+.load-mobile-card-title {
+  font-size: 8px;
+  font-weight: 800;
+  margin-bottom: 3px;
+  line-height: 11.2px;
+  text-align: left;
+}
+
+.load-mobile-card-description {
+  font-size: 8px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  line-height: 10px;
+  color: white;
+}
+
+.load-mobile-card-link {
+  color: white;
+  font-size: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Load More Button */
+.load-mobile-load-more {
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 800;
+  background: #000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  line-height: 21px;
+  text-align: center;
+}
+
+
+/* Detailed blog */
+
+/* Main Container */
+.mobile-detail-blog-container {
+  width: 100vw; 
+  margin: 0; 
+  padding: 0; 
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px #00000040; 
+  
+  
+  
+}
+.mobile-detail-blog-container {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+/* Each Section Container */
+.mobile-detail-blog-section {
+  width: 100%; 
+  padding: 15px; 
+  margin-bottom: 20px; 
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px #00000040;
+  border-radius: 15px; 
+}
+
+
+/* Header Section */
+.mobile-detail-blog-header h2 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.mobile-detail-blog-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.mobile-detail-blog-button {
+  width: 100%;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0px 2px 2px 0px #00000040;
+}
+
+/* Explore Blogs Section */
+.mobile-detail-blog-heading {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.mobile-detail-blog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.mobile-detail-blog-card {
+  background: black;
+  border-radius: 10px;
+  color: white;
+  overflow: hidden;
+  box-shadow: 0px 2px 2px 0px #00000040;
+}
+
+.mobile-detail-blog-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.mobile-detail-blog-content {
+  padding: 10px;
+}
+
+.mobile-detail-blog-title {
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.mobile-detail-blog-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.mobile-detail-blog-author {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mobile-detail-blog-author-img {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.mobile-detail-blog-author-name {
+  font-size: 10px;
+}
+
+.mobile-detail-blog-date {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+}
+
+.mobile-detail-blog-share {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.mobile-detail-blog-share-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.mobile-detail-blog-description {
+  font-size: 9px;
+  margin-bottom: 10px;
+}
+
+.mobile-detail-blog-link {
+  font-size: 10px;
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+/* new css */
+/* Blog Showcase Section */
+.mobile-blog-details-showcase {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  
+}
+
+/* Blog Image */
+.mobile-blog-detail-image {
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  margin-right: -20px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 10px;
+  
+}
+
+/* Blog Title */
+.mobile-blog-detail-title {
+  font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+    line-height: 21px;
+}
+
+
+/* Author Details Section */
+.mobile-blog-detail-author-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* Author Image */
+.mobile-blog-detail-author-image {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Author Info */
+.mobile-blog-detail-author-info {
+  flex-grow: 1;
+  
+}
+
+.mobile-blog-detail-author-name {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 9.8px;
+}
+
+.mobile-blog-detail-publish-details {
+  font-size: 8px;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* Blog Stats */
+.mobile-blog-detail-stats {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mobile-blog-detail-icon {
+  width: 14px;
+  height: 14px;
+}
+
+/* Blog Description */
+.mobile-blog-detail-description {
+  font-size: 9px;
+  color: black;
+  line-height: 11.2px;
+  font-weight: 500;
+}
+
+
+/* New Design Section */
+.mobile-blog-details-design {
+  margin-top: 20px;
+  
+  border-radius: 10px;
+  
+  
+}
+
+.mobile-blog-details-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.mobile-blog-details-tabs {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.mobile-blog-details-tab {
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 50%;
+}
+
+.mobile-blog-details-info {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+/* Price Section */
+.mobile-blog-details-price-section {
+  margin-top: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  
+  
+  
+}
+
+.mobile-blog-details-price-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.mobile-blog-details-price-button {
+  background-color: #000;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.mobile-blog-details-price-info {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+.mobile-blog-detail-follow-button{
+  background-color: #00ACED;
+    color: white;
+    font-weight: 400;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 6.2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+}
+.mobile-blog-detail-stat{
+  display: flex;
+  gap:4px
+}
+.mobile-blog-detail-stat-author{
+  font-size: 10px;
+}
+
+.mobile-blog-details-tabs1{
+display: flex;
+justify-content: center;
+}
+
+/* new car css */
+
+/* General styling */
+.mobile-new-car-container {
+  margin-top: -10px;
+  padding-top: 0;
+  
+}
+
+.mobile-new-car-section {
+  text-align: center;
+  box-shadow: 0px 2px 2px 0px #00000040; 
+  background-color: #fff; 
+  border-radius: 10px; 
+  padding: 10px; 
+  border: 0.2px solid #808182;
+}
+
+
+/* Title styling */
+.mobile-new-car-title {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+/* Tabs (SUV, Hatchback, etc.) styling */
+.mobile-new-car-tabs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+  border-bottom: 0.2px solid #4E5A65; /* Full underline below all buttons */
+  padding: 0 60px;
+  position: relative; /* Needed for positioning */
+}
+
+.mobile-new-car-tab {
+  padding: 5px 10px;
+  font-size: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative; /* Needed for underline positioning */
+  transition: color 0.3s ease;
+  font-weight: 400;
+  line-height: 11.2px;
+  margin-bottom: 3px
+}
+
+.mobile-new-car-tab::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1px; /* Place the active underline above the section underline */
+  width: 0;
+  height: 2px;
+  background-color: #000; /* Active underline color */
+  transition: width 0.3s ease;
+}
+
+.mobile-new-car-tab.active::after {
+  width: 100%; /* Show underline for the active tab */
+}
+
+.mobile-new-car-tab:hover {
+  color: #333; /* Optional hover color for better UX */
+}
+
+/* Swiper styling */
+.mobile-new-car-swiper {
+  padding: 10px 0;
+}
+
+.mobile-new-car-slide {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  width: auto;
+}
+
+/* Card styling */
+.mobile-new-car-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.mobile-new-car-card-image {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  
+}
+
+.mobile-new-car-card-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0;
+}
+
+.mobile-new-car-card-car {
+  position: absolute;
+  width: 75px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60px;
+}
+
+.mobile-new-car-card-name {
+  font-size: 8px;
+    margin: 5px 0;
+    font-weight: 400;
+    line-height: 11.2px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+.mobile-new-car-card-price {
+  font-size: 8px;
+    margin: 5px 0;
+    font-weight: 400;
+    line-height: 11.2px;
+    text-align: left;
+    padding-left: 10px;
+    margin-top: -4px;
+}
+
+.mobile-new-car-card-btn {
+  margin-top: 5px;
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 0.5px solid;
+    width: 85%;
+    font-weight: 400;
+}
+
+
+
+.mobile-new-car-view-all {
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  margin-top: 1px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.mobile-new-car-view-all button {
+  background: none;
+    color: #000;
+    border: none;
+    font-size: 8px;
+    
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-weight: 700;
+    line-height: 11.2px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+
+.mobile-new-car-slide:first-child {
+  margin-left: 20px; 
+}
+
+/* brand car  */
+
+.mobile-new-car-brand-section{
+  
+   
+    box-shadow: 0px 2px 2px 0px #00000040; 
+    border: 0.2px solid #808182; 
+    background-color: #fff; 
+    border-radius: 10px; 
+    padding: 10px; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+  
+}
+.mobile-new-car-tabs-price{
+  display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+    border-bottom: 0.2px solid #4E5A65;
+    position: relative
+}
+
+/* expert section */
+.expert-advice-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.expert-advice-full-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.expert-advice-button-bottom-left {
+  position: absolute;
+  bottom: 35px;
+  left: 17px;
+  padding: 3px 10px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 600;
+}
+
+
 /*Careers*/
 .careers{
   width: 100%;
@@ -1784,3 +3809,4 @@ button{
   font-size: 1vw;
   line-height: 1vw;
 }
+
